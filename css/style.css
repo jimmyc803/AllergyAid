@@ -127,28 +127,3 @@ legend {
   cursor: pointer;
   accent-color: #2a7a2a; /* modern checkbox green */
 }
-
-/*results*/
-.btn-secondary {
-  display: inline-block;
-  background-color: #4caf50; /* lighter green */
-  color: white;
-  padding: 0.6rem 1.5rem;
-  font-weight: 600;
-  font-size: 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  margin-right: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-  background-color: #388e3c;
-  outline: none;
-}
-
-.actions {
-  margin-top: 2rem;
-  text-align: center;
-}
