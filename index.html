@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allergy Aid</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Allergy Aid - Select Dietary Restrictions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-    <header>
-        <h1>Allergy Aid</h1>
-        <p>Helping you eat safely, one meal at a time.</p>
+  <div class="container">
+    <header class="header">
+      <h1>Allergy Aid</h1>
+      <p class="tagline">Choose your dietary restrictions</p>
     </header>
 
-    <section class="intro">
-        <h2>Fast Food, Made Safer</h2>
-        <p>Millions of Americans face dietary restrictions. We're here to simplify your choices at fast food restaurants by filtering menu items based on your allergies and preferences.</p>
-        <a href="#" class="btn">Get Started</a>
-    </section>
+    <main>
+      <form id="restriction-form" action="results.html" method="GET">
+        <fieldset>
+          <legend>Please select all that apply:</legend>
 
-    <section class="features">
-        <div class="feature">
-            <h3>What We Do</h3>
-            <p>We show you exactly what you can eat based on your dietary needs—starting with McDonald's and expanding soon.</p>
-        </div>
-        <div class="feature">
-            <h3>Built For You</h3>
-            <p>Whether it's gluten, dairy, or a vegan diet, our tool filters it all. Just tell us your restrictions.</p>
-        </div>
-        <div class="feature">
-            <h3>Hackathon-Born</h3>
-            <p>Created from scratch with Python and JSON, Allergy Aid is built by students who care.</p>
-        </div>
-    </section>
+          <label class="checkbox-label">
+            <input type="checkbox" name="restrictions" value="Gluten" />
+            Gluten
+          </label>
 
-    <footer>
-        <p>&copy; 2025 Allergy Aid | Built by students</p>
+          <label class="checkbox-label">
+            <input type="checkbox" name="restrictions" value="Dairy" />
+            Dairy
+          </label>
+
+          <label class="checkbox-label">
+            <input type="checkbox" name="restrictions" value="Peanut" />
+            Peanut
+          </label>
+
+          <label class="checkbox-label">
+            <input type="checkbox" name="restrictions" value="Vegetarian" />
+            Vegetarian
+          </label>
+
+          <label class="checkbox-label">
+            <input type="checkbox" name="restrictions" value="Vegan" />
+            Vegan
+          </label>
+
+        </fieldset>
+
+        <button type="submit" class="btn-primary">See Menu Options</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Allergy Aid. All rights reserved.</p>
     </footer>
+  </div>
 </body>
 </html>
