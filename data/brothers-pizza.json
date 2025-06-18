@@ -1,0 +1,65 @@
+{
+  "name": "Brothers Pizza",
+  "items": [
+    {
+      "name": "Plain Cheese Pizza",
+      "price": "$12.00",
+      "description": "Classic cheese pizza with tomato sauce and mozzarella cheese.",
+      "categories": ["vegetarian"]
+    },
+    {
+      "name": "Pepperoni Pizza",
+      "price": "$14.00",
+      "description": "Topped with plenty of pepperoni and mozzarella cheese.",
+      "categories": []
+    },
+    {
+      "name": "Vegan Garden Salad",
+      "price": "$9.50",
+      "description": "Fresh mixed greens with tomatoes, cucumbers, and vinaigrette.",
+      "categories": ["vegan", "gluten-free", "dairy-free"]
+    },
+    {
+      "name": "Grilled Chicken Salad",
+      "price": "$11.00",
+      "description": "Mixed greens topped with grilled chicken breast and house dressing.",
+      "categories": ["gluten-free", "dairy-free"]
+    },
+    {
+      "name": "Buffalo Wings",
+      "price": "$13.00",
+      "description": "Spicy buffalo wings served with celery and blue cheese dressing.",
+      "categories": ["gluten-free", "dairy-free"]
+    },
+    {
+      "name": "Meatball Parm Sandwich",
+      "price": "$12.50",
+      "description": "Meatballs in marinara sauce topped with melted mozzarella on a hoagie roll.",
+      "categories": []
+    },
+    {
+      "name": "Spaghetti with Marinara Sauce",
+      "price": "$11.00",
+      "description": "Classic spaghetti pasta served with homemade marinara sauce.",
+      "categories": ["vegetarian"]
+    },
+    {
+      "name": "Sausage Pizza",
+      "price": "$14.00",
+      "description": "Pizza topped with Italian sausage and mozzarella cheese.",
+      "categories": []
+    },
+    {
+      "name": "Cheese Steak Sandwich",
+      "price": "$13.50",
+      "description": "Thinly sliced steak with melted cheese and onions on a hoagie roll.",
+      "categories": []
+    },
+    {
+      "name": "Garden Vegetable Pizza",
+      "price": "$14.00",
+      "description": "Topped with fresh bell peppers, onions, mushrooms, and olives.",
+      "categories": ["vegetarian"]
+    }
+  ]
+}

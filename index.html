@@ -3,56 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Allergy Aid - Select Dietary Restrictions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <title>Allergy Aid - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/home.css" />
 </head>
 <body>
-  <div class="container">
-    <header class="header">
+  <header class="header">
+    <div class="container header-inner">
       <h1>Allergy Aid</h1>
-      <p class="tagline">Choose your dietary restrictions</p>
-    </header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="partners.html">Partners</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-      <form id="restriction-form" action="results.html" method="GET">
-        <fieldset>
-          <legend>Please select all of your Dietary Restrictions:</legend>
+  <main class="container main-content">
+    <!-- Mission and What We Do -->
+    <section class="mission-section">
+      <h2>Our Mission</h2>
+      <p>
+        At Allergy Aid, we believe everyone deserves safe, stress-free dining experiences. Our mission is to connect allergy-conscious diners with trusted restaurants that provide clear allergen information and thoughtfully crafted menus.
+      </p>
+      <h2>What We Do</h2>
+      <p>
+        We partner with local and national restaurants to offer accurate allergen data and filtering tools so you can confidently enjoy meals without worry. By supporting our partners, we build a safer dining community for people with food allergies.
+      </p>
+    </section>
 
-          <label class="checkbox-label">
-            <input type="checkbox" name="restrictions" value="Gluten" />
-            Gluten Allergy
-          </label>
+    <section class="partners-slider">
+      <h3>Our Current Partners</h3>
+        <div class="slider-container">
+          <div class="slide active">
+            <a href="restaurant.html?name=brothers-pizza">
+              <img src="images/logos/brothers-pizza.png" alt="Brothers Pizza Logo" class="partner-logo" />
+            </a>
+          </div>
+        </div>
 
-          <label class="checkbox-label">
-            <input type="checkbox" name="restrictions" value="Dairy" />
-            Dairy
-          </label>
+      <div class="partner-contact">
+        <p>Interested in partnering with us?</p>
+        <a href="mailto:allergyaidteam@gmail.com" class="partner-email">Contact Us / Partner With Us</a>
+        <p class="email-fallback">Or email us directly at: <strong>allergyaidteam@gmail.com</strong></p>
+      </div>
+    </section>
+  </main>
 
-          <label class="checkbox-label">
-            <input type="checkbox" name="restrictions" value="Peanut" />
-            Peanut Allergy
-          </label>
+  <footer>
+    &copy; 2025 Allergy Aid. All rights reserved.
+  </footer>
 
-          <label class="checkbox-label">
-            <input type="checkbox" name="restrictions" value="Vegetarian" />
-            Vegetarian
-          </label>
-
-          <label class="checkbox-label">
-            <input type="checkbox" name="restrictions" value="Vegan" />
-            Vegan
-          </label>
-
-        </fieldset>
-
-        <button type="submit" class="btn-primary">See Menu Options</button>
-      </form>
-    </main>
-
-    <footer class="footer">
-      <p>© 2025 Allergy Aid. All rights reserved.</p>
-    </footer>
-  </div>
+  <script src="/js/home.js"></script>
 </body>
 </html>

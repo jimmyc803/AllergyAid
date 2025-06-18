@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Allergy-Friendly Menu</title>
+  <link rel="stylesheet" href="css/restaurant.css" />
+</head>
+<body>
+  <header>
+    <img id="restaurantLogo" src="" alt="Restaurant Logo" />
+    <h1 id="restaurantName">Loading Restaurant...</h1>
+  </header>
+
+  <section>
+    <h2>Choose Your Dietary Restrictions:</h2>
+    <form id="filterForm">
+      <label><input type="checkbox" name="allergy" value="gluten-free" /> Gluten-Free</label>
+      <label><input type="checkbox" name="allergy" value="vegetarian" /> Vegetarian</label>
+      <label><input type="checkbox" name="allergy" value="vegan" /> Vegan</label>
+      <label><input type="checkbox" name="allergy" value="dairy-free" /> Dairy-Free</label>
+
+        <div class="button-group">
+            <button type="submit">Show Safe Menu</button>
+            <button type="button" class="home-button" onclick="window.location.href='index.html'">Home</button>
+        </div>
+    </form>
+  </section>
+
+  <script src="/js/restaurant.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Allergy Aid</title>
+  <link rel="stylesheet" href="/css/nav_pages.css" />
+</head>
+<body>
+  <header>
+    <h1>Contact Allergy Aid</h1>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <form id="contactForm" action="#" method="POST">
+        <label for="name">Your Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Your Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Allergy Aid</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thank you for reaching out! We will get back to you soon.');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,9 +1,0 @@
-[
-  { "name": "Grilled Chicken Salad", "allergens": ["None"], "description": "Fresh greens with grilled chicken." },
-  { "name": "Peanut Butter Sandwich", "allergens": ["Peanut"], "description": "Classic peanut butter on whole wheat." },
-  { "name": "Cheese Pizza", "allergens": ["Dairy", "Gluten"], "description": "Mozzarella cheese on a thin crust." },
-  { "name": "Vegan Burger", "allergens": ["Gluten"], "description": "Plant-based patty with lettuce and tomato." },
-  { "name": "Fruit Salad", "allergens": ["None"], "description": "Mixed fresh fruits." },
-  { "name": "Dairy-Free Smoothie", "allergens": ["None"], "description": "Made with almond milk and fruits." },
-  { "name": "Vegetarian Pasta", "allergens": ["Gluten", "Dairy"], "description": "Pasta with tomato sauce and cheese." }
-]
