@@ -1,0 +1,41 @@
+{
+  "name": "Chick-fil-A",
+  "items": [
+    {
+      "name": "Grilled Chicken Sandwich",
+      "price": "$5.65",
+      "description": "Grilled chicken breast with lettuce and tomato on a multigrain bun.",
+      "categories": ["dairy-free"]
+    },
+    {
+      "name": "Waffle Potato Fries",
+      "price": "$2.19",
+      "description": "Crispy waffle-cut potatoes cooked in canola oil.",
+      "categories": ["vegan", "gluten-free", "dairy-free"]
+    },
+    {
+      "name": "Grilled Nuggets (8-count)",
+      "price": "$5.35",
+      "description": "Bite-sized pieces of grilled chicken breast.",
+      "categories": ["gluten-free", "dairy-free"]
+    },
+    {
+      "name": "Market Salad",
+      "price": "$8.99",
+      "description": "Fresh salad with grilled chicken, apples, blueberries, and granola.",
+      "categories": ["gluten-free"]
+    },
+    {
+      "name": "Side Salad",
+      "price": "$3.35",
+      "description": "Fresh lettuce blend with grape tomatoes and shredded cheese.",
+      "categories": ["vegetarian", "gluten-free"]
+    },
+    {
+      "name": "Fruit Cup",
+      "price": "$3.75",
+      "description": "Chopped apples, mandarin oranges, strawberries, and blueberries.",
+      "categories": ["vegan", "gluten-free", "dairy-free"]
+    }
+  ]
+}
