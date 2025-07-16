@@ -65,7 +65,7 @@ header {
 }
 
 .category-header {
-  padding: 1.25rem;
+  padding: 0.75rem 1.25rem; 
   background-color: var(--white);
   color: var(--primary-dark);
   display: flex;
@@ -102,13 +102,14 @@ header {
 
 .category-content.expanded {
   max-height: none;
-  padding: 0 1.25rem 1.25rem;
+  padding: 0 1.25rem 0.1rem; 
 }
 
 /* ===== Menu Items ===== */
 .menu-item {
-  padding: 1rem 0;
+  padding: 0.5rem 0; /* Reduced from 1rem */
   border-bottom: 1px solid #f0f0f0;
+  margin: 0; /* Add this to remove any default margins */
 }
 
 .menu-item:last-child {
@@ -116,7 +117,7 @@ header {
 }
 
 .item-name {
-  margin: 0 0 0.3rem 0;
+  margin: 0; /* Remove bottom margin since we don't have allergen text below */
   font-size: 1rem;
   font-weight: 500;
   color: var(--text);
@@ -137,10 +138,6 @@ header {
   color: #c62828;
 }
 
-.item-allergens.safe {
-  background-color: #e8f5e9;
-  color: #2e7d32;
-}
 
 /* ===== No Items State ===== */
 .no-items {

@@ -79,15 +79,10 @@ window.addEventListener('DOMContentLoaded', () => {
         nameElement.className = 'item-name';
         nameElement.textContent = item.name;
 
+        // In the renderMenu function, replace the allergen element creation with:
         const allergenElement = document.createElement('p');
-        allergenElement.className = item.allergens && item.allergens.length > 0 
-          ? 'item-allergens contains' 
-          : 'item-allergens safe';
-        
-        if (item.allergens && item.allergens.length > 0) {
-          allergenElement.textContent = `⚠️ Contains: ${item.allergens.join(', ')}`;
-        } else {
-          allergenElement.textContent = `✓ Safe (no common allergens)`;
+        if (!item.allergens || item.allergens.length === 0) {
+          itemElement.appendChild(allergenElement);
         }
 
         itemElement.appendChild(nameElement);
