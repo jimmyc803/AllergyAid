@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Allergy Aid - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="./css/home.css" />
 </head>
 <body>
@@ -13,59 +14,77 @@
       <h1>Allergy Aid</h1>
       <nav>
         <a href="index.html">Home</a>
-        <a href="partners.html">Partners</a>
+        <a href="partners.html">Restaurants</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container main-content">
-    <!-- Mission and What We Do -->
-    <section class="mission-section">
-      <h2>Our Mission</h2>
-      <p>
-        At Allergy Aid, we believe everyone deserves safe, stress-free dining experiences. Our mission is to connect allergy-conscious diners with trusted restaurants that provide clear allergen information and thoughtfully crafted menus.
-      </p>
-      <h2>What We Do</h2>
-      <p>
-        We partner with local and national restaurants to offer accurate allergen data and filtering tools so you can confidently enjoy meals without worry. By supporting our partners, we build a safer dining community for people with food allergies.
-      </p>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h2>Dine with Confidence</h2>
+        <p>Find allergy-friendly menu items at your favorite restaurants</p>
+        <a href="partners.html" class="cta-button">Browse Restaurants</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/food-safety.jpg" alt="Food safety illustration">
+      </div>
     </section>
 
-    <!-- Restaurant Partners -->
-    <section class="partners-section">
-      <h3>Our Restaurant Partners</h3>
-
-      <div class="partners-grid">
-
-        <!-- Chick-fil-A -->
-        <a href="restaurant.html?name=chickfila" class="partner-card">
-          <img src="images/logos/chickfila.png" alt="Chick-fil-A Logo" class="partner-logo" />
-        </a>
+    <!-- Mission Section -->
+    <section class="mission-section">
+      <div class="mission-card">
+        <i class="fas fa-heart"></i>
+        <h3>Our Mission</h3>
+        <p>Making dining out safer and more enjoyable for people with food allergies by providing accurate allergen information.</p>
       </div>
+      <div class="mission-card">
+        <i class="fas fa-utensils"></i>
+        <h3>How It Works</h3>
+        <p>Select a restaurant, choose your allergens, and we'll show you safe menu options.</p>
+      </div>
+      <div class="mission-card">
+        <i class="fas fa-handshake"></i>
+        <h3>Our Promise</h3>
+        <p>We work to provide the most up-to-date allergen information from restaurants.</p>
+      </div>
+    </section>
 
-      <div class="partner-contact">
-        <p>Interested in partnering with us?</p>
-        <a href="mailto:allergyaidteam@gmail.com" class="partner-email">Contact Us / Partner With Us</a>
-        <p class="email-fallback">Or email us directly at: <strong>allergyaidteam@gmail.com</strong></p>
+    <!-- Restaurant Section -->
+    <section class="restaurants-section">
+      <h2>Featured Restaurants</h2>
+      <div class="restaurants-grid">
+        <a href="restaurant.html?name=chickfila" class="restaurant-card">
+          <img src="images/logos/chickfila.png" alt="Chick-fil-A Logo" class="restaurant-logo" />
+          <span class="restaurant-name">Chick-fil-A</span>
+        </a>
+        <div class="restaurant-card coming-soon">
+          <div class="coming-soon-badge">Coming Soon</div>
+          <i class="fas fa-store-alt"></i>
+          <span class="restaurant-name">More Restaurants</span>
+        </div>
+      </div>
+      <div class="suggest-restaurant">
+        <p>Don't see your favorite restaurant?</p>
+        <a href="contact.html" class="suggest-button">
+          <i class="fas fa-envelope"></i> Suggest a Restaurant
+        </a>
       </div>
     </section>
   </main>
 
-<div class="social-links">
-  <a href="https://www.tiktok.com/@allergy.aid" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-    <img src="images/logos/tiktok.jpg" alt="TikTok Logo" class="social-icon" />
-    <span class="social-handle">allergy.aid</span>
-  </a>
-  <a href="https://www.instagram.com/allergy_aid" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-    <img src="images/logos/instagram.jpg" alt="Instagram Logo" class="social-icon" />
-    <span class="social-handle">allergy_aid</span>
-  </a>
-</div>
-
-
   <footer>
-    &copy; 2025 Allergy Aid. All rights reserved.
+    <div class="social-links">
+      <a href="https://www.tiktok.com/@allergy.aid" target="_blank" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://www.instagram.com/allergy_aid" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <p>&copy; 2025 Allergy Aid. All rights reserved.</p>
   </footer>
 
   <script src="./js/home.js"></script>
