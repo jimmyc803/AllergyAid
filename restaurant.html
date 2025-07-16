@@ -3,27 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Allergy-Friendly Menu</title>
+  <title>Select Allergens</title>
   <link rel="stylesheet" href="./css/restaurant.css" />
 </head>
 <body>
   <header>
-    <img id="restaurantLogo" src="" alt="Restaurant Logo" />
-    <h1 id="restaurantName">Loading Restaurant...</h1>
+    <img id="restaurantLogo" src="" alt="Restaurant Logo">
+    <h1 id="restaurantName">Loading...</h1>
   </header>
 
   <section>
-    <h2>Choose Your Dietary Restrictions:</h2>
-    <form id="filterForm">
-      <label><input type="checkbox" name="allergy" value="gluten-free" /> Gluten-Free</label>
-      <label><input type="checkbox" name="allergy" value="vegetarian" /> Vegetarian</label>
-      <label><input type="checkbox" name="allergy" value="vegan" /> Vegan</label>
-      <label><input type="checkbox" name="allergy" value="dairy-free" /> Dairy-Free</label>
-
-        <div class="button-group">
-            <button type="submit">Show Safe Menu</button>
-            <button type="button" class="home-button" onclick="window.location.href='index.html'">Home</button>
-        </div>
+    <h2>Select Your Allergens</h2>
+    <form id="allergenForm">
+      <div class="filter-group">
+        <label class="filter-option">
+          <input type="checkbox" name="allergen" value="milk">
+          <span>Milk</span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" name="allergen" value="egg">
+          <span>Egg</span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" name="allergen" value="soy">
+          <span>Soy</span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" name="allergen" value="wheat">
+          <span>Wheat</span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" name="allergen" value="sesame">
+          <span>Sesame</span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" name="allergen" value="tree nuts">
+          <span>Tree Nuts</span>
+        </label>
+      </div>
+      <button type="submit">Show Safe Menu</button>
     </form>
   </section>
 

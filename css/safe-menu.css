@@ -16,18 +16,12 @@ header {
   margin-bottom: 2rem;
 }
 
-header img {
-  max-width: 150px;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
 header h1 {
   color: #3a7d44;
   margin: 0;
 }
 
-section {
+#allergenFilters {
   max-width: 500px;
   margin: 0 auto 2rem auto;
   background: #e6f2d9;
@@ -36,14 +30,35 @@ section {
   box-shadow: 0 0 10px rgba(58, 125, 68, 0.2);
 }
 
-form label {
-  display: block;
-  margin-bottom: 0.7rem;
-  font-size: 1.1rem;
+#allergenFilters h2 {
+  margin-top: 0;
+  color: #3a7d44;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   cursor: pointer;
 }
 
-form button, .home-button {
+.filter-option input {
+  margin: 0;
+}
+
+#menuContainer {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+button {
   margin-top: 1rem;
   padding: 0.7rem 1.4rem;
   background-color: #3a7d44;
@@ -55,50 +70,69 @@ form button, .home-button {
   transition: background-color 0.3s ease;
 }
 
-form button:hover, .home-button:hover {
+button:hover {
   background-color: #2e5e33;
-}
-
-#menuContainer {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.menu-item {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.item-name-price {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #3a7d44;
-  margin-bottom: 0.5rem;
-}
-
-.item-description {
-  font-size: 1rem;
-  color: #555;
-  margin: 0;
 }
 
 #backBtn {
-  background-color: #3a7d44;
-  color: white;
-  border: none;
-  padding: 0.7rem 1.4rem;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  margin: 1rem auto;
   display: block;
-  transition: background-color 0.3s ease;
+  margin: 1rem auto;
 }
 
-#backBtn:hover {
-  background-color: #2e5e33;
+.category-section {
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dropdown-header {
+  width: 100%;
+  padding: 12px;
+  background-color: #e4e4e4;
+  border: none;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-header:hover {
+  background-color: #d4d4d4;
+}
+
+.dropdown-list {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-item {
+  padding: 10px;
+  background-color: #ffffff;
+  margin: 8px 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.item-name {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.item-allergens {
+  font-size: 0.85rem;
+  color: #d32f2f;
+  font-style: italic;
+}
+
+.no-items {
+  text-align: center;
+  padding: 1rem;
+  color: #666;
 }

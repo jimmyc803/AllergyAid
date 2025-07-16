@@ -1,44 +1,87 @@
 window.addEventListener('DOMContentLoaded', () => {
   document.body.classList.add('loaded');
-
-  const filteredData = JSON.parse(sessionStorage.getItem('filteredMenu'));
+  
   const menuContainer = document.getElementById('menuContainer');
   const restaurantName = document.getElementById('restaurantName');
+  const backBtn = document.getElementById('backBtn');
 
-  if (!filteredData) {
-    restaurantName.textContent = 'No menu data found';
-    menuContainer.innerHTML = '<p>Please go back and select dietary restrictions first.</p>';
+  // Load filtered data
+  let menuData;
+  try {
+    const storedData = sessionStorage.getItem('filteredMenu');
+    if (!storedData) throw new Error('No filtered menu found');
+    menuData = JSON.parse(storedData);
+  } catch (error) {
+    console.error("Error:", error);
+    restaurantName.textContent = "Menu Not Available";
+    menuContainer.innerHTML = `
+      <p class="error-message">
+        No menu data found. Please go back and select allergens first.
+      </p>
+    `;
     return;
   }
 
-  restaurantName.textContent = `${filteredData.restaurant} - Safe Menu Items`;
+  // Display restaurant name
+  restaurantName.textContent = `${menuData.restaurant} - Safe Menu`;
 
-  if (filteredData.items.length === 0) {
-    menuContainer.innerHTML = '<p>No items match your restrictions.</p>';
-  } else {
-    menuContainer.innerHTML = ''; // Clear old content
+  // Render menu items
+  function renderMenu(items) {
+    menuContainer.innerHTML = '';
 
-    filteredData.items.forEach(item => {
-      const card = document.createElement('div');
-      card.className = 'menu-item';
+    if (!items || items.length === 0) {
+      menuContainer.innerHTML = `
+        <p class="no-items">No safe menu items found for your allergen selection.</p>
+      `;
+      return;
+    }
 
-      // Item name + price
-      const namePrice = document.createElement('div');
-      namePrice.className = 'item-name-price';
-      namePrice.textContent = `${item.name} — ${item.price}`;
+    // Group by category
+    const groupedItems = items.reduce((groups, item) => {
+      const category = item.category || 'Other';
+      if (!groups[category]) groups[category] = [];
+      groups[category].push(item);
+      return groups;
+    }, {});
 
-      // Description
-      const desc = document.createElement('p');
-      desc.className = 'item-description';
-      desc.textContent = item.description;
+    // Create category sections
+    Object.entries(groupedItems).forEach(([category, items]) => {
+      const section = document.createElement('div');
+      section.className = 'menu-section';
 
-      card.appendChild(namePrice);
-      card.appendChild(desc);
-      menuContainer.appendChild(card);
+      const header = document.createElement('h2');
+      header.className = 'category-header';
+      header.textContent = category;
+      section.appendChild(header);
+
+      items.forEach(item => {
+        const itemElement = document.createElement('div');
+        itemElement.className = 'menu-item';
+
+        const nameElement = document.createElement('h3');
+        nameElement.className = 'item-name';
+        nameElement.textContent = item.name;
+        itemElement.appendChild(nameElement);
+
+        if (item.description) {
+          const descElement = document.createElement('p');
+          descElement.className = 'item-desc';
+          descElement.textContent = item.description;
+          itemElement.appendChild(descElement);
+        }
+
+        section.appendChild(itemElement);
+      });
+
+      menuContainer.appendChild(section);
     });
   }
 
-  document.getElementById('backBtn').addEventListener('click', () => {
+  // Back button functionality
+  backBtn.addEventListener('click', () => {
     window.history.back();
   });
+
+  // Initial render
+  renderMenu(menuData.items);
 });

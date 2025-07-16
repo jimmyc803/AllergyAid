@@ -1,41 +1,720 @@
 {
   "name": "Chick-fil-A",
   "items": [
-    {
-      "name": "Grilled Chicken Sandwich",
-      "price": "$5.65",
-      "description": "Grilled chicken breast with lettuce and tomato on a multigrain bun.",
-      "categories": ["dairy-free"]
-    },
-    {
-      "name": "Waffle Potato Fries",
-      "price": "$2.19",
-      "description": "Crispy waffle-cut potatoes cooked in canola oil.",
-      "categories": ["vegan", "gluten-free", "dairy-free"]
-    },
-    {
-      "name": "Grilled Nuggets (8-count)",
-      "price": "$5.35",
-      "description": "Bite-sized pieces of grilled chicken breast.",
-      "categories": ["gluten-free", "dairy-free"]
-    },
-    {
-      "name": "Market Salad",
-      "price": "$8.99",
-      "description": "Fresh salad with grilled chicken, apples, blueberries, and granola.",
-      "categories": ["gluten-free"]
-    },
-    {
-      "name": "Side Salad",
-      "price": "$3.35",
-      "description": "Fresh lettuce blend with grape tomatoes and shredded cheese.",
-      "categories": ["vegetarian", "gluten-free"]
-    },
-    {
+      -------------------Breakfast-----------------------
+      {
+      "name": "Chick-fil-A Chicken Biscuit",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+      {
+      "name": "Spicy Chicken Biscuit",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+      {
+      "name": "Chick-fil-A Chicken-Minis",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+      {
+      "name": "Egg White Grill",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+      {
+      "name": "All Hash Brown Scramble Burritos",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+
+
+
+      {
+      "name": "Hash Brown Scramble Bowl w/ Nuggets",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+      {
+      "name": "Hash Brown Scramble w/ Sausage",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy"]
+      },
+      {
+      "name": "Hash Brown Scramble Bowl w/ Grilled Filet",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy"]
+      },
+      {
+      "name": "Hash Brown Scramble Bowl w/ Spicy Chicken",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+      {
+      "name": "Hash Brown Scramble Bowl w/ Bacon",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy"]
+      },
+      {
+      "name": "Hash Brown Scramble Bowl w/ No Meat",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy"]
+      },
+      {
+      "name": "Hash Brown Scramble Bowl w/ Nuggets - no hash browns",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+      {
+      "name": "Hash Brown Scramble w/ Sausage - no hash browns",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy"]
+      },
+      {
+      "name": "Hash Brown Scramble Bowl w/ Grilled Filet - no hash browns",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy"]
+      },
+      {
+      "name": "Hash Brown Scramble Bowl w/ Spicy Chicken - no hash browns",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+      {
+      "name": "Hash Brown Scramble Bowl w/ Bacon - no hash browns",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy"]
+      },
+      {
+      "name": "Hash Brown Scramble Bowl w/ No Meat - no hash browns",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy"]
+      },
+
+
+      {
+      "name": "Chicken, Egg & Cheese Biscuit",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+      {
+      "name": "Bacon, Egg & Cheese Biscuit",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+      {
+      "name": "Sausage, Egg & Cheese Biscuit",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+      {
+      "name": "Chicken, Egg & Cheese Muffin",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+      {
+      "name": "Bacon, Egg & Cheese Muffin",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+      {
+      "name": "Sausage, Egg & Cheese Muffin",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+
+
+      {
+      "name": "Hash Browns",
+      "category": "Breakfast",
+      "allergens": []
+      },
+
+
+
+      {
+      "name": "Berry Parfait w/ Cookie Crumbs",
+      "category": "Breakfast",
+      "allergens": ["milk", "soy", "wheat"]
+      },
+      {
+      "name": "Berry Parfait w/ Granola",
+      "category": "Breakfast",
+      "allergens": ["milk", "tree nuts"]
+      },
+
+
+      {
       "name": "Fruit Cup",
-      "price": "$3.75",
-      "description": "Chopped apples, mandarin oranges, strawberries, and blueberries.",
-      "categories": ["vegan", "gluten-free", "dairy-free"]
-    }
+      "category": "Breakfast",
+      "allergens": []
+      },
+      
+      
+      
+      {
+      "name": "Buttery Biscuit",
+      "category": "Breakfast",
+      "allergens": ["milk",  "soy", "wheat"]
+      },
+      {
+      "name": "English Muffin",
+      "category": "Breakfast",
+      "allergens": ["wheat"]
+      },
+      {
+      "name": "Mini Yeast Rolls",
+      "category": "Breakfast",
+      "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+
+      -------------------entrees-----------------------
+      
+      {
+        "name": "Chick-fil-A Chicken Sandwich",
+        "category": "Entrees",
+        "allergens": ["milk", "egg", "soy", "wheat", "sesame"]
+      },
+
+      {
+        "name": "Chick-fil-A Deluxe Sandwich",
+        "category": "Entrees",
+        "allergens": ["milk", "egg", "soy", "wheat", "sesame"]
+      },
+
+      {
+        "name": "Spicy Chicken Sandwich",
+        "category": "Entrees",
+        "allergens": ["milk", "egg", "soy", "wheat", "sesame"]
+      },
+
+      {
+        "name": "Spicy Deluxe Sandwich",
+        "category": "Entrees",
+        "allergens": ["milk", "egg", "soy", "wheat", "sesame"]
+      },
+
+      {
+        "name": "Grilled Chicken Sandwich",
+        "category": "Entrees",
+        "allergens": ["egg", "wheat"]
+      },
+
+      {
+        "name": "Chick-fil-A Grilled Chicken Club Sandwich w/ Cheese",
+        "category": "Entrees",
+        "allergens": ["milk", "egg", "wheat"]
+      },
+
+      {
+        "name": "Chick-fil-A Grilled Chicken Club Sandwich w/ No cheese",
+        "category": "Entrees",
+        "allergens": ["egg", "wheat"]
+      },
+    
+      {
+        "name": "Chick-fil-A Nuggets",
+        "category": "Entrees",
+        "allergens": ["milk", "egg", "wheat"]
+      },
+    
+      {
+        "name": "Grilled Nuggets",
+        "category": "Entrees",
+        "allergens": []
+      },
+
+      {
+        "name": "Chick-fil-A Chick-n-Strips",
+        "category": "Entrees",
+        "allergens": ["milk", "egg", "wheat"]
+      },
+    
+      {
+        "name": "Chick-fil-A Cool Wrap",
+        "category": "Entrees",
+        "allergens": ["milk", "egg", "soy", "wheat","sesame"]
+      },
+    
+
+      ---------------------salads----------------------------
+
+      {
+        "name": "Cobb Salad w/ Nuggets",
+        "category": "Salads",
+        "allergens": ["milk", "egg", "wheat"]
+      },
+      {
+        "name": "Cobb Salad w/ Spicy Grilled Filet(Cold)",
+        "category": "Salads",
+        "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+      {
+        "name": "Cobb Salad w/ Grilled Nuggets",
+        "category": "Salads",
+        "allergens": ["milk", "egg", "wheat"]
+      },
+      {
+        "name": "Cobb Salad w/ Chick-fil-A Chick-n-Strips",
+        "category": "Salads",
+        "allergens": ["milk", "egg", "wheat"]
+      },
+
+      {
+        "name": "Cobb Salad w/ Grilled Filet(Cold)",
+        "category": "Salads",
+        "allergens": ["milk", "egg", "wheat"]
+      },
+      {
+        "name": "Cobb Salad w/ Chick-fil-A Filet",
+        "category": "Salads",
+        "allergens": ["milk", "egg", "wheat"]
+      },
+
+      {
+        "name": "Cobb Salad w/ Spicy Filet",
+        "category": "Salads",
+        "allergens": ["milk", "egg","soy", "wheat"]
+      },
+
+      {
+        "name": "Cobb Salad w/ Grilled Filet(Warm)",
+        "category": "Salads",
+        "allergens": ["milk", "egg", "wheat"]
+      },
+
+      {
+        "name": "Cobb Salad w/ No Chicken",
+        "category": "Salads",
+        "allergens": ["milk", "egg", "wheat"]
+      },
+    ]
+    
+    {
+      "name": "Spicy Southwest Salad w/ Nuggets",
+      "category": "Salads",
+      "allergens": ["milk", "egg", "wheat"]
+    },
+    {
+      "name": "Spicy Southwest Salad w/ Spicy Grilled Filet(Cold)",
+      "category": "Salads",
+      "allergens": ["milk", "egg", "soy",]
+    },
+    {
+      "name": "Spicy Southwest Salad w/ Grilled Nuggets",
+      "category": "Salads",
+      "allergens": ["milk", "egg"]
+    },
+    {
+      "name": "Spicy Southwest Salad w/ Chick-fil-A Chick-n-Strips",
+      "category": "Salads",
+      "allergens": ["milk", "egg", "wheat"]
+    },
+
+    {
+      "name": "Spicy Southwest Salad w/ Grilled Filet(Cold)",
+      "category": "Salads",
+      "allergens": ["milk", "egg"]
+    },
+    {
+      "name": "Spicy Southwest Salad w/ Chick-fil-A Filet",
+      "category": "Salads",
+      "allergens": ["milk", "egg", "wheat"]
+    },
+
+    {
+      "name": "Spicy Southwest Salad w/ Spicy Filet",
+      "category": "Salads",
+      "allergens": ["milk", "egg","soy", "wheat"]
+    },
+
+    {
+      "name": "Spicy Southwest Salad w/ Grilled Filet(Warm)",
+      "category": "Salads",
+      "allergens": ["milk", "egg"]
+    },
+
+    {
+      "name": "Spicy Southwest Salad w/ No Chicken",
+      "category": "Salads",
+      "allergens": ["milk", "egg"]
+    },
+
+    {
+      "name": "Market Salad w/ Nuggets",
+      "category": "Salads",
+      "allergens": ["milk", "egg", "wheat", "tree nuts"]
+    },
+    {
+      "name": "Market Salad w/ Spicy Grilled Filet(Cold)",
+      "category": "Salads",
+      "allergens": ["milk", "soy", "tree nuts"]
+    },
+    {
+      "name": "Market Salad w/ Grilled Nuggets",
+      "category": "Salads",
+      "allergens": ["milk", "tree nuts"]
+    },
+    {
+      "name": "Market Salad w/ Chick-fil-A Chick-n-Strips",
+      "category": "Salads",
+      "allergens": ["milk", "egg", "wheat", "tree nuts"]
+    },
+
+    {
+      "name": "Market Salad w/ Grilled Filet(Cold)",
+      "category": "Salads",
+      "allergens": ["milk", "tree nuts"]
+    },
+    {
+      "name": "Market Salad w/ Chick-fil-A Filet",
+      "category": "Salads",
+      "allergens": ["milk", "egg", "wheat", "tree nuts"]
+    },
+
+    {
+      "name": "Market Salad w/ Spicy Filet",
+      "category": "Salads",
+      "allergens": ["milk", "egg","soy", "wheat", "tree nuts"]
+    },
+
+    {
+      "name": "Market Salad w/ Grilled Filet(Warm)",
+      "category": "Salads",
+      "allergens": ["milk", "tree nuts"]
+    },
+
+    {
+      "name": "Market Salad w/ No Chicken",
+      "category": "Salads",
+      "allergens": ["milk", "tree nuts"]
+    },
   ]
 }
+--------------------Sides----------------------------------------
+      {
+      "name": "Chick-fil-A Waffle Potato Fries",
+      "category": "Sides",
+      "allergens": []
+      },
+      {
+      "name": "Fruit Cup",
+      "category": "Sides",
+      "allergens": []
+      },
+      {
+      "name": "Side Salad",
+      "category": "Sides",
+      "allergens": ["Milk", "Egg", "Wheat"]
+      },
+      {
+      "name": "Mac & Cheese",
+      "category": "Sides",
+      "allergens": ["Milk", "Egg", "Soy", "Wheat"]
+      },
+      {
+      "name": "Chicken Noddle Soup",
+      "category": "Sides",
+      "allergens": ["Milk", "Egg", "Soy", "Wheat"]
+      },
+      {
+      "name": "Kale Crunch Side",
+      "category": "Sides",
+      "allergens": ["Tree Nuts"]
+      },
+      {
+      "name": "Berry Parfait w/ Granola",
+      "category": "Sides",
+      "allergens": ["Milk", "Tree Nuts"]
+      },
+      {
+      "name": "Berry Parfait w/ Cookie Crumbs",
+      "category": "Sides",
+      "allergens": ["Milk", "Soy", "Wheat"]
+      },
+      {
+      "name": "Original Flavor Waffle Potato Chips",
+      "category": "Sides",
+      "allergens": []
+      },
+      {
+      "name": "Buddy Fruits Apple Sauce",
+      "category": "Sides",
+      "allergens": []
+      },
+      ---------------------Kid's Meals-------------------------------
+      {
+      "name": "Nuggets Kid's Meal",
+      "category": "Kid's Meals",
+      "allergens": ["Milk", "Egg", "Wheat"]
+      },
+      {
+      "name": "Chick-n-Strips Kid's Meal",
+      "category": "Kid's Meals",
+      "allergens": ["Milk", "Egg", "Wheat"]
+      },
+      {
+      "name": "Grilled Nuggets Kid's Meal",
+      "category": "Kid's Meals",
+      "allergens": []
+      },
+      -----------------Treats--------------------------------------------
+      {
+        "name": "Peach Milkshake",
+        "category": "Treats",
+        "allergens": ["milk"]
+      },
+
+      {
+        "name": "Regular/Diet Peach Frosted Lemonade",
+        "category": "Treats",
+        "allergens": ["milk"]
+      },
+
+      {
+        "name": "Regular/Diet Pineapple Dragonfruit Frosted Lemonade",
+        "category": "Treats",
+        "allergens": ["milk"]
+      },
+
+      {
+        "name": "Regular/Diet Frosted Lemonade",
+        "category": "Treats",
+        "allergens": ["milk"]
+      },
+
+      {
+        "name": "Frosted Coffee",
+        "category": "Treats",
+        "allergens": ["milk"]
+      },
+
+      {
+        "name": "Chocolate Chunk Cookie",
+        "category": "Treats",
+        "allergens": ["milk","egg","soy","wheat"]
+      },
+      {
+        "name": "Chocolate Fudge Brownie",
+        "category": "Treats",
+        "allergens": ["milk", "egg", "soy", "wheat"]
+      },
+      {
+        "name": "Cookies & Cream Milkshake",
+        "category": "Treats",
+        "allergens": ["milk", "soy", "wheat"]
+      },
+      {
+        "name": "Chocolate Milkshake",
+        "category": "Treats",
+        "allergens": ["milk"]
+      },
+      {
+        "name": "Strawberry Milkshake",
+        "category": "Treats",
+        "allergens": ["milk"]
+      },
+      {
+        "name": "Vanilla Milkshake",
+        "category": "Treats",
+        "allergens": ["milk"]
+      },
+      {
+        "name": "Chick-fil-A Icedream Cone",
+        "category": "Treats",
+        "allergens": ["milk","soy","wheat"]
+      },
+      {
+        "name": "Chick-fil-A Icedream Cup",
+        "category": "Treats",
+        "allergens": ["milk"]
+      },
+
+      ---------------------------Drinks------------------------------------
+      {
+      "name": "Pineapple Dragonfruit Beverages",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "Freshly-Brewed Ice Tea Sweetened",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "Freshly-Brewed Ice Tea Unsweetened",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "Chick-fil-A Lemonade",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "Chick-fil-A Diet Lemonade",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "Sunjoy (1/2 Sweet Tea, 1/2 Lemonade)",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "Sunjoy (1/2 Sweet Tea, Diet 1/2 Lemonade)",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "Sunjoy (1/2 Unsweet Tea, 1/2 Lemonade)",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "Sunjoy (1/2 Unsweet Tea, Diet 1/2 Lemonade)",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "Iced Coffee",
+      "category": "Drinks",
+      "allergens": ["Milk"]
+      },
+      {
+      "name": "Vanilla Iced Coffee",
+      "category": "Drinks",
+      "allergens": ["Milk"]
+      },
+      {
+      "name": "Coca-Cola",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "Dr Pepper",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "Red Flash",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "Dasani Bottled Water",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "Honest Kids Apple Juice",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "Simply Orange",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "1% Chocolate Milk",
+      "category": "Drinks",
+      "allergens": ["Milk"]
+      },
+      {
+      "name": "1% Milk",
+      "category": "Drinks",
+      "allergens": ["Milk"]
+      },
+      {
+      "name": "Coffee",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "Gallon Beverages",
+      "category": "Drinks",
+      "allergens": []
+      },
+      {
+      "name": "Ice Products",
+      "category": "Drinks",
+      "allergens": []
+      },
+      --------------------------Sauces--------------------------------
+      {
+      "name": "Barbeque Sauce",
+      "category": "Sauces",
+      "allergens": []
+      },
+      {
+      "name": "Chick-fil-A Sauce",
+      "category": "Sauces",
+      "allergens": ["Egg"]
+      },
+      {
+      "name": "Garden Herb Ranch Sauce",
+      "category": "Sauces",
+      "allergens": ["Milk", "Egg" ]
+      },
+      {
+      "name": "Honey Mustard Sauce",
+      "category": "Sauces",
+      "allergens": []
+      },
+      {
+      "name": "Polynesian Sauce",
+      "category": "Sauces",
+      "allergens": []
+      },
+      {
+      "name": "Sweet & Spicy Siracha Sauce",
+      "category": "Sauces",
+      "allergens": ["Soy", "Wheat"]
+      },
+      {
+      "name": "Zesty Buffalo Sauce",
+      "category": "Sauces",
+      "allergens": ["Milk", "Egg"]
+      },
+      {
+      "name": "Honey Roasted BBQ",
+      "category": "Sauces",
+      "allergens": ["Egg"]
+      },
+      ---------------------------Dressings------------------------------
+      {
+      "name": "Avocado Lime Ranch Dressing",
+      "category": "Dressings",
+      "allergens": ["Milk", "Egg"]
+      },
+      {
+      "name": "Creamy Salsa Dressing",
+      "category": "Dressings",
+      "allergens": ["Egg"]
+      },
+      {
+      "name": "Fat-Free Honey Mustard Dressing",
+      "category": "Dressings",
+      "allergens": []
+      },
+      {
+      "name": "Garden Herb Ranch Dressing",
+      "category": "Dressings",
+      "allergens": ["Milk", "Egg"]
+      },
+      {
+      "name": "Light Balsamic Vinaigrette Dressing",
+      "category": "Dressings",
+      "allergens": []
+      },
+      {
+      "name": "Light Italian Dressing",
+      "category": "Dressings",
+      "allergens": []
+      },
+      {
+      "name": "Zesty Apple Cider Vinaigrette Dressing",
+      "category": "Dressings",
+      "allergens": []
+      },
