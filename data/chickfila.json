@@ -1,7 +1,6 @@
 {
   "name": "Chick-fil-A",
   "items": [
-      -------------------Breakfast-----------------------
       {
       "name": "Chick-fil-A Chicken Biscuit",
       "category": "Breakfast",
@@ -167,8 +166,6 @@
       "category": "Breakfast",
       "allergens": ["milk", "egg", "soy", "wheat"]
       },
-
-      -------------------entrees-----------------------
       
       {
         "name": "Chick-fil-A Chicken Sandwich",
@@ -235,9 +232,6 @@
         "category": "Entrees",
         "allergens": ["milk", "egg", "soy", "wheat","sesame"]
       },
-    
-
-      ---------------------salads----------------------------
 
       {
         "name": "Cobb Salad w/ Nuggets",
@@ -288,110 +282,106 @@
         "category": "Salads",
         "allergens": ["milk", "egg", "wheat"]
       },
-    ]
     
-    {
-      "name": "Spicy Southwest Salad w/ Nuggets",
-      "category": "Salads",
-      "allergens": ["milk", "egg", "wheat"]
-    },
-    {
-      "name": "Spicy Southwest Salad w/ Spicy Grilled Filet(Cold)",
-      "category": "Salads",
-      "allergens": ["milk", "egg", "soy",]
-    },
-    {
-      "name": "Spicy Southwest Salad w/ Grilled Nuggets",
-      "category": "Salads",
-      "allergens": ["milk", "egg"]
-    },
-    {
-      "name": "Spicy Southwest Salad w/ Chick-fil-A Chick-n-Strips",
-      "category": "Salads",
-      "allergens": ["milk", "egg", "wheat"]
-    },
+      {
+        "name": "Spicy Southwest Salad w/ Nuggets",
+        "category": "Salads",
+        "allergens": ["milk", "egg", "wheat"]
+      },
+      {
+        "name": "Spicy Southwest Salad w/ Spicy Grilled Filet(Cold)",
+        "category": "Salads",
+        "allergens": ["milk", "egg", "soy"]
+      },
+      {
+        "name": "Spicy Southwest Salad w/ Grilled Nuggets",
+        "category": "Salads",
+        "allergens": ["milk", "egg"]
+      },
+      {
+        "name": "Spicy Southwest Salad w/ Chick-fil-A Chick-n-Strips",
+        "category": "Salads",
+        "allergens": ["milk", "egg", "wheat"]
+      },
 
-    {
-      "name": "Spicy Southwest Salad w/ Grilled Filet(Cold)",
-      "category": "Salads",
-      "allergens": ["milk", "egg"]
-    },
-    {
-      "name": "Spicy Southwest Salad w/ Chick-fil-A Filet",
-      "category": "Salads",
-      "allergens": ["milk", "egg", "wheat"]
-    },
+      {
+        "name": "Spicy Southwest Salad w/ Grilled Filet(Cold)",
+        "category": "Salads",
+        "allergens": ["milk", "egg"]
+      },
+      {
+        "name": "Spicy Southwest Salad w/ Chick-fil-A Filet",
+        "category": "Salads",
+        "allergens": ["milk", "egg", "wheat"]
+      },
 
-    {
-      "name": "Spicy Southwest Salad w/ Spicy Filet",
-      "category": "Salads",
-      "allergens": ["milk", "egg","soy", "wheat"]
-    },
+      {
+        "name": "Spicy Southwest Salad w/ Spicy Filet",
+        "category": "Salads",
+        "allergens": ["milk", "egg","soy", "wheat"]
+      },
 
-    {
-      "name": "Spicy Southwest Salad w/ Grilled Filet(Warm)",
-      "category": "Salads",
-      "allergens": ["milk", "egg"]
-    },
+      {
+        "name": "Spicy Southwest Salad w/ Grilled Filet(Warm)",
+        "category": "Salads",
+        "allergens": ["milk", "egg"]
+      },
 
-    {
-      "name": "Spicy Southwest Salad w/ No Chicken",
-      "category": "Salads",
-      "allergens": ["milk", "egg"]
-    },
+      {
+        "name": "Spicy Southwest Salad w/ No Chicken",
+        "category": "Salads",
+        "allergens": ["milk", "egg"]
+      },
 
-    {
-      "name": "Market Salad w/ Nuggets",
-      "category": "Salads",
-      "allergens": ["milk", "egg", "wheat", "tree nuts"]
-    },
-    {
-      "name": "Market Salad w/ Spicy Grilled Filet(Cold)",
-      "category": "Salads",
-      "allergens": ["milk", "soy", "tree nuts"]
-    },
-    {
-      "name": "Market Salad w/ Grilled Nuggets",
-      "category": "Salads",
-      "allergens": ["milk", "tree nuts"]
-    },
-    {
-      "name": "Market Salad w/ Chick-fil-A Chick-n-Strips",
-      "category": "Salads",
-      "allergens": ["milk", "egg", "wheat", "tree nuts"]
-    },
+      {
+        "name": "Market Salad w/ Nuggets",
+        "category": "Salads",
+        "allergens": ["milk", "egg", "wheat", "tree nuts"]
+      },
+      {
+        "name": "Market Salad w/ Spicy Grilled Filet(Cold)",
+        "category": "Salads",
+        "allergens": ["milk", "soy", "tree nuts"]
+      },
+      {
+        "name": "Market Salad w/ Grilled Nuggets",
+        "category": "Salads",
+        "allergens": ["milk", "tree nuts"]
+      },
+      {
+        "name": "Market Salad w/ Chick-fil-A Chick-n-Strips",
+        "category": "Salads",
+        "allergens": ["milk", "egg", "wheat", "tree nuts"]
+      },
 
-    {
-      "name": "Market Salad w/ Grilled Filet(Cold)",
-      "category": "Salads",
-      "allergens": ["milk", "tree nuts"]
-    },
-    {
-      "name": "Market Salad w/ Chick-fil-A Filet",
-      "category": "Salads",
-      "allergens": ["milk", "egg", "wheat", "tree nuts"]
-    },
+      {
+        "name": "Market Salad w/ Grilled Filet(Cold)",
+        "category": "Salads",
+        "allergens": ["milk", "tree nuts"]
+      },
+      {
+        "name": "Market Salad w/ Chick-fil-A Filet",
+        "category": "Salads",
+        "allergens": ["milk", "egg", "wheat", "tree nuts"]
+      },
 
-    {
-      "name": "Market Salad w/ Spicy Filet",
-      "category": "Salads",
-      "allergens": ["milk", "egg","soy", "wheat", "tree nuts"]
-    },
+      {
+        "name": "Market Salad w/ Spicy Filet",
+        "category": "Salads",
+        "allergens": ["milk", "egg","soy", "wheat", "tree nuts"]
+      },
 
-    {
-      "name": "Market Salad w/ Grilled Filet(Warm)",
-      "category": "Salads",
-      "allergens": ["milk", "tree nuts"]
-    },
+      {
+        "name": "Market Salad w/ Grilled Filet(Warm)",
+        "category": "Salads",
+        "allergens": ["milk", "tree nuts"]
+      },
 
-    {
-      "name": "Market Salad w/ No Chicken",
-      "category": "Salads",
-      "allergens": ["milk", "tree nuts"]
-    },
-  ]
-}
---------------------Sides----------------------------------------
+      {
+        "name": "Market Salad w/ No Chicken",
+        "category": "Salads",
+        "allergens": ["milk", "tree nuts"]
+      },
       {
       "name": "Chick-fil-A Waffle Potato Fries",
       "category": "Sides",
@@ -442,7 +432,6 @@
       "category": "Sides",
       "allergens": []
       },
-      ---------------------Kid's Meals-------------------------------
       {
       "name": "Nuggets Kid's Meal",
       "category": "Kid's Meals",
@@ -458,7 +447,7 @@
       "category": "Kid's Meals",
       "allergens": []
       },
-      -----------------Treats--------------------------------------------
+
       {
         "name": "Peach Milkshake",
         "category": "Treats",
@@ -530,7 +519,7 @@
         "allergens": ["milk"]
       },
 
-      ---------------------------Drinks------------------------------------
+
       {
       "name": "Pineapple Dragonfruit Beverages",
       "category": "Drinks",
@@ -641,7 +630,7 @@
       "category": "Drinks",
       "allergens": []
       },
-      --------------------------Sauces--------------------------------
+
       {
       "name": "Barbeque Sauce",
       "category": "Sauces",
@@ -682,7 +671,7 @@
       "category": "Sauces",
       "allergens": ["Egg"]
       },
-      ---------------------------Dressings------------------------------
+
       {
       "name": "Avocado Lime Ranch Dressing",
       "category": "Dressings",
@@ -717,4 +706,6 @@
       "name": "Zesty Apple Cider Vinaigrette Dressing",
       "category": "Dressings",
       "allergens": []
-      },
+      }
+  ]
+}
