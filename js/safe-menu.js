@@ -15,9 +15,10 @@ window.addEventListener('DOMContentLoaded', () => {
     console.error("Error:", error);
     restaurantName.textContent = "Menu Not Available";
     menuContainer.innerHTML = `
-      <p class="error-message">
-        No menu data found. Please go back and select allergens first.
-      </p>
+      <div class="no-items">
+        <i class="fas fa-exclamation-circle"></i>
+        <p>No menu data found. Please go back and select allergens first.</p>
+      </div>
     `;
     return;
   }
@@ -39,8 +40,16 @@ window.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
+    // Filter out non-food items
+    const filteredItems = items.filter(item => {
+      const lowerName = item.name.toLowerCase();
+      return !lowerName.includes('back to allergen') && 
+             !lowerName.includes('expert & language') &&
+             !lowerName.includes('homework');
+    });
+
     // Group by category
-    const groupedItems = items.reduce((groups, item) => {
+    const groupedItems = filteredItems.reduce((groups, item) => {
       const category = item.category || 'Other';
       if (!groups[category]) groups[category] = [];
       groups[category].push(item);
@@ -60,7 +69,7 @@ window.addEventListener('DOMContentLoaded', () => {
       `;
 
       const content = document.createElement('div');
-      content.className = 'category-content collapsed';
+      content.className = 'category-content';
 
       items.forEach(item => {
         const itemElement = document.createElement('div');
@@ -71,12 +80,14 @@ window.addEventListener('DOMContentLoaded', () => {
         nameElement.textContent = item.name;
 
         const allergenElement = document.createElement('p');
-        allergenElement.className = 'item-allergens';
+        allergenElement.className = item.allergens && item.allergens.length > 0 
+          ? 'item-allergens contains' 
+          : 'item-allergens safe';
+        
         if (item.allergens && item.allergens.length > 0) {
           allergenElement.textContent = `⚠️ Contains: ${item.allergens.join(', ')}`;
         } else {
-          allergenElement.textContent = `✅ No common allergens`;
-          allergenElement.style.color = '#3a7d44';
+          allergenElement.textContent = `✓ Safe (no common allergens)`;
         }
 
         itemElement.appendChild(nameElement);
@@ -84,15 +95,11 @@ window.addEventListener('DOMContentLoaded', () => {
         content.appendChild(itemElement);
       });
 
-      // Toggle functionality - modified to only affect clicked category
-      header.addEventListener('click', (e) => {
-        const clickedHeader = e.currentTarget;
-        const clickedContent = clickedHeader.nextElementSibling;
-        const clickedIcon = clickedHeader.querySelector('.toggle-icon');
-        
-        // Toggle only the clicked category
-        clickedContent.classList.toggle('collapsed');
-        clickedIcon.textContent = clickedContent.classList.contains('collapsed') ? '+' : '-';
+      // Toggle functionality
+      header.addEventListener('click', () => {
+        const isExpanded = content.classList.toggle('expanded');
+        const icon = header.querySelector('.toggle-icon');
+        icon.textContent = isExpanded ? '−' : '+';
       });
 
       section.appendChild(header);

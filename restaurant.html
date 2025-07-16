@@ -12,11 +12,12 @@
     <h1 id="restaurantName">Loading...</h1>
   </header>
 
-  <section>
-    <h2>Select Your Allergens</h2>
-    <form id="allergenForm">
-      <div class="filter-group">
-        <label class="filter-option">
+  <section class="allergen-section">
+    <div class="allergen-container">
+      <h2>Select Your Allergens</h2>
+      <form id="allergenForm">
+        <div class="filter-group">
+       <label class="filter-option">
           <input type="checkbox" name="allergen" value="milk">
           <span>Milk</span>
         </label>
@@ -40,9 +41,14 @@
           <input type="checkbox" name="allergen" value="tree nuts">
           <span>Tree Nuts</span>
         </label>
-      </div>
-      <button type="submit">Show Safe Menu</button>
-    </form>
+        </div>
+        <button type="submit">Show Safe Menu</button>
+      </form>
+    </div>
+    
+    <div id="chickfilaDisclaimer" class="disclaimer hidden">
+      <p><strong>Note:</strong> Nutrition and allergen information may vary due to preparation methods. For specific dietary concerns, contact Chick-fil-A CARES at 1-866-232-2040.</p>
+    </div>
   </section>
 
   <script src="./js/restaurant.js"></script>
