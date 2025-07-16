@@ -55,6 +55,10 @@ body {
   color: var(--primary);
 }
 
+.header a {
+  text-decoration: none;
+}
+
 .header nav {
   display: flex;
   gap: 1.5rem;
