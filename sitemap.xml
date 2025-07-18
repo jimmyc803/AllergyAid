@@ -9,22 +9,27 @@
 
 <url>
   <loc>https://getallergyaid.com/</loc>
-  <lastmod>2025-07-16T15:25:15+00:00</lastmod>
+  <lastmod>2025-07-18T01:37:01+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://getallergyaid.com/restaurants</loc>
-  <lastmod>2025-07-16T15:25:15+00:00</lastmod>
+  <lastmod>2025-07-18T01:37:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://getallergyaid.com/partners</loc>
+  <lastmod>2025-07-18T01:37:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://getallergyaid.com/contact</loc>
-  <lastmod>2025-07-16T15:25:15+00:00</lastmod>
+  <lastmod>2025-07-18T01:37:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://getallergyaid.com/restaurant?name=chickfila</loc>
-  <lastmod>2025-07-16T15:25:15+00:00</lastmod>
+  <loc>https://getallergyaid.com/allergen-picker?name=chickfila</loc>
+  <lastmod>2025-07-18T01:37:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
