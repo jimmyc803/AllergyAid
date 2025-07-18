@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -31,63 +31,60 @@ body {
   margin-bottom: 2rem;
 }
 
-/* ===== CONTACT FORM ===== */
-.contact-form {
+/* ===== PARTNERS SECTION ===== */
+.partners-section {
+  padding: 2rem 0;
+}
+
+.partner-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.partner-card {
   background: var(--white);
-  padding: 2rem;
   border-radius: 12px;
   box-shadow: var(--shadow);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-.form-group {
-  margin-bottom: 1.5rem;
+.partner-card:hover {
+  transform: translateY(-5px);
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
+.partner-card h2 {
+  color: var(--primary-dark);
+  margin-top: 0;
 }
 
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.form-group textarea {
-  min-height: 150px;
-  resize: vertical;
-}
-
-.submit-btn {
+.partner-card a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
   background-color: var(--primary);
   color: white;
-  border: none;
-  padding: 0.8rem 1.8rem;
+  text-decoration: none;
   border-radius: 50px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  cursor: pointer;
+  font-weight: 500;
   transition: background-color 0.3s ease;
 }
 
-.submit-btn:hover {
+.partner-card a:hover {
   background-color: var(--primary-dark);
 }
 
-.email-note {
-  margin-top: 2rem;
-  text-align: center;
-  color: var(--text);
+.placeholder {
+  opacity: 0.7;
 }
 
-.email-note a {
-  color: var(--primary);
-  text-decoration: none;
+.placeholder-logo {
+  background-color: var(--gray);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 /* ===== FOOTER ===== */

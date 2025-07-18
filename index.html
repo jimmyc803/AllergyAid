@@ -16,21 +16,24 @@
   <title>Allergy Aid - Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  
   <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/navbar.css">
 
   <link rel="icon" href="images/allergyaidicon.png" type="image/x-icon">
 </head>
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="index.html"> <h1>Allergy Aid</h1> </a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="partners.html">Restaurants</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <header class="header">
+      <div class="container header-inner">
+        <a href="index.html"><h1>Allergy Aid</h1></a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="restaurants.html">Restaurants</a>
+          <a href="partners.html">Partners</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
 
   <main class="container main-content">
     <!-- Hero Section -->
@@ -38,7 +41,7 @@
       <div class="hero-content">
         <h2>Dine with Confidence</h2>
         <p>Find allergy-friendly menu items at your favorite restaurants</p>
-        <a href="partners.html" class="cta-button">Browse Restaurants</a>
+        <a href="allergen-picker.html?name=chickfila" class="cta-button">Browse Restaurants</a>
       </div>
       <div class="hero-image">
         <img src="images/food-safety.jpg" alt="Food safety illustration">
@@ -68,7 +71,7 @@
     <section class="restaurants-section">
       <h2>Featured Restaurants</h2>
       <div class="restaurants-grid">
-        <a href="restaurant.html?name=chickfila" class="restaurant-card">
+        <a href="allergen-picker.html?name=chickfila" class="restaurant-card">
           <span class="restaurant-name">Chick-fil-A</span>
         </a>
         <div class="restaurant-card coming-soon">
