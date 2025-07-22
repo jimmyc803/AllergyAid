@@ -2,8 +2,8 @@
   "name": "RESTAURANT_NAME",
   "disclaimer": "DISCLAIMER.",
   "customAllergens": [
-    {"id": "unique_id", "displayName": "User-Friendly Name"},
-    {"id": "unique_id", "displayName": "User-Friendly Name"}
+    {"id": "id1", "displayName": "User-Friendly Name"},
+    {"id": "id2", "displayName": "User-Friendly Name"}
   ],
   "items": [
     {

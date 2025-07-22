@@ -33,13 +33,6 @@ window.addEventListener('DOMContentLoaded', () => {
     };
   }
 
-  // Format display name
-  const readableName = restaurantParam
-    .split('-')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
-  restaurantTitle.textContent = `${readableName} Menu`;
-
   // Load restaurant data and setup form
   fetch(menuUrl)
     .then(response => {
@@ -47,6 +40,9 @@ window.addEventListener('DOMContentLoaded', () => {
       return response.json();
     })
     .then(restaurantData => {
+      // Set restaurant name directly from JSON data
+      restaurantTitle.textContent = `${restaurantData.name} Menu`;
+
       // Clear existing checkboxes but keep container
       filterGroup.innerHTML = '';
 
@@ -83,6 +79,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
     .catch(error => {
       console.error("Error loading restaurant data:", error);
+      restaurantTitle.textContent = "Menu Not Available";
       filterGroup.innerHTML = '<p>Failed to load menu data. Please try again later.</p>';
     });
 

@@ -1,0 +1,298 @@
+{
+  "name": "Raising Cane's",
+  "disclaimer": "Cane’s Sauce®, Coleslaw, and Drinks = gluten-free. Gluten items cooked in kitchen. Nutrition info is based on averages from labs and suppliers. Differences may occur due to portion size, prep methods, and sources. We try to identify allergens, but cross-contact is possible. Suppliers may change ingredients anytime. Customers with allergies should be cautious. Cane’s is not liable for allergic reactions or contact during dining.Fried foods use soybean & canola oil blend. Per FDA, highly refined soybean oil is not labeled as an allergen.",
+  "customAllergens": [
+    {"id": "egg", "displayName": "Egg"},
+    {"id": "soy", "displayName": "Soy"},
+    {"id": "fish", "displayName": "Fish (Anchovies)"},
+    {"id": "milk", "displayName": "Milk"},
+    {"id": "nuts", "displayName": "Nuts"},
+    {"id": "wheat", "displayName": "Wheat"},
+    {"id": "sesame", "displayName": "Sesame"}
+  ],
+  "items": [
+    {
+      "name": "Chicken Finger",
+      "category": "Individual Items",
+      "allergens": ["egg", "milk", "wheat"] 
+    },
+    
+    {
+      "name": "Crinkle-Cut Fries",
+      "category": "Individual Items",
+      "allergens": ["egg", "milk", "wheat"] 
+    },
+    
+    {
+      "name": "Texas Toast",
+      "category": "Individual Items",
+      "allergens": ["soy", "milk", "wheat", "sesame"] 
+    },
+    
+    {
+      "name": "Coleslaw",
+      "category": "Individual Items",
+      "allergens": ["egg"] 
+    },
+    
+    {
+      "name": "Cane's Sauce",
+      "category": "Individual Items",
+      "allergens": ["egg", "soy", "fish"] 
+    },
+
+    {
+      "name": "Chicken Sandwich",
+      "category": "Individual Items",
+      "allergens": ["egg", "fish", "milk", "soy", "wheat", "sesame"] 
+    },
+    
+    {
+      "name": "3 Finger Combo",
+      "category": "Combination Meals",
+      "allergens": ["egg", "fish", "milk", "soy", "wheat", "sesame"] 
+    },
+    {
+      "name": "Box Combo",
+      "category": "Combination Meals",
+      "allergens": ["egg", "fish", "milk", "soy", "wheat", "sesame"] 
+    },
+    {
+      "name": "Caniac Combo",
+      "category": "Combination Meals",
+      "allergens": ["egg", "fish", "milk", "soy", "wheat", "sesame"] 
+    },
+    {
+      "name": "Sandwich Combo",
+      "category": "Combination Meals",
+      "allergens": ["egg", "fish", "milk", "soy", "wheat", "sesame"] 
+    },
+    {
+      "name": "Box Combo - The Pos",
+      "category": "Combination Meals",
+      "allergens": ["egg", "fish", "milk", "soy", "wheat", "sesame"] 
+    },
+    {
+      "name": "Kid's Combo",
+      "category": "Combination Meals",
+      "allergens": ["egg", "fish", "milk", "soy", "wheat"] 
+    },
+    {
+      "name": "Kid's Combo (Maryland)",
+      "category": "Combination Meals",
+      "allergens": ["egg", "milk", "wheat"] 
+    },
+    {
+      "name": "Sweet Tea",
+      "category": "Drinks",
+      "allergens": [] 
+    },{
+      "name": "Unsweet Tea",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Lemonade",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Half Sweeet/Half Lemonade",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Half Unsweet/Half Lemonade",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Barq's Root Beer",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Coca-Cola Cherry",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Coca-Cola",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Coca-Cola Zero",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Diet Coke",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Diet Mountain Dew",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Diet  Pepsi",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Dr Pepper",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Fanta Fruit Punch",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Fanta Orange",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Gatorade Fruit Punch",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Hi-C Flashin Fruit Punch",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Mello Yello",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Mountain Dew",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Mug Root Beer",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Orange Crush",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Pepsi",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Pepsi Zero",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Pibb Xtra",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Powerade Mtn Berry Blast",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Sprite",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+    {
+      "name": "Starry",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+
+    {
+      "name": "Tropicana Fruit Punch",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+
+    {
+      "name": "Apple Juice Drink Pouch",
+      "category": "Drinks",
+      "allergens": [] 
+    },
+
+    {
+      "name": "Milk 1% Box",
+      "category": "Drinks",
+      "allergens": ["milk"] 
+    },
+    
+    {
+      "name": "Honey Mustard",
+      "category": "Condiments",
+      "allergens": ["egg", "milk"] 
+    },
+
+    {
+      "name": "Ketchup",
+      "category": "Condiments",
+      "allergens": [] 
+    },
+    
+    {
+      "name": "Louisiana Hot Sauce Packet",
+      "category": "Condiments",
+      "allergens": [] 
+    },
+
+    {
+      "name": "Kraft Mayonnaise Packet",
+      "category": "Condiments",
+      "allergens": ["egg"] 
+    },
+
+    {
+      "name": "Sugar Packet",
+      "category": "Condiments",
+      "allergens": [] 
+    },
+
+    {
+      "name": "Splenda Pack",
+      "category": "Condiments",
+      "allergens": [] 
+    },
+
+    {
+      "name": "Sweet 'N Low Packet",
+      "category": "Condiments",
+      "allergens": [] 
+    },
+
+    {
+      "name": "Iodized Salt Packet",
+      "category": "Condiments",
+      "allergens": [] 
+    },
+
+    {
+      "name": "Black Pepper Packet",
+      "category": "Condiments",
+      "allergens": [] 
+    },
+
+    {
+      "name": "Lemon Wedge",
+      "category": "Condiments",
+      "allergens": [] 
+    }
+  ]
+}
