@@ -86,14 +86,16 @@ h2::after {
   margin: 1rem auto 0;
 }
 
+/* Updated filter group styles */
 .filter-group {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
-.filter-option {
+/* Ensures both default and dynamic options get same styling */
+.filter-group label {
   display: flex;
   align-items: center;
   padding: 1rem;
@@ -101,14 +103,15 @@ h2::after {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin: 0; /* Remove any default margins */
 }
 
-.filter-option:hover {
+.filter-group label:hover {
   background-color: var(--primary);
   color: var(--white);
 }
 
-.filter-option input[type="checkbox"] {
+.filter-group input[type="checkbox"] {
   margin-right: 0.8rem;
   width: 18px;
   height: 18px;
@@ -150,7 +153,13 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
   .filter-group {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-group {
+    grid-template-columns: 1fr; /* 1 column on mobile */
   }
   
   section {

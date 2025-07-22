@@ -40,16 +40,8 @@ window.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Filter out non-food items
-    const filteredItems = items.filter(item => {
-      const lowerName = item.name.toLowerCase();
-      return !lowerName.includes('back to allergen') && 
-             !lowerName.includes('expert & language') &&
-             !lowerName.includes('homework');
-    });
-
     // Group by category
-    const groupedItems = filteredItems.reduce((groups, item) => {
+    const groupedItems = items.reduce((groups, item) => {
       const category = item.category || 'Other';
       if (!groups[category]) groups[category] = [];
       groups[category].push(item);
@@ -78,15 +70,8 @@ window.addEventListener('DOMContentLoaded', () => {
         const nameElement = document.createElement('h4');
         nameElement.className = 'item-name';
         nameElement.textContent = item.name;
-
-        // In the renderMenu function, replace the allergen element creation with:
-        const allergenElement = document.createElement('p');
-        if (!item.allergens || item.allergens.length === 0) {
-          itemElement.appendChild(allergenElement);
-        }
-
+        
         itemElement.appendChild(nameElement);
-        itemElement.appendChild(allergenElement);
         content.appendChild(itemElement);
       });
 

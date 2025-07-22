@@ -3,22 +3,24 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Get URL parameters
   const urlParams = new URLSearchParams(window.location.search);
-  const restaurantParam = urlParams.get('name'); // 'chickfila' from URL
+  const restaurantParam = urlParams.get('name');
   
   // Get DOM elements
   const logoImg = document.getElementById('restaurantLogo');
   const restaurantTitle = document.getElementById('restaurantName');
   const allergenForm = document.getElementById('allergenForm');
+  const filterGroup = document.querySelector('.filter-group');
+  const disclaimerContainer = document.getElementById('restaurantDisclaimer');
 
   // Validate restaurant parameter
   if (!restaurantParam) {
     restaurantTitle.textContent = "Restaurant Not Found";
     if (logoImg) logoImg.style.display = "none";
-    menuContainer.innerHTML = '<p>Please select a restaurant from the home page.</p>';
+    filterGroup.innerHTML = '<p>Please select a restaurant from the home page.</p>';
     return;
   }
 
-  // Set paths - ensure these match your actual file structure
+  // Set paths
   const menuUrl = `./data/${restaurantParam}.json`;
   const logoUrl = `./images/logos/${restaurantParam}.png`;
 
@@ -38,6 +40,52 @@ window.addEventListener('DOMContentLoaded', () => {
     .join(' ');
   restaurantTitle.textContent = `${readableName} Menu`;
 
+  // Load restaurant data and setup form
+  fetch(menuUrl)
+    .then(response => {
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      return response.json();
+    })
+    .then(restaurantData => {
+      // Clear existing checkboxes but keep container
+      filterGroup.innerHTML = '';
+
+      // Determine which allergens to show
+      const allergensToDisplay = restaurantData.customAllergens || [
+        {id: 'milk', displayName: 'Milk'},
+        {id: 'egg', displayName: 'Egg'},
+        {id: 'soy', displayName: 'Soy'},
+        {id: 'wheat', displayName: 'Wheat'},
+        {id: 'sesame', displayName: 'Sesame'},
+        {id: 'tree nuts', displayName: 'Tree Nuts'},
+        {id: 'peanut', displayName: 'Peanut'},
+        {id: 'fish', displayName: 'Fish'}
+      ];
+
+      // Create checkboxes
+      allergensToDisplay.forEach(allergen => {
+        const label = document.createElement('label');
+        label.className = 'filter-option';
+        label.innerHTML = `
+          <input type="checkbox" name="allergen" value="${allergen.id}">
+          <span>${allergen.displayName || allergen.id}</span>
+        `;
+        filterGroup.appendChild(label);
+      });
+
+      // Set disclaimer if it exists
+      if (restaurantData.disclaimer) {
+        disclaimerContainer.innerHTML = `<p><strong>Note:</strong> ${restaurantData.disclaimer}</p>`;
+        disclaimerContainer.classList.remove('hidden');
+      } else {
+        disclaimerContainer.classList.add('hidden');
+      }
+    })
+    .catch(error => {
+      console.error("Error loading restaurant data:", error);
+      filterGroup.innerHTML = '<p>Failed to load menu data. Please try again later.</p>';
+    });
+
   // Handle form submission
   allergenForm.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -56,7 +104,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
       // Filter items
       const safeItems = menuData.items.filter(item => {
-        const itemAllergens = (item.allergens || []).map(a => a.toLowerCase());
+        const itemAllergens = (item.allergens || []).map(a => 
+          typeof a === 'string' ? a.toLowerCase() : a.id.toLowerCase()
+        );
         return !selectedAllergens.some(allergen => 
           itemAllergens.includes(allergen)
         );
@@ -65,7 +115,8 @@ window.addEventListener('DOMContentLoaded', () => {
       // Store and redirect
       sessionStorage.setItem('filteredMenu', JSON.stringify({
         restaurant: menuData.name,
-        items: safeItems
+        items: safeItems,
+        customAllergens: menuData.customAllergens
       }));
       window.location.href = 'safe-menu.html';
       
