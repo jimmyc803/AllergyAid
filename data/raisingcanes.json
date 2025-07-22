@@ -78,6 +78,11 @@
       "allergens": ["egg", "fish", "milk", "soy", "wheat"] 
     },
     {
+      "name": "Kid's Combo (Louisville, KY)",
+      "category": "Combination Meals",
+      "allergens": ["egg", "soy", "fish", "milk", "wheat"] 
+    },
+    {
       "name": "Kid's Combo (Maryland)",
       "category": "Combination Meals",
       "allergens": ["egg", "milk", "wheat"] 
