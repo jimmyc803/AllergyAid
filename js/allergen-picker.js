@@ -40,10 +40,10 @@ window.addEventListener('DOMContentLoaded', () => {
       return response.json();
     })
     .then(restaurantData => {
-      // Set restaurant name directly from JSON data
+      // Set restaurant name
       restaurantTitle.textContent = `${restaurantData.name} Menu`;
 
-      // Clear existing checkboxes but keep container
+      // Clear existing checkboxes
       filterGroup.innerHTML = '';
 
       // Determine which allergens to show
@@ -66,6 +66,12 @@ window.addEventListener('DOMContentLoaded', () => {
           <input type="checkbox" name="allergen" value="${allergen.id}">
           <span>${allergen.displayName || allergen.id}</span>
         `;
+        
+        // Add selection handler
+        label.addEventListener('change', function() {
+          this.classList.toggle('selected', this.querySelector('input').checked);
+        });
+        
         filterGroup.appendChild(label);
       });
 

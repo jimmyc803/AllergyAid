@@ -2,6 +2,7 @@
 :root {
   --primary: #3a7d44;
   --primary-dark: #2e5e33;
+  --primary-darker: #1e4a24; /* New darker shade for borders */
   --primary-light: #e6f2d9;
   --white: #fff;
   --gray: #f5f5f5;
@@ -35,20 +36,39 @@ body.loaded {
 }
 
 /* ===== Header ===== */
-header {
-  background-color: var(--white);
-  box-shadow: var(--shadow);
-  padding: 1.5rem 0;
+.header-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.header-center {
+  flex: 1;
   text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  margin: 0 auto;
+}
+
+.back-button {
+  position: absolute;
+  left: 20px;
+  color: var(--primary-dark);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.back-button:hover {
+  background-color: var(--primary-light);
+  transform: translateX(-3px);
 }
 
 #restaurantLogo {
   height: 80px;
   width: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -60,10 +80,10 @@ header {
 }
 
 /* ===== Allergen Selection ===== */
-section {
+.allergen-section {
   max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
+  margin: 0.5rem auto 2rem;
+  padding: 1.5rem;
   background-color: var(--white);
   border-radius: 12px;
   box-shadow: var(--shadow);
@@ -72,7 +92,7 @@ section {
 h2 {
   color: var(--primary-dark);
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
   position: relative;
 }
@@ -83,46 +103,58 @@ h2::after {
   width: 60px;
   height: 3px;
   background-color: var(--primary);
-  margin: 1rem auto 0;
+  margin: 0.5rem auto 0;
 }
 
-/* Updated filter group styles */
 .filter-group {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-/* Ensures both default and dynamic options get same styling */
 .filter-group label {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 1rem;
-  background-color: var(--primary-light);
+  background-color: var(--white);
+  border: 2px solid var(--primary-darker); /* Darker border */
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  margin: 0; /* Remove any default margins */
+  transition: all 0.2s ease;
+  margin: 0;
+  text-align: center;
+  position: relative;
 }
 
 .filter-group label:hover {
+  border-color: var(--primary-dark);
+  background-color: var(--primary-light);
+}
+
+.filter-group label.selected {
   background-color: var(--primary);
+  border-color: var(--primary-darker); /* Darker border when selected */
   color: var(--white);
 }
 
 .filter-group input[type="checkbox"] {
-  margin-right: 0.8rem;
-  width: 18px;
-  height: 18px;
-  accent-color: var(--primary);
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+  cursor: pointer;
 }
 
 button[type="submit"] {
   display: block;
   width: 100%;
   max-width: 300px;
-  margin: 2rem auto 0;
+  margin: 1.5rem auto 0;
   padding: 1rem;
   background-color: var(--primary);
   color: var(--white);
@@ -153,16 +185,31 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
   .filter-group {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .header-content {
+    padding: 1rem;
+  }
+  
+  .back-button {
+    position: static;
+    margin-right: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .filter-group {
-    grid-template-columns: 1fr; /* 1 column on mobile */
+    grid-template-columns: 1fr;
   }
   
-  section {
-    padding: 1.5rem;
+  .allergen-section {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+  
+  .header-center {
+    text-align: left;
+    padding-left: 1rem;
   }
 }

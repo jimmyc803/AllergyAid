@@ -5,26 +5,20 @@ window.addEventListener('DOMContentLoaded', () => {
   const restaurantName = document.getElementById('restaurantName');
   const backBtn = document.getElementById('backBtn');
 
-  // Add search elements
+  // Create search bar (minimal styling to preserve original design)
+  const searchContainer = document.createElement('div');
+  searchContainer.className = 'search-container';
+  
   const searchInput = document.createElement('input');
   searchInput.type = 'text';
   searchInput.id = 'menuItemSearch';
   searchInput.placeholder = 'Search menu items...';
   searchInput.className = 'search-input';
-
-  const searchButton = document.createElement('button');
-  searchButton.id = 'searchMenuItemBtn';
-  searchButton.textContent = 'Search';
-  searchButton.className = 'search-button';
-
-  const searchContainer = document.createElement('div');
-  searchContainer.className = 'search-container';
-  searchContainer.appendChild(searchInput);
-  searchContainer.appendChild(searchButton);
-
+  
   // Insert search bar after header
   const header = document.querySelector('header');
   header.insertAdjacentElement('afterend', searchContainer);
+  searchContainer.appendChild(searchInput);
 
   // Load filtered data
   let menuData;
@@ -37,7 +31,6 @@ window.addEventListener('DOMContentLoaded', () => {
     restaurantName.textContent = "Menu Not Available";
     menuContainer.innerHTML = `
       <div class="no-items">
-        <i class="fas fa-exclamation-circle"></i>
         <p>No menu data found. Please go back and select allergens first.</p>
       </div>
     `;
@@ -47,21 +40,20 @@ window.addEventListener('DOMContentLoaded', () => {
   // Display restaurant name
   restaurantName.textContent = `${menuData.restaurant} - Safe Menu`;
 
-  // Render menu items with collapsible categories
-  function renderMenu(items) {
+  // Render menu items (preserving original structure)
+  function renderMenu(items, searchTerm = '') {
     menuContainer.innerHTML = '';
 
     if (!items || items.length === 0) {
       menuContainer.innerHTML = `
         <div class="no-items">
-          <i class="fas fa-utensils-slash"></i>
-          <p>No safe menu items found for your allergen selection.</p>
+          <p>${searchTerm ? `No items match "${searchTerm}"` : 'No safe menu items found for your allergen selection.'}</p>
         </div>
       `;
       return;
     }
 
-    // Group by category
+    // Group by category (original grouping logic)
     const groupedItems = items.reduce((groups, item) => {
       const category = item.category || 'Other';
       if (!groups[category]) groups[category] = [];
@@ -69,7 +61,7 @@ window.addEventListener('DOMContentLoaded', () => {
       return groups;
     }, {});
 
-    // Create category sections
+    // Create category sections (original structure)
     Object.entries(groupedItems).forEach(([category, items]) => {
       const section = document.createElement('div');
       section.className = 'menu-category';
@@ -85,69 +77,56 @@ window.addEventListener('DOMContentLoaded', () => {
       content.className = 'category-content';
 
       items.forEach(item => {
-        const itemElement = document.createElement('div');
-        itemElement.className = 'menu-item';
-        itemElement.dataset.itemName = item.name.toLowerCase();
-
-        const nameElement = document.createElement('h4');
-        nameElement.className = 'item-name';
-        nameElement.textContent = item.name;
-        
-        itemElement.appendChild(nameElement);
-        content.appendChild(itemElement);
+        const itemName = item.name.toLowerCase();
+        if (!searchTerm || itemName.includes(searchTerm.toLowerCase())) {
+          const itemElement = document.createElement('div');
+          itemElement.className = 'menu-item';
+          
+          const nameElement = document.createElement('h4');
+          nameElement.className = 'item-name';
+          nameElement.textContent = item.name;
+          
+          itemElement.appendChild(nameElement);
+          content.appendChild(itemElement);
+        }
       });
 
-      // Toggle functionality
-      header.addEventListener('click', () => {
-        const isExpanded = content.classList.toggle('expanded');
-        const icon = header.querySelector('.toggle-icon');
-        icon.textContent = isExpanded ? '−' : '+';
-      });
+      // Only add category if it has visible items
+      if (content.children.length > 0) {
+        // Original toggle functionality
+        header.addEventListener('click', () => {
+          const isExpanded = content.classList.toggle('expanded');
+          const icon = header.querySelector('.toggle-icon');
+          icon.textContent = isExpanded ? '−' : '+';
+        });
 
-      section.appendChild(header);
-      section.appendChild(content);
-      menuContainer.appendChild(section);
-    });
-  }
-
-  // Search functionality
-  function searchMenuItems() {
-    const searchTerm = document.getElementById('menuItemSearch').value.toLowerCase();
-    const menuItems = document.querySelectorAll('.menu-item');
-    
-    menuItems.forEach(item => {
-      const itemName = item.dataset.itemName;
-      if (itemName.includes(searchTerm)) {
-        item.style.display = 'block';
-        // Show parent category if match found
-        item.closest('.menu-category').style.display = 'block';
-        item.closest('.category-content').classList.add('expanded');
-        item.closest('.menu-category').querySelector('.toggle-icon').textContent = '−';
-      } else {
-        item.style.display = 'none';
+        section.appendChild(header);
+        section.appendChild(content);
+        menuContainer.appendChild(section);
       }
     });
 
-    // Hide empty categories
-    document.querySelectorAll('.menu-category').forEach(category => {
-      const visibleItems = category.querySelectorAll('.menu-item[style="display: block;"]').length;
-      if (visibleItems === 0) {
-        category.style.display = 'none';
-      }
-    });
-  }
-
-  // Event listeners
-  searchButton.addEventListener('click', searchMenuItems);
-  searchInput.addEventListener('keyup', function(event) {
-    if (event.key === 'Enter') {
-      searchMenuItems();
+    // Show message if no items match search
+    if (menuContainer.children.length === 0 && searchTerm) {
+      menuContainer.innerHTML = `
+        <div class="no-items">
+          <p>No items match "${searchTerm}"</p>
+        </div>
+      `;
     }
+  }
+
+  // Real-time search with original styling preserved
+  searchInput.addEventListener('input', () => {
+    const searchTerm = searchInput.value.trim();
+    renderMenu(menuData.items, searchTerm);
   });
 
+  // Original back button functionality
   backBtn.addEventListener('click', () => {
     window.history.back();
   });
 
+  // Initial render
   renderMenu(menuData.items);
 });

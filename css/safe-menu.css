@@ -187,30 +187,23 @@ header {
   }
 }
 
+/* Search bar - minimal styling */
 .search-container {
-  margin: 20px auto;
-  display: flex;
-  justify-content: center;
+  margin: 15px auto;
   max-width: 600px;
 }
 
 .search-input {
+  width: 100%;
   padding: 10px 15px;
   border: 1px solid #ddd;
-  border-radius: 4px 0 0 4px;
-  width: 70%;
+  border-radius: 4px;
   font-size: 16px;
 }
 
-.search-button {
-  padding: 10px 15px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
-}
-
-.search-button:hover {
-  background-color: #45a049;
+/* No results message - matches existing style */
+.no-items {
+  text-align: center;
+  padding: 20px;
+  color: #666;
 }

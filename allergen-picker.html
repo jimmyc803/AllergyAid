@@ -7,7 +7,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-17XLE1VGH7');
   </script>
 
@@ -15,13 +14,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Select Allergens</title>
   <link rel="stylesheet" href="./css/allergen-picker.css" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="icon" href="images/allergyaidicon.png" type="image/x-icon">
 </head>
 <body>
   <header>
-    <img id="restaurantLogo" src="" alt="Restaurant Logo">
-    <h1 id="restaurantName">Loading...</h1>
+    <div class="header-content">
+      <a href="restaurants.html" class="back-button"><i class="fas fa-arrow-left"></i></a>
+      <div class="header-center">
+        <img id="restaurantLogo" src="" alt="Restaurant Logo">
+        <h1 id="restaurantName">Loading...</h1>
+      </div>
+    </div>
   </header>
 
   <section class="allergen-section">

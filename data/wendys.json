@@ -1,0 +1,21 @@
+{
+  "name": "Wendy's",
+  "disclaimer": "DISCLAIMER.",
+  "customAllergens": [
+    {"id": "id1", "displayName": "User-Friendly Name"},
+    {"id": "id2", "displayName": "User-Friendly Name"}
+  ],
+  "items": [
+    {
+      "name": "MENU_ITEM_NAME",
+      "category": "Combo",
+      "allergens": ["id1", "id2"] 
+    },
+    {
+      "name": "MENU_ITEM_NAME",
+      "category": "CATEGORY_NAME",
+      "allergens": ["id1", "id2"] 
+    }
+
+  ]
+}
