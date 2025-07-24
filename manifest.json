@@ -1,0 +1,16 @@
+{
+  "name": "Allergy Aid",
+  "short_name": "AllergyAid",
+  "description": "Find allergy-friendly menu items at restaurants",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#3a7d44",
+  "icons": [
+    {
+      "src": "images/allergyaid-app-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
