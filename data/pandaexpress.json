@@ -1,0 +1,387 @@
+{
+  "name": "Panda Express",
+  "disclaimer": "DISCLAIMER.",
+  "customAllergens": [
+    {"id": "wheat", "displayName": "Wheat"},
+    {"id": "soy", "displayName": "Soy"},
+    {"id": "treenuts", "displayName": "Tree Nuts"},
+    {"id": "fish", "displayName": "Fish"},
+    {"id": "peanuts", "displayName": "Peanuts"},
+    {"id": "shellfish", "displayName": "Shellfish"},
+    {"id": "egg", "displayName": "Egg"},
+    {"id": "milk", "displayName": "Milk"},
+    {"id": "sesame", "displayName": "Sesame (Sesame Oil)"}
+  ],
+  "items": [
+    {
+      "name": "Chow Mein",
+      "category": "Sides",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Chow Mein - Cub Meal",
+      "category": "Sides",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Fried Rice",
+      "category": "Sides",
+      "allergens": ["wheat", "soy", "sesame", "egg"]
+    },
+    {
+      "name": "Fried Rice - Cub Meal",
+      "category": "Sides",
+      "allergens": ["wheat", "soy", "sesame", "egg"]
+    },
+    {
+      "name": "White Steamed Rice",
+      "category": "Sides",
+      "allergens": []
+    },
+    {
+      "name": "White Steamed Rice - Cub Meal",
+      "category": "Sides",
+      "allergens": []
+    },
+    {
+      "name": "Super Greens",
+      "category": "Sides",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Super Greens - Cub Meal",
+      "category": "Sides",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Chow Fun",
+      "category": "Sides",
+      "allergens": ["wheat", "soy", "milk"]
+    },
+    {
+      "name": "Chow Fun - Cub Meal",
+      "category": "Sides",
+      "allergens": ["wheat", "soy", "milk"]
+    },
+        {
+      "name": "Super Greens Entree",
+      "category": "Vegetables",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Super Greens - Cub Meal Entree",
+      "category": "Vegetables",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Eggplant Tofu",
+      "category": "Vegetables",
+      "allergens": ["wheat", "soy","sesame"]
+    },
+    {
+      "name": "Eggplant Tofu - Cub Meal",
+      "category": "Vegetables",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+        {
+      "name": "Beyond Orange Chicken",
+      "category": "Specialty",
+      "allergens": ["wheat", "soy"]
+    },
+        {
+      "name": "Beyond Orange Chicken - Cub Meal",
+      "category": "Specialty",
+      "allergens": ["wheat", "soy"]
+    },
+        {
+      "name": "Black Pepper Chicken",
+      "category": "Chicken",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Black Pepper Chicken - Cub Meal",
+      "category": "Chicken",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Kung Pao Chicken",
+      "category": "Chicken",
+      "allergens": ["wheat", "soy", "peanuts", "sesame"]
+    },
+    {
+      "name": "Kung Pao Chicken - Cub Meal",
+      "category": "Chicken",
+      "allergens": ["wheat", "soy", "peanuts", "sesame"]
+    },
+    {
+      "name": "Grilled Teriyaki Chicken",
+      "category": "Chicken",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Grilled Teriyaki Chicken - Cub Meal",
+      "category": "Chicken",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Teriyaki Chicken",
+      "category": "Chicken",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Teriyaki Chicken - Cub Meal",
+      "category": "Chicken",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Mushroom Chicken",
+      "category": "Chicken",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Mushroom Chicken - Cub Meal",
+      "category": "Chicken",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Orange Chicken",
+      "category": "Chicken",
+      "allergens": ["wheat", "soy", "egg", "milk", "sesame"]
+    },
+    {
+      "name": "Orange Chicken - Cub Meal",
+      "category": "Chicken",
+      "allergens": ["wheat", "soy", "egg", "milk", "sesame"]
+    },
+    {
+      "name": "Potato Chicken",
+      "category": "Chicken",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Potato Chicken - Cub Meal",
+      "category": "Chicken",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Honey Sesame Chicken Breast",
+      "category": "Chicken Breast",
+      "allergens": ["wheat", "sesame"]
+    },
+    {
+      "name": "Honey Sesame Chicken Breast - Cub Meal",
+      "category": "Chicken Breast",
+      "allergens": ["wheat", "sesame"]
+    },
+    {
+      "name": "String Bean Chicken Breast",
+      "category": "Chicken Breast",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "String Bean Chicken Breast - Cub Meal",
+      "category": "Chicken Breast",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Sweetfire Chicken Breast",
+      "category": "Chicken Breast",
+      "allergens": ["wheat"]
+    },
+    {
+      "name": "Sweetfire Chicken Breast - Cub Meal",
+      "category": "Chicken Breast",
+      "allergens": ["wheat"]
+    },
+    {
+      "name": "Sweet & Sour Chicken Breast",
+      "category": "Chicken Breast",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Sweet & Sour Chicken Breast - Cub Meal",
+      "category": "Chicken Breast",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Beijing Beef",
+      "category": "Beef",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Beijing Beef - Cub Meal",
+      "category": "Beef",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Black Pepper Sirloin Steak",
+      "category": "Beef",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Black Pepper Sirloin Steak - Cub Meal",
+      "category": "Beef",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Broccoli Beef",
+      "category": "Beef",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Broccoli Beef - Cub Meal",
+      "category": "Beef",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Chili Crisp Shrimp",
+      "category": "Seafood",
+      "allergens": ["wheat", "soy", "shellfish", "sesame"]
+    },
+    {
+      "name": "Chili Crisp Shrimp - Cub Meal",
+      "category": "Seafood",
+      "allergens": ["wheat", "soy", "shellfish", "sesame"]
+    },
+    {
+      "name": "Honey Walnut Shrimp",
+      "category": "Seafood",
+      "allergens": ["wheat", "soy", "shellfish", "treenuts", "milk", "egg"]
+    },
+    {
+      "name": "Honey Walnut Shrimp - Cub Meal",
+      "category": "Seafood",
+      "allergens": ["wheat", "soy", "shellfish", "treenuts", "milk", "egg"]
+    },
+    {
+      "name": "Wok-Fired Shrimp",
+      "category": "Seafood",
+      "allergens": ["wheat", "soy", "shellfish"]
+    },
+    {
+      "name": "Wok-Fired Shrimp - Cub Meal",
+      "category": "Seafood",
+      "allergens": ["wheat", "soy", "shellfish"]
+    },
+    {
+      "name": "Golden Treasure Shrimp",
+      "category": "Seafood",
+      "allergens": ["wheat", "soy", "shellfish"]
+    },
+    {
+      "name": "Golden Treasure Shrimp - Cub Meal",
+      "category": "Seafood",
+      "allergens": ["wheat", "soy", "shellfish"]
+    },
+    {
+      "name": "Steamed Ginger Fish",
+      "category": "Seafood",
+      "allergens": ["fish", "soy", "wheat"]
+    },
+    {
+      "name": "Steamed Ginger Fish - Cub Meal",
+      "category": "Seafood",
+      "allergens": ["fish", "soy", "wheat"]
+    },
+        {
+      "name": "Chicken Egg Roll (1 Roll)",
+      "category": "Appetizers",
+      "allergens": ["wheat", "soy", "egg", "sesame", "milk"]
+    },
+    {
+      "name": "Chicken Potsticker (3 Pcs)",
+      "category": "Appetizers",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Cream Cheese Rangoon (3 Pcs)",
+      "category": "Appetizers",
+      "allergens": ["wheat", "milk", "egg"]
+    },
+    {
+      "name": "Vegetable Spring Roll (2 Rolls)",
+      "category": "Appetizers",
+      "allergens": ["wheat", "soy"]
+    },
+        {
+      "name": "Orange Chicken Cub Meal",
+      "category": "Cub Meals",
+      "allergens": ["wheat", "soy", "egg", "milk", "sesame"]
+    },
+    {
+      "name": "Grilled Teriyaki Chicken Cub Meal",
+      "category": "Cub Meals",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Broccoli Beef Cub Meal",
+      "category": "Cub Meals",
+      "allergens": ["wheat", "sesame", "soy"]
+    },
+        {
+      "name": "Teriyaki Sauce",
+      "category": "More",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Apple Pie Roll",
+      "category": "More",
+      "allergens": ["wheat"]
+    },
+    {
+      "name": "Sweet & Sour Sauce",
+      "category": "More",
+      "allergens": []
+    },
+    {
+      "name": "Chili Sauce",
+      "category": "More",
+      "allergens": []
+    },
+    {
+      "name": "Soy Sauce",
+      "category": "More",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Potsticker Sauce",
+      "category": "More",
+      "allergens": ["wheat", "soy", "sesame"]
+    },
+    {
+      "name": "Hot Mustard",
+      "category": "More",
+      "allergens": ["sesame"]
+    },
+    {
+      "name": "Plum Sauce",
+      "category": "More",
+      "allergens": []
+    },
+    {
+      "name": "Fortune Cookie",
+      "category": "More",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Chocolate Chunk Cookie",
+      "category": "More",
+      "allergens": ["wheat", "soy", "egg", "milk"]
+    },
+    {
+      "name": "Tree Top Apple Crisps",
+      "category": "More",
+      "allergens": []
+    },
+    {
+      "name": "Hot & Sour Soup - Cup",
+      "category": "Soup",
+      "allergens": ["wheat", "soy", "egg", "sesame"]
+    },
+    {
+      "name": "Hot & Sour Soup - Bowl",
+      "category": "Soup", 
+      "allergens": ["wheat", "soy", "egg", "sesame"]
+    }
+  ]
+}

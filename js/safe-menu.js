@@ -5,6 +5,27 @@ window.addEventListener('DOMContentLoaded', () => {
   const restaurantName = document.getElementById('restaurantName');
   const backBtn = document.getElementById('backBtn');
 
+  // Add search elements
+  const searchInput = document.createElement('input');
+  searchInput.type = 'text';
+  searchInput.id = 'menuItemSearch';
+  searchInput.placeholder = 'Search menu items...';
+  searchInput.className = 'search-input';
+
+  const searchButton = document.createElement('button');
+  searchButton.id = 'searchMenuItemBtn';
+  searchButton.textContent = 'Search';
+  searchButton.className = 'search-button';
+
+  const searchContainer = document.createElement('div');
+  searchContainer.className = 'search-container';
+  searchContainer.appendChild(searchInput);
+  searchContainer.appendChild(searchButton);
+
+  // Insert search bar after header
+  const header = document.querySelector('header');
+  header.insertAdjacentElement('afterend', searchContainer);
+
   // Load filtered data
   let menuData;
   try {
@@ -66,6 +87,7 @@ window.addEventListener('DOMContentLoaded', () => {
       items.forEach(item => {
         const itemElement = document.createElement('div');
         itemElement.className = 'menu-item';
+        itemElement.dataset.itemName = item.name.toLowerCase();
 
         const nameElement = document.createElement('h4');
         nameElement.className = 'item-name';
@@ -87,6 +109,41 @@ window.addEventListener('DOMContentLoaded', () => {
       menuContainer.appendChild(section);
     });
   }
+
+  // Search functionality
+  function searchMenuItems() {
+    const searchTerm = document.getElementById('menuItemSearch').value.toLowerCase();
+    const menuItems = document.querySelectorAll('.menu-item');
+    
+    menuItems.forEach(item => {
+      const itemName = item.dataset.itemName;
+      if (itemName.includes(searchTerm)) {
+        item.style.display = 'block';
+        // Show parent category if match found
+        item.closest('.menu-category').style.display = 'block';
+        item.closest('.category-content').classList.add('expanded');
+        item.closest('.menu-category').querySelector('.toggle-icon').textContent = '−';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+
+    // Hide empty categories
+    document.querySelectorAll('.menu-category').forEach(category => {
+      const visibleItems = category.querySelectorAll('.menu-item[style="display: block;"]').length;
+      if (visibleItems === 0) {
+        category.style.display = 'none';
+      }
+    });
+  }
+
+  // Event listeners
+  searchButton.addEventListener('click', searchMenuItems);
+  searchInput.addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+      searchMenuItems();
+    }
+  });
 
   backBtn.addEventListener('click', () => {
     window.history.back();
