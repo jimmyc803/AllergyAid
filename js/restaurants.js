@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Create search elements
   const searchContainer = document.createElement('div');
   searchContainer.className = 'search-container';
   
@@ -9,12 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
   searchInput.placeholder = 'Search restaurants...';
   searchInput.className = 'search-input';
   
-  // Insert search bar after page title
+
   const pageTitle = document.querySelector('.page-title');
   pageTitle.insertAdjacentElement('afterend', searchContainer);
   searchContainer.appendChild(searchInput);
 
-  // Real-time search functionality
+
   function searchRestaurants() {
     const searchTerm = searchInput.value.toLowerCase();
     const cards = document.querySelectorAll('.partner-card');
@@ -23,14 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
     cards.forEach(card => {
       const title = card.querySelector('h2').textContent.toLowerCase();
       if (title.includes(searchTerm)) {
-        card.style.display = ''; // Reset to default display
+        card.style.display = '';
         anyMatches = true;
       } else {
         card.style.display = 'none';
       }
     });
 
-    // Show "no results" message if no matches
     const noResultsDiv = document.querySelector('.no-results');
     if (!anyMatches && searchTerm.length > 0) {
       if (!noResultsDiv) {
@@ -47,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Event listeners
+
   searchInput.addEventListener('input', searchRestaurants);
   searchInput.addEventListener('keyup', (event) => {
     if (event.key === 'Escape') {

@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const restaurantName = document.getElementById('restaurantName');
   const backBtn = document.getElementById('backBtn');
 
-  // Create search bar (minimal styling to preserve original design)
+
   const searchContainer = document.createElement('div');
   searchContainer.className = 'search-container';
   
@@ -15,12 +15,12 @@ window.addEventListener('DOMContentLoaded', () => {
   searchInput.placeholder = 'Search menu items...';
   searchInput.className = 'search-input';
   
-  // Insert search bar after header
+ 
   const header = document.querySelector('header');
   header.insertAdjacentElement('afterend', searchContainer);
   searchContainer.appendChild(searchInput);
 
-  // Load filtered data
+
   let menuData;
   try {
     const storedData = sessionStorage.getItem('filteredMenu');
@@ -37,10 +37,10 @@ window.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  // Display restaurant name
+
   restaurantName.textContent = `${menuData.restaurant} - Safe Menu`;
 
-  // Render menu items (preserving original structure)
+
   function renderMenu(items, searchTerm = '') {
     menuContainer.innerHTML = '';
 
@@ -53,7 +53,7 @@ window.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Group by category (original grouping logic)
+   
     const groupedItems = items.reduce((groups, item) => {
       const category = item.category || 'Other';
       if (!groups[category]) groups[category] = [];
@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', () => {
       return groups;
     }, {});
 
-    // Create category sections (original structure)
+ 
     Object.entries(groupedItems).forEach(([category, items]) => {
       const section = document.createElement('div');
       section.className = 'menu-category';
@@ -91,9 +91,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }
       });
 
-      // Only add category if it has visible items
+     
       if (content.children.length > 0) {
-        // Original toggle functionality
+     
         header.addEventListener('click', () => {
           const isExpanded = content.classList.toggle('expanded');
           const icon = header.querySelector('.toggle-icon');
@@ -106,7 +106,6 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Show message if no items match search
     if (menuContainer.children.length === 0 && searchTerm) {
       menuContainer.innerHTML = `
         <div class="no-items">
@@ -116,17 +115,16 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Real-time search with original styling preserved
   searchInput.addEventListener('input', () => {
     const searchTerm = searchInput.value.trim();
     renderMenu(menuData.items, searchTerm);
   });
 
-  // Original back button functionality
+ 
   backBtn.addEventListener('click', () => {
     window.history.back();
   });
 
-  // Initial render
+
   renderMenu(menuData.items);
 });

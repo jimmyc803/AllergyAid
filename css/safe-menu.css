@@ -1,4 +1,3 @@
-/* ===== Base Styles ===== */
 :root {
   --primary: #3a7d44;
   --primary-dark: #2e5e33;
@@ -27,7 +26,7 @@ body.loaded {
   opacity: 1;
 }
 
-/* ===== Header ===== */
+
 header {
   background-color: var(--white);
   box-shadow: var(--shadow);
@@ -44,7 +43,7 @@ header {
   margin: 0;
 }
 
-/* ===== Menu Container ===== */
+
 #menuContainer {
   max-width: 800px;
   width: 100%;
@@ -55,7 +54,7 @@ header {
   gap: 1.5rem;
 }
 
-/* ===== Category Styles ===== */
+
 .menu-category {
   background: var(--white);
   border-radius: 12px;
@@ -92,7 +91,7 @@ header {
   transition: transform 0.3s ease;
 }
 
-/* ===== Category Content ===== */
+
 .category-content {
   max-height: 0;
   overflow: hidden;
@@ -105,11 +104,11 @@ header {
   padding: 0 1.25rem 0.1rem; 
 }
 
-/* ===== Menu Items ===== */
+
 .menu-item {
-  padding: 0.5rem 0; /* Reduced from 1rem */
+  padding: 0.5rem 0; 
   border-bottom: 1px solid #f0f0f0;
-  margin: 0; /* Add this to remove any default margins */
+  margin: 0; 
 }
 
 .menu-item:last-child {
@@ -117,7 +116,7 @@ header {
 }
 
 .item-name {
-  margin: 0; /* Remove bottom margin since we don't have allergen text below */
+  margin: 0; 
   font-size: 1rem;
   font-weight: 500;
   color: var(--text);
@@ -132,14 +131,14 @@ header {
   width: fit-content;
 }
 
-/* Allergen indicators */
+
 .item-allergens.contains {
   background-color: #ffebee;
   color: #c62828;
 }
 
 
-/* ===== No Items State ===== */
+
 .no-items {
   text-align: center;
   padding: 3rem;
@@ -152,7 +151,7 @@ header {
   color: var(--primary-light);
 }
 
-/* ===== Back Button ===== */
+
 #backBtn {
   display: block;
   width: 100%;
@@ -176,7 +175,7 @@ header {
   box-shadow: 0 6px 12px rgba(58, 125, 68, 0.3);
 }
 
-/* ===== Responsive ===== */
+
 @media (max-width: 768px) {
   .container {
     padding: 0 1rem;
@@ -187,7 +186,7 @@ header {
   }
 }
 
-/* Search bar - minimal styling */
+
 .search-container {
   margin: 15px auto;
   max-width: 600px;
@@ -201,7 +200,7 @@ header {
   font-size: 16px;
 }
 
-/* No results message - matches existing style */
+
 .no-items {
   text-align: center;
   padding: 20px;
