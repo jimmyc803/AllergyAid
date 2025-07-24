@@ -2,20 +2,141 @@
   "name": "Chipotle",
   "disclaimer": "DISCLAIMER.",
   "customAllergens": [
-    {"id": "id1", "displayName": "User-Friendly Name"},
-    {"id": "id2", "displayName": "User-Friendly Name"}
+    {"id": "dairy", "displayName": "Dairy"},
+    {"id": "soy", "displayName": "Soy"},
+    {"id": "gluten", "displayName": "Gluten"},
+    {"id": "sulphites", "displayName": "Sulphites"}
   ],
   "items": [
     {
-      "name": "MENU_ITEM_NAME",
-      "category": "CATEGORY_NAME",
-      "allergens": ["id1", "id2"] 
+      "name": "Barbacoa",
+      "category": "Proteins",
+      "allergens": [] 
     },
     {
-      "name": "MENU_ITEM_NAME",
-      "category": "CATEGORY_NAME",
-      "allergens": ["id1", "id2"] 
+      "name": "Black Beans",
+      "category": "Beans",
+      "allergens": [] 
+    },
+    {
+      "name": "Brown Rice",
+      "category": "Grains & Tortillas",
+      "allergens": [] 
+    },
+    {
+      "name": "Carnitas",
+      "category": "Proteins",
+      "allergens": [] 
+    },
+    {
+      "name": "Chicken",
+      "category": "Proteins",
+      "allergens": [] 
+    },
+    {
+      "name": "Chipotle Honey Vinaigrette",
+      "category": "Dressings",
+      "allergens": ["sulphites"] 
+    },
+    {
+      "name": "Crispy Corn Tortilla",
+      "category": "Grains & Tortillas",
+      "allergens": [] 
+    },
+    {
+      "name": "Fajita Vegetables",
+      "category": "Vegetables",
+      "allergens": [] 
+    },
+    {
+      "name": "Flour Tortilla (Burrito)",
+      "category": "Grains & Tortillas",
+      "allergens": ["gluten","sulphites"] 
+    },
+    {
+      "name": "Flour Tortilla (Taco)",
+      "category": "Grains & Tortillas",
+      "allergens": ["gluten","sulphites"] 
+    },
+    {
+      "name": "Fresh Tomato Salsa",
+      "category": "Salsas & Sauces",
+      "allergens": [] 
+    },
+    {
+      "name": "Guacamole",
+      "category": "Dairy & Toppings",
+      "allergens": [] 
+    },
+    {
+      "name": "Monterey Jack Cheese",
+      "category": "Dairy & Toppings",
+      "allergens": ["dairy"] 
+    },
+    {
+      "name": "Pinto Beans",
+      "category": "Beans",
+      "allergens": [] 
+    },
+    {
+      "name": "Queso Blanco",
+      "category": "Dairy & Toppings",
+      "allergens": ["dairy"] 
+    },
+    {
+      "name": "Red Chimichurri Sauce",
+      "category": "Salsas & Sauces",
+      "allergens": ["sulphites"] 
+    },
+    {
+      "name": "Roasted Chili-Corn Salsa",
+      "category": "Salsas & Sauces",
+      "allergens": [""] 
+    },
+    {
+      "name": "Romaine Lettuce",
+      "category": "Vegetables & Greens",
+      "allergens": [""] 
+    },
+    {
+      "name": "Sofritas",
+      "category": "Proteins",
+      "allergens": ["soy", "sulphites"] 
+    },
+    {
+      "name": "Sour Cream",
+      "category": "Dairy & Toppings",
+      "allergens": ["dairy"] 
+    },
+    {
+      "name": "Steak",
+      "category": "Proteins",
+      "allergens": [""] 
+    },
+    {
+      "name": "Supergreens Lettuce Blend",
+      "category": "Vegetables & Greens",
+      "allergens": [""] 
+    },
+    {
+      "name": "Tomatillo Green-Chili Salsa",
+      "category": "Salsas & Sauces",
+      "allergens": [""] 
+    },
+    {
+      "name": "Tomatillo Red-Chili Salsa",
+      "category": "Salsas & Sauces",
+      "allergens": [""] 
+    },
+    {
+      "name": "Tortilla Chips",
+      "category": "Grains & Tortillas",
+      "allergens": [""] 
+    },
+    {
+      "name": "White Rice",
+      "category": "Grains & Tortillas",
+      "allergens": [""] 
     }
-
   ]
 }
