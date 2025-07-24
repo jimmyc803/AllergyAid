@@ -1,0 +1,132 @@
+{
+  "name": "Halal Guys",
+  "disclaimer": "DISCLAIMER.",
+  "customAllergens": [
+    {"id": "gluten", "displayName": "Gliadin (Gluten)"},
+    {"id": "dairy", "displayName": "Casein (Dairy)"},
+    {"id": "crustacea", "displayName": "Crustacea (Crustacean)"},
+    {"id": "peanut", "displayName": "Peanut"},
+    {"id": "almond", "displayName": "Almond"},
+    {"id": "egg", "displayName": "Egg"},
+    {"id": "hazelnut", "displayName": "Hazelnut"},
+    {"id": "walnut", "displayName": "Walnut"},
+    {"id": "brazil", "displayName": "Brazil Nut"},
+    {"id": "cashew", "displayName": "Cashew / Pistachio"},
+    {"id": "soy", "displayName": "Soy"},
+    {"id": "pea", "displayName": "Pea (Lupine)"},
+    {"id": "mustard", "displayName": "Mustard"},
+    {"id": "sesame", "displayName": "Sesame"}
+  ],
+  "items": [
+    {
+      "name": "Chicken",
+      "category": "Proteins",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "Beef Gyro",
+      "category": "Proteins",
+      "allergens": ["gluten"]
+    },
+    {
+      "name": "Falafel",
+      "category": "Proteins",
+      "allergens": ["soy", "mustard"]
+    },
+    {
+      "name": "Rice",
+      "category": "Grains & Breads",
+      "allergens": []
+    },
+    {
+      "name": "Pita",
+      "category": "Grains & Breads",
+      "allergens": ["gluten", "soy", "sesame"]
+    },
+    {
+      "name": "Lettuce",
+      "category": "Vegetables",
+      "allergens": []
+    },
+    {
+      "name": "Tomatoes",
+      "category": "Vegetables",
+      "allergens": []
+    },
+    {
+      "name": "Olives",
+      "category": "Vegetables",
+      "allergens": []
+    },
+    {
+      "name": "Jalapenos",
+      "category": "Vegetables",
+      "allergens": []
+    },
+    {
+      "name": "Onions",
+      "category": "Vegetables",
+      "allergens": []
+    },
+    {
+      "name": "Green Peppers",
+      "category": "Vegetables",
+      "allergens": []
+    },
+    {
+      "name": "White Sauce",
+      "category": "Sauces & Condiments",
+      "allergens": ["egg", "soy"]
+    },
+    {
+      "name": "Hot Sauce",
+      "category": "Sauces & Condiments",
+      "allergens": []
+    },
+    {
+      "name": "BBQ Sauce",
+      "category": "Sauces & Condiments",
+      "allergens": ["soy", "mustard"]
+    },
+    {
+      "name": "Hummus",
+      "category": "Sauces & Condiments",
+      "allergens": ["sesame"]
+    },
+    {
+      "name": "Baba Ghanoush",
+      "category": "Sauces & Condiments",
+      "allergens": ["sesame"]
+    },
+    {
+      "name": "Tahini",
+      "category": "Sauces & Condiments",
+      "allergens": ["soy", "sesame"]
+    },
+    {
+      "name": "French Fries",
+      "category": "Sides",
+      "allergens": ["gluten", "dairy", "soy"]
+    },
+    {
+      "name": "Baklava",
+      "category": "Desserts",
+      "allergens": ["gluten", "dairy", "egg", "walnut", "brazil", "cashew"]
+    },
+    {
+      "name": "Baklava Cheese Cake",
+      "category": "Desserts",
+      "allergens": ["gluten", "dairy", "peanut", "egg", "walnut", "brazil", "cashew", "soy"]
+    },
+    {
+      "name": "Cookies",
+      "category": "Desserts",
+      "allergens": ["gluten", "dairy", "egg", "walnut", "cashew"]
+    },
+    {
+      "name": "Frying Oil",
+      "category": "Other",
+      "allergens": []
+    }
+  ]
+}
