@@ -1,6 +1,6 @@
 {
   "name": "RESTAURANT_NAME",
-  "disclaimer": "DISCLAIMER.",
+  "website": "SITE",
   "customAllergens": [
     {"id": "id1", "displayName": "User-Friendly Name"},
     {"id": "id2", "displayName": "User-Friendly Name"}

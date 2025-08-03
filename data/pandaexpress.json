@@ -1,6 +1,6 @@
 {
   "name": "Panda Express",
-  "disclaimer": "DISCLAIMER.",
+  "website": "http://pandaexpress.com/nutritioninformation",
   "customAllergens": [
     {"id": "wheat", "displayName": "Wheat"},
     {"id": "soy", "displayName": "Soy"},

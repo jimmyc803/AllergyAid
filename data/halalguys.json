@@ -1,6 +1,6 @@
 {
   "name": "Halal Guys",
-  "disclaimer": "DISCLAIMER.",
+  "website": "https://thehalalguys.com/nutrition-allergens/",
   "customAllergens": [
     {"id": "gluten", "displayName": "Gliadin (Gluten)"},
     {"id": "dairy", "displayName": "Casein (Dairy)"},

@@ -1,18 +1,15 @@
 window.addEventListener('DOMContentLoaded', () => {
   document.body.classList.add('loaded');
 
-
   const urlParams = new URLSearchParams(window.location.search);
   const restaurantParam = urlParams.get('name');
   
-
   const logoImg = document.getElementById('restaurantLogo');
   const restaurantTitle = document.getElementById('restaurantName');
   const allergenForm = document.getElementById('allergenForm');
   const filterGroup = document.querySelector('.filter-group');
   const disclaimerContainer = document.getElementById('restaurantDisclaimer');
 
- 
   if (!restaurantParam) {
     restaurantTitle.textContent = "Restaurant Not Found";
     if (logoImg) logoImg.style.display = "none";
@@ -20,10 +17,8 @@ window.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-
   const menuUrl = `./data/${restaurantParam}.json`;
   const logoUrl = `./images/logos/${restaurantParam}.png`;
-
 
   if (logoImg) {
     logoImg.src = logoUrl;
@@ -33,19 +28,14 @@ window.addEventListener('DOMContentLoaded', () => {
     };
   }
 
-
   fetch(menuUrl)
     .then(response => {
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       return response.json();
     })
     .then(restaurantData => {
-
       restaurantTitle.textContent = `${restaurantData.name} Menu`;
-
-
       filterGroup.innerHTML = '';
-
 
       const allergensToDisplay = restaurantData.customAllergens || [
         {id: 'milk', displayName: 'Milk'},
@@ -58,7 +48,6 @@ window.addEventListener('DOMContentLoaded', () => {
         {id: 'fish', displayName: 'Fish'}
       ];
 
-   
       allergensToDisplay.forEach(allergen => {
         const label = document.createElement('label');
         label.className = 'filter-option';
@@ -67,7 +56,6 @@ window.addEventListener('DOMContentLoaded', () => {
           <span>${allergen.displayName || allergen.id}</span>
         `;
         
-   
         label.addEventListener('change', function() {
           this.classList.toggle('selected', this.querySelector('input').checked);
         });
@@ -75,13 +63,21 @@ window.addEventListener('DOMContentLoaded', () => {
         filterGroup.appendChild(label);
       });
 
-   
-      if (restaurantData.disclaimer) {
-        disclaimerContainer.innerHTML = `<p><strong>Note:</strong> ${restaurantData.disclaimer}</p>`;
-        disclaimerContainer.classList.remove('hidden');
+      // New standardized disclaimer with dynamic website link
+      const disclaimerText = "Allergy Data is sourced directly from the official restaurant sites. For full details,";
+      
+      if (restaurantData.website) {
+        disclaimerContainer.innerHTML = `
+          <p><strong>Note:</strong> ${disclaimerText} 
+            <a href="${restaurantData.website}" target="_blank" rel="noopener noreferrer">[click here]</a>
+          </p>
+        `;
       } else {
-        disclaimerContainer.classList.add('hidden');
+        disclaimerContainer.innerHTML = `
+          <p><strong>Note:</strong> ${disclaimerText} please consult the restaurant's official website.</p>
+        `;
       }
+      disclaimerContainer.classList.remove('hidden');
     })
     .catch(error => {
       console.error("Error loading restaurant data:", error);
@@ -89,23 +85,19 @@ window.addEventListener('DOMContentLoaded', () => {
       filterGroup.innerHTML = '<p>Failed to load menu data. Please try again later.</p>';
     });
 
-
   allergenForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     
     try {
-  
       const selectedAllergens = Array.from(
         document.querySelectorAll('input[name="allergen"]:checked')
       ).map(cb => cb.value.toLowerCase());
 
-  
       const response = await fetch(menuUrl);
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       
       const menuData = await response.json();
 
-  
       const safeItems = menuData.items.filter(item => {
         const itemAllergens = (item.allergens || []).map(a => 
           typeof a === 'string' ? a.toLowerCase() : a.id.toLowerCase()
@@ -114,7 +106,6 @@ window.addEventListener('DOMContentLoaded', () => {
           itemAllergens.includes(allergen)
         );
       });
-
 
       sessionStorage.setItem('filteredMenu', JSON.stringify({
         restaurant: menuData.name,

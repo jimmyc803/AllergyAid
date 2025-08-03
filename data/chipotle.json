@@ -1,6 +1,6 @@
 {
   "name": "Chipotle",
-  "disclaimer": "DISCLAIMER.",
+  "website": "https://www.chipotle.com/allergens",
   "customAllergens": [
     {"id": "dairy", "displayName": "Dairy"},
     {"id": "soy", "displayName": "Soy"},

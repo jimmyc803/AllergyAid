@@ -1,6 +1,6 @@
 {
   "name": "Raising Cane's",
-  "disclaimer": "Cane’s Sauce®, Coleslaw, and Drinks = gluten-free. Gluten items cooked in kitchen. Nutrition info is based on averages from labs and suppliers. Differences may occur due to portion size, prep methods, and sources. We try to identify allergens, but cross-contact is possible. Suppliers may change ingredients anytime. Customers with allergies should be cautious. Cane’s is not liable for allergic reactions or contact during dining.Fried foods use soybean & canola oil blend. Per FDA, highly refined soybean oil is not labeled as an allergen.",
+  "website": "https://www.raisingcanes.com/allergens/",
   "customAllergens": [
     {"id": "egg", "displayName": "Egg"},
     {"id": "soy", "displayName": "Soy"},
