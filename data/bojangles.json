@@ -1,0 +1,592 @@
+{
+  "name": "Bojangles",
+  "website": "https://www.bojangles.com/menu/nutrition/",
+  "customAllergens": [
+    {"id": "egg", "displayName": "Egg"},
+    {"id": "fish", "displayName": "Fish"},
+    {"id": "milk", "displayName": "Milk"},
+    {"id": "peanut", "displayName": "Peanut"},
+    {"id": "shellfish", "displayName": "Shellfish"},
+    {"id": "soy", "displayName": "Soy"},
+    {"id": "treenuts", "displayName": "Tree Nuts"},
+    {"id": "wheat", "displayName": "Wheat"},
+    {"id": "sesame", "displayName": "Sesame"}
+  ],
+  "items": [
+    {
+      "name": "Bacon, Egg & Cheese Biscuit",
+      "category": "Biscuits",
+      "allergens": ["egg","milk","soy","wheat"]
+    },
+
+    {
+      "name": "Cajun Filet Biscuit",
+      "category": "Biscuits",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Bo's Chicken Biscuit",
+      "category": "Biscuits",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Cheddar Bo Biscuit",
+      "category": "Biscuits",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Country Ham & Egg Biscuit",
+      "category": "Biscuits",
+      "allergens": ["egg","milk","soy","wheat"]
+    },
+
+    {
+      "name": "Country Ham Biscuit",
+      "category": "Biscuits",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Egg & Cheese Biscuit",
+      "category": "Biscuits",
+      "allergens": ["egg","milk","soy","wheat"]
+    },
+
+    {
+      "name": "Gravy Biscuit",
+      "category": "Biscuits",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Old Fashioned Gravy Biscuit",
+      "category": "Biscuits",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Plain Biscuit",
+      "category": "Biscuits",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Sausage & Egg Biscuit",
+      "category": "Biscuits",
+      "allergens": ["egg","milk","soy","wheat"]
+    },
+
+    {
+      "name": "Sausage Biscuit",
+      "category": "Biscuits",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Southern Filet Biscuit",
+      "category": "Biscuits",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Steak Biscuit",
+      "category": "Biscuits",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Add American Cheese",
+      "category": "Biscuits",
+      "allergens": ["milk","soy"]
+    },
+
+    {
+      "name": "Add Egg",
+      "category": "Biscuits",
+      "allergens": ["egg","milk"]
+    },
+
+    {
+      "name": "Bo's Chicken Sandwich",
+      "category": "Sandwiches",
+      "allergens": ["egg","milk","soy","wheat"]
+    },
+
+    {
+      "name": "Grilled Chicken Club Sandwich",
+      "category": "Sandwiches",
+      "allergens": ["egg","milk","soy","wheat"]
+    },
+
+    {
+      "name": "Grilled Chicken Sandwich",
+      "category": "Sandwiches",
+      "allergens": ["egg","wheat"]
+    },
+
+    {
+      "name": "Garden Salad",
+      "category": "Salads",
+      "allergens": ["milk"]
+    },
+
+    {
+      "name": "Grilled Chicken Salad",
+      "category": "Salads",
+      "allergens": ["milk"]
+    },
+
+    {
+      "name": "Chicken Supremes Salad",
+      "category": "Salads",
+      "allergens": ["milk"]
+    },
+
+    {
+      "name": "Bo Bites Salad",
+      "category": "Salads",
+      "allergens": ["milk"]
+    },
+
+    {
+      "name": "Bo's House Salad",
+      "category": "Salads",
+      "allergens": ["egg","milk","wheat"]
+    },
+
+    {
+      "name": "Bo-Berry Biscuit",
+      "category": "Sweets",
+      "allergens": ["egg","milk","soy","wheat"]
+    },
+
+    {
+      "name": "Cinnamon Biscuit",
+      "category": "Sweets",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Cinnamon Twist",
+      "category": "Sweets",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Sweet Potato Pie",
+      "category": "Sweets",
+      "allergens": ["egg","milk","soy","wheat"]
+    },
+
+    {
+      "name": "2 Piece Supremes",
+      "category": "Kids' Meal",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Bo's Chicken Tenders",
+      "category": "Kids' Meal",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Chicken Leg",
+      "category": "Kids' Meal",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Mac 'N Cheese",
+      "category": "Kids' Meal",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Bo Bites",
+      "category": "Kids' Meal",
+      "allergens": []
+    },
+
+    {
+      "name": "Breast",
+      "category": "Chicken",
+      "allergens": ["wheat"]
+    },
+
+    {
+      "name": "Leg",
+      "category": "Chicken",
+      "allergens": ["wheat"]
+    },
+
+    {
+      "name": "Thigh",
+      "category": "Chicken",
+      "allergens": ["wheat"]
+    },
+
+    {
+      "name": "Wing",
+      "category": "Chicken",
+      "allergens": ["wheat"]
+    },
+
+    {
+      "name": "Supremes",
+      "category": "Chicken",
+      "allergens": ["wheat"]
+    },
+
+    {
+      "name": "Bo's Chicken Tenders",
+      "category": "Chicken",
+      "allergens": ["milk","wheat"]
+    },
+
+    {
+      "name": "Bo Bites Ala Carte",
+      "category": "Chicken",
+      "allergens": ["milk","soy","wheat","sesame"]
+    },
+
+    {
+      "name": "Bo-Tato Rounds",
+      "category": "Fixin's",
+      "allergens": []
+    },
+
+    {
+      "name": "Bojangles Cajun Pintos",
+      "category": "Fixin's",
+      "allergens": []
+    },
+
+    {
+      "name": "Bojangles Dirty Rice",
+      "category": "Fixin's",
+      "allergens": ["soy","wheat"]
+    },
+
+    {
+      "name": "Cole Slaw",
+      "category": "Fixin's",
+      "allergens": ["egg"]
+    },
+
+    {
+      "name": "Green Beans",
+      "category": "Fixin's",
+      "allergens": ["soy","wheat"]
+    },
+
+    {
+      "name": "Macaroni 'N Cheese",
+      "category": "Fixin's",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Baked Macaroni 'N Cheese",
+      "category": "Fixin's",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Mashed Potatoes 'N Gravy",
+      "category": "Fixin's",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Mashed Potatoes 'N Old Fashioned Gravy",
+      "category": "Fixin's",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Mashed Potatoes 'N Brown Gravy",
+      "category": "Fixin's",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "Grits",
+      "category": "Fixin's",
+      "allergens": []
+    },
+
+    {
+      "name": "Seasoned Fries",
+      "category": "Fixin's",
+      "allergens": []
+    },
+
+    {
+      "name": "Chicken Rice Bowl (w/o biscuit)",
+      "category": "Bowls",
+      "allergens": ["milk","soy","wheat"]
+    },
+
+    {
+      "name": "BBQ Sauce",
+      "category": "Dipping Sauces",
+      "allergens": []
+    },
+
+    {
+      "name": "Peach Honey Pepper Sauce",
+      "category": "Dipping Sauces",
+      "allergens": []
+    },
+
+    {
+      "name": "Creamy Buffalo Sauce",
+      "category": "Dipping Sauces",
+      "allergens": ["egg"]
+    },
+
+    {
+      "name": "Honey Mustard Sauce",
+      "category": "Dipping Sauces",
+      "allergens": ["egg"]
+    },
+
+    {
+      "name": "Housemade Ranch Sauce",
+      "category": "Dipping Sauces",
+      "allergens": ["egg","milk"]
+    },
+
+    {
+      "name": "Jalapeno Ranch Sauce",
+      "category": "Dipping Sauces",
+      "allergens": ["egg","milk"]
+    },
+
+    {
+      "name": "Housemade Ranch Dressing",
+      "category": "Salad Dressing",
+      "allergens": ["egg","milk"]
+    },
+
+    {
+      "name": "Ken's Blue Cheese Dressing",
+      "category": "Salad Dressing",
+      "allergens": ["egg","milk"]
+    },
+
+    {
+      "name": "Ken's Fat Free Italian Dressing",
+      "category": "Salad Dressing",
+      "allergens": []
+    },
+
+    {
+      "name": "Ken's Honey Dijon Dressing",
+      "category": "Salad Dressing",
+      "allergens": ["egg"]
+    },
+
+    {
+      "name": "Ken's Thousand Island",
+      "category": "Salad Dressing",
+      "allergens": ["egg"]
+    },
+
+    {
+      "name": "Ken's Fat Free Ranch",
+      "category": "Salad Dressing",
+      "allergens": ["milk"]
+    },
+
+    {
+      "name": "Homestyle Cheese Garlic Croutons",
+      "category": "Salad Dressing",
+      "allergens": ["milk","wheat"]
+    },
+
+    {
+      "name": "Vanilla Milkshake",
+      "category": "Sweet Treats",
+      "allergens": ["egg","fish","milk","peanut","shellfish","soy","treenuts","wheat"]
+    },
+
+    {
+      "name": "Chocolate Milkshake",
+      "category": "Sweet Treats",
+      "allergens": ["egg","fish","milk","peanut","shellfish","soy","treenuts","wheat"]
+    },
+
+    {
+      "name": "Bo-Berry Milkshake",
+      "category": "Sweet Treats",
+      "allergens": ["egg","fish","milk","peanut","shellfish","soy","treenuts","wheat"]
+    },
+    {
+  "name": "Bottled Water",
+  "category": "Drinks",
+  "allergens": []
+    },
+
+    {
+    "name": "Cheerwine",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Coffee",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Diet Mountain Dew",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Diet Pepsi",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Dr Pepper",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+
+    {
+    "name": "Milk 1% Lowfat (White)",
+    "category": "Drinks",
+    "allergens": ["milk"]
+    },
+
+    {
+    "name": "Milk 1% Lowfat (Chocolate)",
+    "category": "Drinks",
+    "allergens": ["milk"]
+    },
+
+    {
+    "name": "Mirinda Strawberry",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Mountain Dew",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Mug Root Beer",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Pepsi",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Pepsi Zero",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Simply Orange",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Starry",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Tropicana Fruit Punch",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Tropicana Lemonade (16oz)",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Tropicana Lemonade",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Tropicana Pink Lemonade",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Tropicana Twister Soda",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Cold Brew (Black)",
+    "category": "Drinks",
+    "allergens": []
+    },
+
+    {
+    "name": "Sweet Cream Cold Brew",
+    "category": "Drinks",
+    "allergens": ["milk"]
+    },
+
+    {
+    "name": "Vanilla Cream Cold Brew",
+    "category": "Drinks",
+    "allergens": ["egg","fish","milk","peanut","shellfish","soy","treenuts","wheat"]
+    },
+
+    {
+    "name": "Half Gallon Sweet Tea",
+    "category": "Legendary Iced Tea",
+    "allergens": []
+    },
+
+    {
+    "name": "Half Gallon Unsweetened Tea",
+    "category": "Legendary Iced Tea",
+    "allergens": []
+    },
+
+    {
+    "name": "Sweet Iced Tea",
+    "category": "Legendary Iced Tea",
+    "allergens": []
+    },
+
+    {
+    "name": "Unsweetened Iced Tea",
+    "category": "Legendary Iced Tea",
+    "allergens": []
+    }
+  ]
+}
