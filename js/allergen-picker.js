@@ -64,7 +64,7 @@ window.addEventListener('DOMContentLoaded', () => {
       });
 
       // New standardized disclaimer with dynamic website link
-      const disclaimerText = "While AllergyAid sources data directly from official restaurant websites, please be aware that some specific factors—such as cooking oils, cross-contamination, or preparation methods—may not be fully accounted for. For your safety, always consult the official restaurant allergen information before ordering. Learn more at Restaurant’s Allergen Information Site,";
+      const disclaimerText = "While AllergyAid sources data directly from official restaurant websites, please be aware that some specific factors—such as cooking oils, cross-contamination, or preparation methods—may not be fully accounted for. For your safety, always consult the official restaurant allergen information before ordering. Learn more at the Restaurant’s Allergen Information Site:";
       
       if (restaurantData.website) {
         disclaimerContainer.innerHTML = `
