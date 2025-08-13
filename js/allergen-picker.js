@@ -68,7 +68,7 @@ window.addEventListener('DOMContentLoaded', () => {
       
       if (restaurantData.website) {
         disclaimerContainer.innerHTML = `
-          <p><strong>Note:</strong> ${disclaimerText} 
+          <p><strong>Disclaimer:</strong> ${disclaimerText} 
             <a href="${restaurantData.website}" target="_blank" rel="noopener noreferrer">[click here]</a>
           </p>
         `;
