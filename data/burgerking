@@ -1,0 +1,370 @@
+{
+  "name": "Burger King",
+  "website": "https://bk-use1-prod.sites.rbictg.com/nutrition/allergens.pdf",
+  "customAllergens": [
+    {"id": "milk", "displayName": "Milk"},
+    {"id": "wheat", "displayName": "Wheat"},
+    {"id": "egg", "displayName": "Egg"},
+    {"id": "soy", "displayName": "Soy"},
+    {"id": "fish", "displayName": "Fish"},
+    {"id": "peanuts", "displayName": "Peanuts"},
+    {"id": "treenuts", "displayName": "Tree Nuts"},
+    {"id": "sesame", "displayName": "Sesame"}
+  ],
+  "items": [
+    {
+      "name": "Whopper Sandwich",
+      "category": "Flame-Grilled Burgers",
+      "allergens": ["wheat", "egg", "soy", "sesame"] 
+    },
+    {
+      "name": "IMPOSSIBLE Whopper Sandwich",
+      "category": "Flame-Grilled Burgers",
+      "allergens": ["wheat", "egg", "soy", "sesame"] 
+    },
+    {
+      "name": "Double Whopper Sandwich",
+      "category": "Flame-Grilled Burgers",
+      "allergens":["wheat", "egg", "soy", "sesame"] 
+    },
+    {
+      "name": "Triple Whopper Sandwich",
+      "category": "Flame-Grilled Burgers",
+      "allergens": ["wheat", "egg", "soy", "sesame"] 
+    },
+    {
+      "name": "Bacon & Cheese Whopper Sandwich",
+      "category": "Flame-Grilled Burgers",
+      "allergens": ["milk", "wheat", "egg", "soy", "sesame"] 
+    },
+    {
+      "name": "Whopper Jr. Sandwich",
+      "category": "Flame-Grilled Burgers",
+      "allergens": ["wheat", "egg", "soy", "sesame"] 
+    },
+    {
+      "name": "Bacon King Sandwich",
+      "category": "Flame-Grilled Burgers",
+      "allergens": ["milk", "wheat", "egg", "soy", "sesame"] 
+    },
+    {
+      "name": "IMPOSSIBLE King Sandwich",
+      "category": "Flame-Grilled Burgers",
+      "allergens": ["milk", "wheat", "egg", "soy", "sesame"] 
+    },
+    {
+      "name": "Hamburger / Double Hamburger",
+      "category": "Flame-Grilled Burgers",
+      "allergens": ["wheat", "soy", "sesame"] 
+    },
+    {
+      "name": "Cheeseburger / Double Cheeseburger",
+      "category": "Flame-Grilled Burgers",
+      "allergens": ["milk", "wheat", "soy", "sesame"] 
+    },
+    {
+      "name": "Bacon Cheeseburger / Double Bacon Cheeseburger",
+      "category": "Flame-Grilled Burgers",
+      "allergens": ["milk", "wheat", "soy", "sesame"] 
+    },
+    {
+      "name": "Rodeo Burger",
+      "category": "Flame-Grilled Burgers",
+      "allergens": ["wheat", "soy", "sesame"] 
+    },
+    {
+      "name": "Classic Royal Crispy Chicken Sandwich",
+      "category": "Chicken & Fish",
+      "allergens": ["milk", "wheat", "egg", "soy", "sesame"] 
+    },
+    {
+      "name": "Spicy Royal Crispy Chicken Sandwich",
+      "category": "Chicken & Fish",
+      "allergens": ["milk", "wheat", "egg", "soy", "sesame"] 
+    },
+    {
+      "name": "Bacon & Swiss Royal Crispy Chicken Sandwich",
+      "category": "Chicken & Fish",
+      "allergens": ["milk", "wheat", "egg", "soy", "sesame"] 
+    },
+    {
+      "name": "Original Chicken Sandwich",
+      "category": "Chicken & Fish",
+      "allergens": ["milk", "wheat", "egg", "soy", "sesame"] 
+    },
+    {
+      "name": "Chicken Jr.",
+      "category": "Chicken & Fish",
+      "allergens": ["wheat", "egg", "soy", "sesame"] 
+    },
+    {
+      "name": "Chicken Nuggets",
+      "category": "Chicken & Fish",
+      "allergens": ["wheat"] 
+    },
+    {
+      "name": "Chicken Fries",
+      "category": "Chicken & Fish",
+      "allergens": ["wheat"] 
+    },
+    {
+      "name": "Big Fish Sandwich",
+      "category": "Chicken & Fish",
+      "allergens": ["wheat", "egg", "soy", "fish", "sesame"] 
+    },
+    {
+      "name": "Hamburger",
+      "category": "King Jr. Meals",
+      "allergens": ["wheat","soy","sesame"] 
+    },
+    {
+      "name": "Cheeseburger",
+      "category": "King Jr. Meals",
+      "allergens": ["milk","wheat","soy","sesame"] 
+    },
+    {
+      "name": "Chicken Nuggets",
+      "category": "King Jr. Meals",
+      "allergens": ["wheat"] 
+    },
+    {
+      "name": "Oatmeal",
+      "category": "King Jr. Meals",
+      "allergens": ["milk"] 
+    },
+    {
+      "name": "Mott's Natural Applesauce",
+      "category": "King Jr. Meals",
+      "allergens": [] 
+    },
+    {
+      "name": "French Fries",
+      "category": "King Jr. Meals",
+      "allergens": [] 
+    },
+    {
+      "name": "Fat Free Milk",
+      "category": "King Jr. Meals",
+      "allergens": ["milk"] 
+    },
+    {
+      "name": "1% Low Fat Chocolate Milk",
+      "category": "King Jr. Meals",
+      "allergens": ["milk"] 
+    },
+    {
+      "name": "Honest Kids' Apple Juice Drink",
+      "category": "King Jr. Meals",
+      "allergens": [] 
+    },
+    {
+      "name": "HERSHEY'S Sundae Pie",
+      "category": "Desserts",
+      "allergens": ["milk","wheat","soy"] 
+    },
+    {
+      "name": "Chocolate Chip Cookie",
+      "category": "Desserts",
+      "allergens": ["milk","wheat","egg","soy"] 
+    },
+    {
+      "name": "Soft Serve Cone",
+      "category": "Desserts",
+      "allergens": ["milk","wheat"] 
+    },
+    {
+      "name": "Soft Serve Cup",
+      "category": "Desserts",
+      "allergens": ["milk"] 
+    },
+    {
+      "name": "HERSHEY'S Chocolate Sundae",
+      "category": "Desserts",
+      "allergens": ["milk"] 
+    },
+    {
+      "name": "OREO Cookie Shake",
+      "category": "Desserts",
+      "allergens": ["milk","wheat","soy"] 
+    },
+    {
+      "name": "OREO Cookie Chocolate Shake",
+      "category": "Desserts",
+      "allergens": ["milk","wheat","soy"] 
+    },
+    {
+      "name": "Vanilla Shake",
+      "category": "Desserts",
+      "allergens": ["milk"] 
+    },
+    {
+      "name": "HERSHEY'S Chocolate Shake",
+      "category": "Desserts",
+      "allergens": ["milk"] 
+    },
+    {
+        "name": "Egg & Cheese Croissan'wich Sandwich",
+        "category": "Breakfast",
+        "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+
+    {
+        "name": "Sausage, Egg & Cheese Croissan'wich Sandwich",
+        "category": "Breakfast",
+        "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    
+    {
+        "name": "Ham, Egg & Cheese Croissan'wich Sandwich",
+        "category": "Breakfast",
+        "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    {
+        "name": "Bacon, Egg & Cheese Croissan'wich Sandwich",
+        "category": "Breakfast",
+        "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    {
+        "name": "Fully Loaded Croissan'wich Sandwich",
+        "category": "Breakfast",
+        "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    {
+        "name": "Double Croissan'wich with Double Sausage Sandwich",
+        "category": "Breakfast",
+        "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    {
+        "name": "Double Croissan'wich with Sausage & Bacon Sandwich",
+        "category": "Breakfast",
+        "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    {
+        "name": "Double Croissan'wich with Ham & Sausage Sandwich",
+        "category": "Breakfast",
+        "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    {
+        "name": "Sausage Biscuit",
+        "category": "Breakfast",
+        "allergens": ["milk", "wheat", "soy"]
+    },
+    {
+        "name": "Ham, Egg & Cheese Biscuit",
+        "category": "Breakfast",
+        "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    {
+        "name": "Sausage, Egg & Cheese Biscuit",
+        "category": "Breakfast",
+        "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    {
+        "name": "Bacon, Egg & Cheese Biscuit",
+        "category": "Breakfast",
+        "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    {
+        "name": "Fully Loaded Biscuit",
+        "category": "Breakfast",
+        "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    {
+        "name": "Breakfast Burrito Jr.",
+        "category": "Breakfast",
+        "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    {
+        "name": "Egg-Normous Burrito",
+        "category": "Breakfast",
+        "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    {
+        "name": "Hash Browns",
+        "category": "Breakfast",
+        "allergens": ["wheat"]
+    },
+    {
+        "name": "French Toast Sticks",
+        "category": "Breakfast",
+        "allergens": ["wheat","soy"]
+    },
+    {
+        "name": "Breakfast Syrup",
+        "category": "Breakfast",
+        "allergens": []
+    },
+
+    {
+        "name": "French Fries",
+        "category": "Sides & Add-Ons",
+        "allergens": []
+    },
+        {
+        "name": "Onion Rings",
+        "category": "Sides & Add-Ons",
+        "allergens": ["wheat"]
+    },
+        {
+        "name": "Mozzarella Fries",
+        "category": "Sides & Add-Ons",
+        "allergens": ["milk","wheat","soy"]
+    },
+        {
+        "name": "Barbecue Dipping Sauce",
+        "category": "Sides & Add-Ons",
+        "allergens": []
+    },
+        {
+        "name": "Buffalo Dipping Sauce",
+        "category": "Sides & Add-Ons",
+        "allergens": ["milk","egg"]
+    },
+        {
+        "name": "Honey Mustard Dipping Sauce",
+        "category": "Sides & Add-Ons",
+        "allergens": ["egg"]
+    },
+        {
+        "name": "Ranch Dipping Sauce",
+        "category": "Sides & Add-Ons",
+        "allergens": ["milk","egg"]
+    },
+        {
+        "name": "Zesty Dipping Sauce",
+        "category": "Sides & Add-Ons",
+        "allergens": ["egg","soy"]
+    },
+        {
+        "name": "Marinara Dipping Sauce",
+        "category": "Sides & Add-Ons",
+        "allergens": []
+    },
+        {
+        "name": "Jam Packet (Strawberry or Grape)",
+        "category": "Sides & Add-Ons",
+        "allergens": []
+    },
+    
+    {
+        "name": "BK Cafe",
+        "category": "Beverages",
+        "allergens": []
+    },
+    {
+        "name": "BK Cafe Decaf",
+        "category": "Beverages",
+        "allergens": []
+    },
+    {
+        "name": "BK Cafe Iced Vanilla Coffee",
+        "category": "Beverages",
+        "allergens": ["milk"]
+    },
+    {
+        "name": "BK Cafe Iced Mocha Coffee",
+        "category": "Beverages",
+        "allergens": ["milk"]
+    }
+  ]
+}
