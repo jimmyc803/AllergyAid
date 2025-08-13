@@ -74,7 +74,7 @@ window.addEventListener('DOMContentLoaded', () => {
         `;
       } else {
         disclaimerContainer.innerHTML = `
-          <p><strong>Note:</strong> ${disclaimerText} please consult the restaurant's official website.</p>
+          <p><strong>Disclaimer:</strong> ${disclaimerText} please consult the restaurant's official website.</p>
         `;
       }
       disclaimerContainer.classList.remove('hidden');
