@@ -101,103 +101,7 @@ body {
 
 .restaurants-section {
   padding: 3rem 0;
-}
-
-.restaurants-section h2 {
-  text-align: center;
-  color: var(--primary-dark);
-  margin-bottom: 2rem;
-}
-
-.restaurants-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
-.restaurant-card {
-  background: var(--white);
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  text-align: center;
-  transition: transform 0.3s ease;
-  text-decoration: none;
-  color: var(--text);
-}
-
-.restaurant-card:hover {
-  transform: translateY(-5px);
-}
-
-.coming-soon {
-  opacity: 0.7;
-}
-
-.coming-soon-badge {
-  background-color: var(--primary-light);
-  color: var(--primary-dark);
-  padding: 0.3rem 0.6rem;
-  border-radius: 50px;
-  font-size: 0.8rem;
-  margin-bottom: 1rem;
-  display: inline-block;
-}
-
-.suggest-restaurant {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.suggest-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: var(--primary-light);
-  color: var(--primary-dark);
-  padding: 0.6rem 1.2rem;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 1rem;
-}
-
-footer {
-  background-color: var(--primary-dark);
-  color: white;
-  text-align: center;
-  padding: 2rem 0;
-  margin-top: 3rem;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.social-links a {
-  color: white;
-  font-size: 1.5rem;
-}
-
-@media (max-width: 768px) {
-  .hero-section {
-    flex-direction: column;
-  }
-
-  .mission-section {
-    grid-template-columns: 1fr;
-  }
-
-  .container {
-    padding: 0 1rem;
-  }
-}
-
-.restaurants-section {
-  padding: 3rem 0;
+  width: 100%;
 }
 
 .restaurants-section h2 {
@@ -211,8 +115,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .restaurant-card {
@@ -222,6 +125,8 @@ footer {
   box-shadow: var(--shadow);
   text-align: center;
   transition: transform 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .restaurant-card:hover {
@@ -283,10 +188,42 @@ footer {
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-  .restaurants-grid {
-    grid-template-columns: 1fr;
-  }
+.suggest-restaurant {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.suggest-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: var(--primary-dark);
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.5rem;
 }
 
 #installBtn {
@@ -335,6 +272,18 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .mission-section {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
   .header-inner nav {
     flex-direction: column;
     width: 100%;
@@ -353,6 +302,12 @@ footer {
   }
 }
 
+@media (max-width: 600px) {
+  .restaurants-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 #installBtn.installed {
   background-color: var(--primary);
   color: white;
@@ -361,4 +316,3 @@ footer {
 #installBtn.installed:hover {
   background-color: var(--primary-dark);
 }
-
