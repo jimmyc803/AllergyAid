@@ -1,0 +1,387 @@
+{
+  "name": "Long John Silver's",
+  "website": "https://www.ljsilversmenu.com/allergen-menu/",
+  "customAllergens": [
+    {"id": "cod", "displayName": "Fish (Cod)"},
+    {"id": "salmon", "displayName": "Fish (Salmon)"},
+    {"id": "shrimp", "displayName": "Shellfish (Shrimp)"},
+    {"id": "clams", "displayName": "Shellfish (Clams)"},
+    {"id": "chicken", "displayName": "Chicken"},
+    {"id": "wheat", "displayName": "Wheat"},
+    {"id": "soy", "displayName": "Soy"},
+    {"id": "milk", "displayName": "Milk"},
+    {"id": "egg", "displayName": "Eggs"},
+    {"id": "coconut", "displayName": "Coconut"},
+    {"id": "wheat", "displayName": "Wheat"},
+    {"id": "dairy", "displayName": "Dairy"},
+    {"id": "cheese", "displayName": "Dairy (Cheese)"},
+    {"id": "peanut", "displayName": "Peanut"}
+  ],
+  "items": [
+    {
+      "name": "Fish Basket",
+      "category": "Fish Basket",
+      "allergens": ["cod", "wheat","soy","milk","egg"] 
+    },
+    {
+      "name": "8 Piece Family Meal",
+      "category": "Family Meals",
+      "allergens": ["cod", "wheat","soy","milk","egg"] 
+    },
+        {
+      "name": "12 Piece Family Meal",
+      "category": "Family Meals",
+      "allergens": ["cod", "wheat","soy","milk","egg"] 
+    },
+    {
+      "name": "16 Piece Family Meal",
+      "category": "Family Meals",
+      "allergens": ["cod", "wheat","soy","milk","egg"] 
+    },
+    {
+      "name": "15pc Battered Shrimp",
+      "category": "$10 Family Meal",
+      "allergens": ["shrimp","wheat","soy"] 
+    },
+    {
+      "name": "Coconut Popcorn Shrimp",
+      "category": "$10 Family Meal",
+      "allergens": ["shrimp","wheat","soy","coconut"] 
+    },
+    {
+      "name": "9pc Chicken",
+      "category": "$10 Family Meal",
+      "allergens": ["wheat","soy"] 
+    },
+    {
+      "name": "6pc Fish Sea-Share",
+      "category": "$10 Family Meal",
+      "allergens": ["cod","wheat","soy"] 
+    },
+    {
+      "name": "Popcorn Shrimp",
+      "category": "$10 Family Meal",
+      "allergens": ["shrimp","wheat","soy"] 
+    },
+    {
+      "name": "15pc Grilled Shrimp",
+      "category": "$10 Family Meal",
+      "allergens": ["shrimp","soy"] 
+    },
+    {
+      "name": "Fish & Chicken Platter",
+      "category": "Platters",
+      "allergens": ["cod","chicken","wheat","soy"] 
+    },
+    {
+      "name": "Chicken & Shrimp Platter",
+      "category": "Platters",
+      "allergens": ["chicken","wheat","soy","shrimp"] 
+    },
+    {
+      "name": "Fish & Shrimp Platter",
+      "category": "Platters",
+      "allergens": ["cod", "shrimp"] 
+    },
+    {
+      "name": "Fish & Chicken Meal",
+      "category": "Meals",
+      "allergens": ["cod","chicken","wheat","soy"] 
+    },
+    {
+      "name": "8 Shrimp Meal",
+      "category": "Meals",
+      "allergens": ["shrimp","wheat","soy"] 
+    },
+    {
+      "name": "3 Chicken Meal",
+      "category": "Meals",
+      "allergens": ["chicken","wheat","soy"] 
+    },
+    {
+      "name": "2 Fish Meal",
+      "category": "Meals",
+      "allergens": ["cod","wheat","soy"] 
+    },
+    {
+      "name": "Fish Sandwich Combo",
+      "category": "Combos",
+      "allergens": ["cod","wheat","milk","soy","egg"] 
+    },
+    {
+      "name": "2 Chicken Combo",
+      "category": "Combos",
+      "allergens": ["chicken","wheat","soy"] 
+    },
+    {
+      "name": "2 Fish Combo",
+      "category": "Combos",
+      "allergens": ["cod","wheat","soy"] 
+    },
+    {
+      "name": "Original Bacon Cheeseburger",
+      "category": "A&W Entrees",
+      "allergens": ["wheat","soy","milk","egg"] 
+    },
+    {
+      "name": "Double Cheeseburger",
+      "category": "A&W Entrees",
+      "allergens": ["wheat","soy","milk","egg"] 
+    },
+    {
+      "name": "(Grilled) Chicken Tenders",
+      "category": "A&W Entrees",
+      "allergens": ["wheat","soy"] 
+    },
+    {
+      "name": "Cheeseburger",
+      "category": "A&W Entrees",
+      "allergens": ["wheat","soy","milk","egg"] 
+    },
+    {
+      "name": "Chicken Sandwich (Grilled)",
+      "category": "A&W Entrees",
+      "allergens": ["wheat","soy"] 
+    },
+    {
+      "name": "Papa Burger",
+      "category": "A&W Entrees",
+      "allergens": ["wheat","soy","milk","egg"] 
+    },
+    {
+      "name": "Bacon Double Cheeseburger",
+      "category": "A&W Entrees",
+      "allergens": ["wheat","soy","milk","egg"] 
+    },
+    {
+      "name": "Grilled Salmon & Shrimp Platter",
+      "category": "Grilled Choices",
+      "allergens": ["salmon","shrimp"]
+    },
+    {
+      "name": "Grilled Shrimp Meal",
+      "category": "Grilled Choices",
+      "allergens": ["shrimp"]
+    },
+    {
+      "name": "Rice Bowls (Shrimp Bowl)",
+      "category": "Grilled Choices",
+      "allergens": ["shrimp","wheat","soy"]
+    },
+    {
+      "name": "2 Tacos",
+      "category": "Grilled Choices",
+      "allergens": ["wheat","soy","cod"]
+    },
+    {
+      "name": "9pc Chicken Sea Share",
+      "category": "Sea Shares",
+      "allergens": ["chicken","wheat","soy"]
+    },
+    {
+      "name": "6pc Fish Sea Share",
+      "category": "Sea Shares",
+      "allergens": ["cod","wheat","soy"]
+    },
+    {
+      "name": "Popcorn Shrimp Sea Share",
+      "category": "Sea Shares",
+      "allergens": ["shrimp","wheat","soy"]
+    },
+    {
+      "name": "15pc Grilled Shrimp Sea Share",
+      "category": "Sea Shares",
+      "allergens": ["shrimp","soy"]
+    },
+    {
+      "name": "15pc Hand-Battered Shrimp Share",
+      "category": "Sea Shares",
+      "allergens": ["shrimp","wheat","soy"]
+    },
+    {
+      "name": "1 pc Grilled Salmon",
+      "category": "Add-A-Piece",
+      "allergens": ["salmon"]
+    },
+    {
+      "name": "3 pc Grilled Shrimp",
+      "category": "Add-A-Piece",
+      "allergens": ["shrimp"]
+    },
+    {
+      "name": "Clams",
+      "category": "Add-A-Piece",
+      "allergens": ["clams"]
+    },
+    {
+      "name": "Popcorn Shrimp",
+      "category": "Add-A-Piece",
+      "allergens": ["shrimp", "wheat", "soy"]
+    },
+    {
+      "name": "3 pc Shrimp",
+      "category": "Add-A-Piece",
+      "allergens": ["shrimp"]
+    },
+    {
+      "name": "1 pc Chicken",
+      "category": "Add-A-Piece",
+      "allergens": ["chicken", "wheat", "soy"]
+    },
+    {
+      "name": "1 pc Fish",
+      "category": "Add-A-Piece",
+      "allergens": ["cod", "wheat", "soy"]
+    },
+    {
+      "name": "Chili Cheese Fries",
+      "category": "Sides",
+      "allergens": ["cheese", "wheat", "soy"]
+    },
+    {
+      "name": "Cheese Curds",
+      "category": "Sides",
+      "allergens": ["cheese", "wheat", "soy"]
+    },
+    {
+      "name": "Onion Rings",
+      "category": "Sides",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Rice Family",
+      "category": "Sides",
+      "allergens": []
+    },
+    {
+      "name": "Hushpuppies 12 pieces",
+      "category": "Sides",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Corn Family",
+      "category": "Sides",
+      "allergens": []
+    },
+    {
+      "name": "Green Beans Family",
+      "category": "Sides",
+      "allergens": []
+    },
+    {
+      "name": "Coleslaw Family",
+      "category": "Sides",
+      "allergens": []
+    },
+    {
+      "name": "Fries Family",
+      "category": "Sides",
+      "allergens": ["wheat", "soy"]
+    },
+    {
+      "name": "Sriracha Cheese Curds",
+      "category": "Sides",
+      "allergens": ["cheese", "wheat", "soy"]
+    },
+    {
+      "name": "Chocolate Cheesecake",
+      "category": "Desserts",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "Classic Cheesecake",
+      "category": "Desserts",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "Strawberry Sundae",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "Chocolate Sundae",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "Hot Caramel Sundae",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "Hot Fudge Sundae",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "Cone",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy", "wheat"]
+    },
+    {
+      "name": "Cookie Dough Polar Swirl",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "Reese’s Polar Swirl",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy", "peanut"]
+    },
+    {
+      "name": "M&M Polar Swirl",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "Oreo Polar Swirl",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy", "wheat"]
+    },
+    {
+      "name": "Vanilla Shake",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "Chocolate Shake",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "Strawberry Shake",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "Orange Freeze",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "A&W Diet Root Beer Freeze",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "A&W Root Beer Freeze",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "Orange Float",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "A&W Diet Root Beer Float",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy"]
+    },
+    {
+      "name": "A&W Root Beer Float",
+      "category": "Sweets & Treats",
+      "allergens": ["dairy"]
+    }
+  ]
+}
