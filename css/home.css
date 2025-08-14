@@ -396,8 +396,24 @@ footer {
   }
 }
 
+/* Restaurant Grid - Mobile Fix */
 @media (max-width: 600px) {
   .restaurants-grid {
     grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  /* Ensure all cards are visible */
+  .restaurant-card {
+    display: block !important;
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  /* Specific fix for Burger King/Panda Express */
+  .restaurant-card:nth-child(3),
+  .restaurant-card:nth-child(4) {
+    display: block !important;
   }
 }
