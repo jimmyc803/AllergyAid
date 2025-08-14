@@ -92,3 +92,38 @@
 .header a {
   text-decoration: none;
 }
+
+/* Mobile Navbar Fixes (add to your existing navbar.css) */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .header-inner nav {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .header-inner nav a {
+    padding: 0.8rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+
+  .header-inner nav a:last-child {
+    border-bottom: none;
+  }
+
+  #installBtn {
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
