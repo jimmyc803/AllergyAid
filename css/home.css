@@ -15,6 +15,11 @@ body {
   line-height: 1.6;
   margin: 0;
   background-color: var(--white);
+  background-image: 
+    radial-gradient(circle at 10% 20%, var(--primary-light) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, var(--primary-light) 0%, transparent 20%);
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 
 .container {
@@ -23,11 +28,15 @@ body {
   padding: 0 2rem;
 }
 
+/* Hero Section */
 .hero-section {
   display: flex;
   align-items: center;
   gap: 3rem;
-  padding: 4rem 0;
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--primary-light) 0%, white 100%);
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 2rem;
 }
 
 .hero-content {
@@ -35,9 +44,13 @@ body {
 }
 
 .hero-content h2 {
-  font-size: 2.5rem;
-  color: var(--primary-dark);
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  line-height: 1.2;
+  background: linear-gradient(to right, var(--primary-dark), var(--primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1.5rem;
 }
 
 .hero-content p {
@@ -55,12 +68,33 @@ body {
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid var(--primary-dark);
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, var(--primary), var(--primary-dark));
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
 }
 
 .cta-button:hover {
-  background-color: var(--primary-dark);
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(58, 125, 68, 0.3);
+}
+
+.cta-button:hover::before {
+  transform: scaleX(1);
 }
 
 .hero-image {
@@ -69,10 +103,13 @@ body {
 
 .hero-image img {
   width: 100%;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
+  border-radius: 20px;
+  transform: perspective(1000px) rotateY(-10deg);
+  box-shadow: 0 20px 40px rgba(58, 125, 68, 0.15);
+  border: 8px solid white;
 }
 
+/* Mission Section */
 .mission-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -86,12 +123,26 @@ body {
   border-radius: 12px;
   box-shadow: var(--shadow);
   text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(58, 125, 68, 0.1);
+}
+
+.mission-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(58, 125, 68, 0.15);
 }
 
 .mission-card i {
   font-size: 2.5rem;
   color: var(--primary);
-  margin-bottom: 1rem;
+  background: var(--primary-light);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
 }
 
 .mission-card h3 {
@@ -99,6 +150,7 @@ body {
   margin-bottom: 1rem;
 }
 
+/* Restaurants Section */
 .restaurants-section {
   padding: 3rem 0;
   width: 100%;
@@ -127,16 +179,40 @@ body {
   transition: transform 0.3s ease;
   width: 100%;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
-.restaurant-card:hover {
-  transform: translateY(-5px);
+.restaurant-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--primary);
 }
 
 .restaurant-card h3 {
   color: var(--primary-dark);
   margin: 0 0 1rem;
   font-size: 1.3rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.restaurant-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background: var(--primary-light);
 }
 
 .restaurant-links {
@@ -144,6 +220,7 @@ body {
   justify-content: center;
   gap: 0.8rem;
   flex-wrap: wrap;
+  margin-top: 1.5rem;
 }
 
 .menu-link, .website-link {
@@ -188,24 +265,7 @@ body {
   text-decoration: underline;
 }
 
-.suggest-restaurant {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.suggest-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: var(--primary-light);
-  color: var(--primary-dark);
-  padding: 0.6rem 1.2rem;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 1rem;
-}
-
+/* Footer */
 footer {
   background-color: var(--primary-dark);
   color: white;
@@ -226,6 +286,7 @@ footer {
   font-size: 1.5rem;
 }
 
+/* Install Button */
 #installBtn {
   background-color: var(--primary-light);
   color: var(--primary-dark);
@@ -255,22 +316,68 @@ footer {
   font-size: 1rem;
 }
 
-.header-inner nav {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1rem;
-}
-
+/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-20px) translateX(10px); }
+}
+
+/* Floating Background Elements */
+.floating-elements {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.floating-circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.15;
+}
+
+.circle-1 {
+  width: 300px;
+  height: 300px;
+  background: var(--primary);
+  top: 20%;
+  left: 10%;
+  animation: float 8s infinite ease-in-out;
+}
+
+.circle-2 {
+  width: 200px;
+  height: 200px;
+  background: var(--primary-dark);
+  top: 60%;
+  right: 10%;
+  animation: float 10s infinite ease-in-out reverse;
+}
+
+.circle-3 {
+  width: 150px;
+  height: 150px;
+  background: var(--primary-light);
+  bottom: 10%;
+  left: 40%;
+  animation: float 7s infinite ease-in-out;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
@@ -284,21 +391,8 @@ footer {
     padding: 0 1rem;
   }
 
-  .header-inner nav {
-    flex-direction: column;
-    width: 100%;
-    align-items: stretch;
-  }
-  
-  .nav-links {
-    justify-content: space-around;
-    margin-bottom: 0.5rem;
-  }
-  
-  #installBtn {
-    margin-left: 0;
-    width: 100%;
-    justify-content: center;
+  .hero-content h2 {
+    font-size: 2.2rem;
   }
 }
 
@@ -306,13 +400,4 @@ footer {
   .restaurants-grid {
     grid-template-columns: 1fr;
   }
-}
-
-#installBtn.installed {
-  background-color: var(--primary);
-  color: white;
-}
-
-#installBtn.installed:hover {
-  background-color: var(--primary-dark);
 }

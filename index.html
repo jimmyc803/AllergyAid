@@ -1,54 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#FFFFFF">
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNL67MWF9Q"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-17XLE1VGH7');
-  </script>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Allergy Aid - Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  
   <link rel="stylesheet" href="./css/home.css" />
   <link rel="stylesheet" href="./css/navbar.css">
-
   <link rel="icon" href="images/allergyaidicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <header class="header">
-      <div class="container header-inner">
-        <a href="index.html"><h1>Allergy Aid</h1></a>
-        <nav>
-          <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="restaurants.html">Restaurants</a>
-            <a href="partners.html">Partners</a>
-            <a href="contact.html">Contact</a>
-          </div>
-            <button id="installBtn" onclick="installApp()">
-              <i class="fas fa-plus-circle"></i> Add to Home
-            </button>
-        </nav>
-      </div>
-    </header>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html"><h1>Allergy Aid</h1></a>
+      <nav>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="restaurants.html">Restaurants</a>
+          <a href="partners.html">Partners</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <button id="installBtn">
+          <i class="fas fa-plus-circle"></i> Add to Home
+        </button>
+      </nav>
+    </div>
+  </header>
 
   <main class="container main-content">
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-content">
         <h2>Dine with Confidence</h2>
-        <p>Find allergy-friendly menu items at your favorite restaurants</p>
+        <p>Find allergy-friendly menu items at your favorite restaurants with our verified allergen database</p>
         <a href="restaurants.html" class="cta-button">Browse Restaurants</a>
       </div>
       <div class="hero-image">
@@ -66,19 +58,19 @@
       <div class="mission-card">
         <i class="fas fa-utensils"></i>
         <h3>How It Works</h3>
-        <p>Select a restaurant, choose your allergens, and we'll show you safe menu options in an easy-to-read format that's based off the official menu.</p>
+        <p>Select a restaurant, choose your allergens, and we'll show you safe menu options in an easy-to-read format.</p>
       </div>
       <div class="mission-card">
         <i class="fas fa-handshake"></i>
         <h3>Our Promise</h3>
-        <p>We work to provide the most up-to-date allergen information from restaurants.</p>
+        <p>We work directly with restaurants to provide the most up-to-date allergen information available.</p>
       </div>
     </section>
 
+    <!-- Restaurant Section -->
     <section class="restaurants-section">
       <h2>Featured Restaurants</h2>
       <div class="restaurants-grid">
-        
         <!-- Chick-fil-A -->
         <div class="restaurant-card">
           <h3>Chick-fil-A</h3>
@@ -136,6 +128,13 @@
     </div>
     <p>&copy; 2025 Allergy Aid. All rights reserved.</p>
   </footer>
+
+  <!-- Floating Background Elements -->
+  <div class="floating-elements">
+    <div class="floating-circle circle-1"></div>
+    <div class="floating-circle circle-2"></div>
+    <div class="floating-circle circle-3"></div>
+  </div>
 
   <script src="./js/home.js"></script>
 </body>
