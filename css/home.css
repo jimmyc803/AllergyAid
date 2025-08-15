@@ -417,3 +417,91 @@ footer {
     display: block !important;
   }
 }
+
+/* Horizontal Banner Styles */
+.horizontal-banner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 3rem auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(58, 125, 68, 0.1);
+  overflow: hidden;
+}
+
+.horizontal-banner a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.banner-flex {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.banner-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-right: 1.5rem;
+  border-radius: 6px;
+}
+
+.banner-text {
+  flex: 1;
+}
+
+.banner-text h3 {
+  color: var(--primary-dark);
+  margin: 0 0 0.2rem;
+  font-size: 1.3rem;
+}
+
+.banner-text p {
+  color: var(--text-light);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.cta-button {
+  background: var(--primary);
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-left: 1.5rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.horizontal-banner:hover .cta-button {
+  background: var(--primary-dark);
+  transform: translateX(3px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .banner-flex {
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .banner-logo {
+    margin: 0 0 0.5rem;
+  }
+  
+  .banner-text {
+    flex: 0 0 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cta-button {
+    margin: 0.5rem 0 0;
+  }
+}
