@@ -35,7 +35,7 @@
     { 
       "name": "Blackened Tenders",
       "category": "Tenders",
-      "allergens": ["milk", "wheat", "egg"]
+      "allergens": ["soy"]
     },
     { 
       "name": "Classic Boneless Wings",
@@ -90,27 +90,27 @@
     { 
       "name": "Biscuit",
       "category": "Signature Sides",
-      "allergens": ["milk", "wheat"]
+      "allergens": ["milk", "wheat", "soy"]
     },
     { 
       "name": "Cajun Fries",
       "category": "Signature Sides",
-      "allergens": ["wheat", "soy"]
+      "allergens": ["wheat"]
     },
     { 
       "name": "Homestyle Mac & Cheese",
       "category": "Signature Sides",
-      "allergens": ["milk", "wheat", "soy"]
+      "allergens": ["milk", "wheat", "egg", "soy"]
     },
     { 
       "name": "Mashed Potatoes with Cajun Gravy",
       "category": "Signature Sides",
-      "allergens": ["milk", "soy"]
+      "allergens": ["milk", "wheat", "soy"]
     },
     { 
       "name": "Red Beans & Rice",
       "category": "Signature Sides",
-      "allergens": ["soy"]
+      "allergens": []
     },
     { 
       "name": "Coleslaw",

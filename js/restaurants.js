@@ -54,3 +54,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const container = document.querySelector('.partner-list');
+  if (!container) return;
+
+  // Get all cards except the "More Coming Soon" placeholder
+  const regularCards = Array.from(container.querySelectorAll('.partner-card:not(.placeholder)'));
+  
+  // Get the placeholder card if it exists
+  const placeholderCard = container.querySelector('.partner-card.placeholder');
+  
+  // Sort regular cards alphabetically
+  regularCards.sort((a, b) => {
+    const nameA = a.querySelector('h2').textContent.toLowerCase();
+    const nameB = b.querySelector('h2').textContent.toLowerCase();
+    return nameA.localeCompare(nameB);
+  });
+
+  // Clear the container
+  container.innerHTML = '';
+  
+  // Add sorted regular cards
+  regularCards.forEach(card => container.appendChild(card));
+  
+  // Add placeholder card at the end if it exists
+  if (placeholderCard) {
+    container.appendChild(placeholderCard);
+  }
+});
