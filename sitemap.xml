@@ -9,47 +9,67 @@
 
 <url>
   <loc>https://getallergyaid.com/</loc>
-  <lastmod>2025-07-26T22:53:06+00:00</lastmod>
+  <lastmod>2025-08-15T23:54:15+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://getallergyaid.com/restaurants</loc>
-  <lastmod>2025-07-26T22:53:06+00:00</lastmod>
+  <lastmod>2025-08-15T23:54:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://getallergyaid.com/partners</loc>
-  <lastmod>2025-07-26T22:53:06+00:00</lastmod>
+  <lastmod>2025-08-15T23:54:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://getallergyaid.com/contact</loc>
-  <lastmod>2025-07-26T22:53:06+00:00</lastmod>
+  <lastmod>2025-08-15T23:54:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://getallergyaid.com/allergen-picker?name=chickfila</loc>
-  <lastmod>2025-07-26T22:53:06+00:00</lastmod>
+  <lastmod>2025-08-15T23:54:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://getallergyaid.com/allergen-picker?name=raisingcanes</loc>
-  <lastmod>2025-07-26T22:53:06+00:00</lastmod>
+  <lastmod>2025-08-15T23:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://getallergyaid.com/allergen-picker?name=burgerking</loc>
+  <lastmod>2025-08-15T23:54:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://getallergyaid.com/allergen-picker?name=pandaexpress</loc>
+  <lastmod>2025-08-15T23:54:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://getallergyaid.com/allergen-picker?name=halalguys</loc>
-  <lastmod>2025-07-26T22:53:06+00:00</lastmod>
+  <lastmod>2025-08-15T23:54:15+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://getallergyaid.com/allergen-picker?name=chipotle</loc>
-  <lastmod>2025-07-26T22:53:06+00:00</lastmod>
+  <lastmod>2025-08-15T23:54:15+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://getallergyaid.com/allergen-picker?name=pandaexpress</loc>
-  <lastmod>2025-07-26T22:53:06+00:00</lastmod>
+  <loc>https://getallergyaid.com/allergen-picker?name=bojangles</loc>
+  <lastmod>2025-08-15T23:54:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getallergyaid.com/allergen-picker?name=longjohnsilvers</loc>
+  <lastmod>2025-08-15T23:54:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://getallergyaid.com/allergen-picker?name=popeyes</loc>
+  <lastmod>2025-08-15T23:54:15+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
