@@ -1,0 +1,176 @@
+{
+  "name": "Popeyes",
+  "website": "https://plk-use1-prod.sites.rbictg.com/nutrition/Popeyes_US_Allergen.pdf",
+  "customAllergens": [
+    { "id": "milk", "displayName": "Milk" },
+    { "id": "wheat", "displayName": "Wheat" },
+    { "id": "egg", "displayName": "Egg" },
+    { "id": "soy", "displayName": "Soy" },
+    { "id": "fish", "displayName": "Fish/Shellfish" },
+    { "id": "peanuts", "displayName": "Peanuts" },
+    { "id": "treenuts", "displayName": "Tree Nuts" },
+    { "id": "sesame", "displayName": "Sesame" }
+  ],
+  "items": [
+    { 
+      "name": "Classic Signature Chicken (Wing, Leg, Breast, Thigh)",
+      "category": "Signature Chicken - Classic or Spicy",
+      "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    { 
+      "name": "Spicy Signature Chicken (Wing, Leg, Breast, Thigh)",
+      "category": "Signature Chicken - Classic or Spicy",
+      "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    { 
+      "name": "Classic Tenders",
+      "category": "Tenders",
+      "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    { 
+      "name": "Spicy Tenders",
+      "category": "Tenders",
+      "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    { 
+      "name": "Blackened Tenders",
+      "category": "Tenders",
+      "allergens": ["milk", "wheat", "egg"]
+    },
+    { 
+      "name": "Classic Boneless Wings",
+      "category": "Wings – Boneless or Bone-In",
+      "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    { 
+      "name": "Spicy Bone-In Wings",
+      "category": "Wings – Boneless or Bone-In",
+      "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    { 
+      "name": "Honey BBQ Wings (Boneless or Bone-In)",
+      "category": "Wings – Boneless or Bone-In",
+      "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    { 
+      "name": "Honey Lemon Pepper Wings (Boneless or Bone-In)",
+      "category": "Wings – Boneless or Bone-In",
+      "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    { 
+      "name": "Roasted Garlic Parmesan Wings (Boneless or Bone-In)",
+      "category": "Wings – Boneless or Bone-In",
+      "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    { 
+      "name": "Signature Hot Wings (Boneless or Bone-In)",
+      "category": "Wings – Boneless or Bone-In",
+      "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    { 
+      "name": "Sweet ‘N Spicy Wings (Boneless or Bone-In)",
+      "category": "Wings – Boneless or Bone-In",
+      "allergens": ["milk", "wheat", "egg", "soy"]
+    },
+    { 
+      "name": "Popcorn Shrimp",
+      "category": "Seafood",
+      "allergens": ["milk", "wheat", "egg", "soy", "fish"]
+    },
+    { 
+      "name": "Classic Chicken Sandwich",
+      "category": "Sandwiches",
+      "allergens": ["milk", "wheat", "egg", "soy", "sesame"]
+    },
+    { 
+      "name": "Spicy Chicken Sandwich",
+      "category": "Sandwiches",
+      "allergens": ["milk", "wheat", "egg", "soy", "sesame"]
+    },
+    { 
+      "name": "Biscuit",
+      "category": "Signature Sides",
+      "allergens": ["milk", "wheat"]
+    },
+    { 
+      "name": "Cajun Fries",
+      "category": "Signature Sides",
+      "allergens": ["wheat", "soy"]
+    },
+    { 
+      "name": "Homestyle Mac & Cheese",
+      "category": "Signature Sides",
+      "allergens": ["milk", "wheat", "soy"]
+    },
+    { 
+      "name": "Mashed Potatoes with Cajun Gravy",
+      "category": "Signature Sides",
+      "allergens": ["milk", "soy"]
+    },
+    { 
+      "name": "Red Beans & Rice",
+      "category": "Signature Sides",
+      "allergens": ["soy"]
+    },
+    { 
+      "name": "Coleslaw",
+      "category": "Signature Sides",
+      "allergens": ["egg", "soy"]
+    },
+    { 
+      "name": "Jalapeno",
+      "category": "Signature Sides",
+      "allergens": []
+    },
+    { 
+      "name": "Bayou Buffalo",
+      "category": "Dipping Sauces",
+      "allergens": ["milk"]
+    },
+    { 
+      "name": "BoldBQ",
+      "category": "Dipping Sauces",
+      "allergens": ["wheat", "soy"]
+    },
+    { 
+      "name": "Blackened Ranch",
+      "category": "Dipping Sauces",
+      "allergens": ["milk", "egg"]
+    },
+    { 
+      "name": "Buttermilk Ranch",
+      "category": "Dipping Sauces",
+      "allergens": ["milk", "egg"]
+    },
+    { 
+      "name": "Mardi Gras Mustard",
+      "category": "Dipping Sauces",
+      "allergens": ["egg"]
+    },
+    { 
+      "name": "Sweet Heat",
+      "category": "Dipping Sauces",
+      "allergens": []
+    },
+    { 
+      "name": "Tartar",
+      "category": "Dipping Sauces",
+      "allergens": ["egg"]
+    },
+    { 
+      "name": "Wild Honey Mustard",
+      "category": "Dipping Sauces",
+      "allergens": ["egg"]
+    },
+    { 
+      "name": "Cocktail Sauce",
+      "category": "Dipping Sauces",
+      "allergens": []
+    },
+    { 
+      "name": "Cinnamon Apple Pie",
+      "category": "Desserts",
+      "allergens": ["milk", "wheat", "soy"]
+    }
+  ]
+}
