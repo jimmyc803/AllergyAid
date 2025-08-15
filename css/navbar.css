@@ -91,14 +91,14 @@
   }
 
   .nav-links a {
-    font-weight: 600; /* Maintain boldness on mobile */
-    font-size: 0.95rem; /* Slightly smaller for mobile */
-    background: rgba(58, 125, 68, 0.1); /* Light green background */
-    padding: 0.5rem 1rem; /* Better touch target */
-  }
-
-  .nav-links a.active {
-    background: var(--primary-light);
+    flex: 1; /* Make all links share equal width */
+    margin: 0 0.25rem; /* Small spacing between links */
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    white-space: nowrap;
+    background: #f5f5f5;
+    border-radius: 20px;
   }
 
   #installBtn {
