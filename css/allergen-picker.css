@@ -1,18 +1,20 @@
 :root {
   --primary: #3a7d44;
   --primary-dark: #2e5e33;
-  --primary-darker: #1e4a24; 
+  --primary-darker: #1e4a24;
   --primary-light: #e6f2d9;
+  --primary-lighter: #f2f8ec;
   --white: #fff;
   --gray: #f5f5f5;
   --text: #333;
   --text-light: #666;
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 6px 16px rgba(58, 125, 68, 0.2);
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--white);
+  background-color: var(--primary-lighter);
   color: var(--text);
   line-height: 1.6;
   min-height: 100vh;
@@ -34,33 +36,49 @@ body.loaded {
   padding: 0 20px;
 }
 
-.header-content {
-  display: flex;
-  align-items: center;
-  position: relative;
+/* Header Styles */
+header {
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   padding: 1rem 0;
 }
 
-.header-center {
-  flex: 1;
-  text-align: center;
-  margin: 0 auto;
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 1rem;
 }
 
 .back-button {
   position: absolute;
-  left: 20px;
+  left: 1rem;
   color: var(--primary-dark);
   font-size: 1.5rem;
-  padding: 0.5rem;
+  padding: 0.75rem;
   border-radius: 50%;
   transition: all 0.3s ease;
-  z-index: 1;
+  background: var(--primary-light);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .back-button:hover {
-  background-color: var(--primary-light);
+  background-color: var(--primary);
+  color: white;
   transform: translateX(-3px);
+}
+
+.header-center {
+  text-align: center;
+  padding: 0 2rem;
 }
 
 #restaurantLogo {
@@ -68,72 +86,83 @@ body.loaded {
   width: auto;
   margin-bottom: 0.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
+  border: 2px solid var(--white);
 }
 
 #restaurantName {
   color: var(--primary-dark);
   font-size: 1.8rem;
   margin: 0;
+  font-weight: 700;
 }
 
+/* Allergen Selection Section */
 .allergen-section {
   max-width: 800px;
-  margin: 0.5rem auto 2rem;
-  padding: 1.5rem;
+  margin: 2rem auto;
+  padding: 2rem;
   background-color: var(--white);
-  border-radius: 12px;
+  border-radius: 16px;
   box-shadow: var(--shadow);
+  border: 1px solid rgba(58, 125, 68, 0.1);
 }
 
 h2 {
   color: var(--primary-dark);
   text-align: center;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
   position: relative;
+  padding-bottom: 0.5rem;
 }
 
 h2::after {
   content: '';
   display: block;
-  width: 60px;
-  height: 3px;
-  background-color: var(--primary);
-  margin: 0.5rem auto 0;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, var(--primary), var(--primary-dark));
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
 }
 
 .filter-group {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .filter-group label {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 1.25rem 0.5rem;
   background-color: var(--white);
-  border: 2px solid var(--primary-darker);
-  border-radius: 8px;
+  border: 2px solid var(--primary-light);
+  border-radius: 12px;
   cursor: pointer;
-  transition: all 0.2s ease;
-  margin: 0;
+  transition: all 0.3s ease;
   text-align: center;
   position: relative;
+  min-height: 100px;
 }
 
 .filter-group label:hover {
-  border-color: var(--primary-dark);
-  background-color: var(--primary-light);
+  border-color: var(--primary);
+  background-color: var(--primary-lighter);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
 }
 
 .filter-group label.selected {
   background-color: var(--primary);
-  border-color: var(--primary-darker); 
+  border-color: var(--primary-dark);
   color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
 }
 
 .filter-group input[type="checkbox"] {
@@ -147,13 +176,14 @@ h2::after {
   cursor: pointer;
 }
 
+/* Submit Button */
 button[type="submit"] {
   display: block;
   width: 100%;
   max-width: 300px;
-  margin: 1.5rem auto 0;
+  margin: 2rem auto 0;
   padding: 1rem;
-  background-color: var(--primary);
+  background: linear-gradient(to right, var(--primary), var(--primary-dark));
   color: var(--white);
   border: none;
   border-radius: 50px;
@@ -161,37 +191,68 @@ button[type="submit"] {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(58, 125, 68, 0.2);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+button[type="submit"]::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, var(--primary-dark), var(--primary-darker));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+button[type="submit"]:hover::after {
+  opacity: 1;
+}
+
+button[type="submit"] span {
+  position: relative;
+  z-index: 1;
 }
 
 button[type="submit"]:hover {
-  background-color: var(--primary-dark);
   transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(58, 125, 68, 0.3);
+  box-shadow: 0 8px 16px rgba(58, 125, 68, 0.3);
 }
 
-
+/* Footer */
 footer {
-  background-color: var(--primary-dark);
+  background: linear-gradient(to right, var(--primary-dark), var(--primary-darker));
   color: var(--white);
   text-align: center;
   padding: 1.5rem;
   margin-top: auto;
 }
 
-
+/* Responsive Design */
 @media (max-width: 768px) {
   .filter-group {
     grid-template-columns: repeat(2, 1fr);
   }
   
   .header-content {
-    padding: 1rem;
+    padding: 0.5rem;
   }
   
   .back-button {
-    position: static;
-    margin-right: 1rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  #restaurantLogo {
+    height: 60px;
+  }
+  
+  #restaurantName {
+    font-size: 1.5rem;
   }
 }
 
@@ -201,12 +262,11 @@ footer {
   }
   
   .allergen-section {
-    padding: 1rem;
-    margin: 0.5rem;
+    padding: 1.5rem;
+    margin: 1rem;
   }
   
-  .header-center {
-    text-align: left;
-    padding-left: 1rem;
+  h2 {
+    font-size: 1.5rem;
   }
 }
