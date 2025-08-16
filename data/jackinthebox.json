@@ -1,0 +1,567 @@
+{
+  "name": "Jack in the Box",
+  "website": "https://assets.ctfassets.net/5hs630wuugof/5YPXJN6p8U0Esf31agJxUK/26a003f0ab50ca9eb38d0e6a3f7f2bf5/Nutrition_Facts_2025.PDF",
+  "customAllergens": [
+    {"id": "milk", "displayName": "Milk"},
+    {"id": "eggs", "displayName": "Eggs"},
+    {"id": "peanuts", "displayName": "Peanuts"},
+    {"id": "treenuts", "displayName": "Tree Nuts"},
+    {"id": "fish", "displayName": "Fish"},
+    {"id": "shellfish", "displayName": "Crustaceans/Shellfish"},
+    {"id": "soy", "displayName": "Soy"},
+    {"id": "sesame", "displayName": "Sesame"},
+    {"id": "wheat", "displayName": "Wheat"}
+  ],
+  "items": [
+    {
+      "name": "Chicken Fajita Pita made with Whole Grain (no salsa)",
+      "category": "Better for You",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "Chicken Teriyaki Bowl",
+      "category": "Better for You",
+      "allergens": ["soy","wheat"]
+    },
+    {
+      "name": "Garden Salad with Grilled Chicken",
+      "category": "Better for You",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Jr. Jumbo Jack",
+      "category": "Better for You",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+
+    {
+      "name": "Bacon Double Smashed Jack",
+      "category": "Burgers & More",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Bacon & Swiss Buttery Jack",
+      "category": "Burgers & More",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Bacon Ultimate Cheeseburger",
+      "category": "Burgers & More",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Cheeseburger",
+      "category": "Burgers & More",
+      "allergens": ["soy","milk","wheat","sesame"]
+    },
+    {
+      "name": "Classic Buttery Jack",
+      "category": "Burgers & More",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Classic Smashed Jack",
+      "category": "Burgers & More",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Double Jack",
+      "category": "Burgers & More",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Hamburger",
+      "category": "Burgers & More",
+      "allergens": ["soy","milk","wheat","sesame"]
+    },
+    {
+      "name": "Jr. Bacon Cheeseburger",
+      "category": "Burgers & More",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Jr. Jumbo Jack",
+      "category": "Burgers & More",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Jr. Jumbo Jack Cheeseburger",
+      "category": "Burgers & More",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Jumbo Jack",
+      "category": "Burgers & More",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Jumbo Jack Cheeseburger",
+      "category": "Burgers & More",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Sourdough Jack",
+      "category": "Burgers & More",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Ultimate Cheeseburger",
+      "category": "Burgers & More",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Chicken Fajita Pita made with Whole Grain (with salsa)",
+      "category": "Chicken & More",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "Chicken Nuggets (4 pc.)",
+      "category": "Chicken & More",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "Chicken Nuggets (8 pc.)",
+      "category": "Chicken & More",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "Chicken Sandwich",
+      "category": "Chicken & More",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Chicken Sandwich with Bacon",
+      "category": "Chicken & More",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Chicken Teriyaki Bowl",
+      "category": "Chicken & More",
+      "allergens": ["soy","wheat"]
+    },
+    {
+      "name": "Crispy Chicken Strips (3 pc.)",
+      "category": "Chicken & More",
+      "allergens": ["milk","wheat"]
+    },
+    {
+      "name": "Crispy Chicken Strips (5 pc.)",
+      "category": "Chicken & More",
+      "allergens": ["milk","wheat"]
+    },
+    {
+      "name": "Fish Sandwich (seasonal)",
+      "category": "Chicken & More",
+      "allergens": ["soy","eggs","fish","wheat","sesame"]
+    },
+    {
+      "name": "Homestyle Ranch Chicken Club",
+      "category": "Chicken & More",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Jack’s Spicy Chicken Sandwich",
+      "category": "Chicken & More",
+      "allergens": ["soy","eggs","wheat","sesame"]
+    },
+    {
+      "name": "Jack’s Spicy Chicken Sandwich with Cheese",
+      "category": "Chicken & More",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Sourdough Grilled Chicken Club",
+      "category": "Chicken & More",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "The Cluck Chicken Sandwich",
+      "category": "Chicken & More",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Garden Salad with Crispy Chicken Strips",
+      "category": "Salads",
+      "allergens": ["milk","wheat"]
+    },
+    {
+      "name": "Garden Salad with Grilled Chicken",
+      "category": "Salads",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Side Salad",
+      "category": "Salads",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Southwest Salad with Crispy Chicken Strips",
+      "category": "Salads",
+      "allergens": ["milk","wheat"]
+    },
+    {
+      "name": "Southwest Salad with Grilled Chicken",
+      "category": "Salads",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Buttermilk Ranch Dressing",
+      "category": "Salads",
+      "allergens": ["eggs","milk"]
+    },
+    {
+      "name": "Hidden Valley Balsamic Vinaigrette Dressing",
+      "category": "Salads",
+      "allergens": []
+    },
+    {
+      "name": "Tri-Colored Tortilla Strips",
+      "category": "Salads",
+      "allergens": ["wheat"]
+    },
+    {
+      "name": "Wheat Caesar Croutons",
+      "category": "Salads",
+      "allergens": ["milk","wheat"]
+    },
+    {
+      "name": "Creamy Southwest Dressing",
+      "category": "Salads",
+      "allergens": ["eggs","milk"]
+    },
+    {
+      "name": "Egg Roll (1 pc.)",
+      "category": "Snacks & Sides",
+      "allergens": ["soy","eggs","fish","wheat"]
+    },
+    {
+      "name": "Egg Roll (3 pc.)",
+      "category": "Snacks & Sides",
+      "allergens": ["soy","eggs","fish","wheat"]
+    },
+    {
+      "name": "French Fries (Small)",
+      "category": "Snacks & Sides",
+      "allergens": []
+    },
+    {
+      "name": "French Fries (Medium)",
+      "category": "Snacks & Sides",
+      "allergens": []
+    },
+    {
+      "name": "French Fries (Large)",
+      "category": "Snacks & Sides",
+      "allergens": []
+    },
+    {
+      "name": "Panko Onion Rings",
+      "category": "Snacks & Sides",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "Seasoned Curly Fries (Small)",
+      "category": "Snacks & Sides",
+      "allergens": ["wheat"]
+    },
+    {
+      "name": "Seasoned Curly Fries (Medium)",
+      "category": "Snacks & Sides",
+      "allergens": ["wheat"]
+    },
+    {
+      "name": "Seasoned Curly Fries (Large)",
+      "category": "Snacks & Sides",
+      "allergens": ["wheat"]
+    },
+    {
+      "name": "Side Salad",
+      "category": "Snacks & Sides",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Stuffed Jalapeños (3 pc.)",
+      "category": "Snacks & Sides",
+      "allergens": ["milk","wheat"]
+    },
+    {
+      "name": "Stuffed Jalapeños (7 pc.)",
+      "category": "Snacks & Sides",
+      "allergens": ["milk","wheat"]
+    },
+    {
+      "name": "Taco, Regular (1 Taco)",
+      "category": "Snacks & Sides",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "Taco, Tiny (13 pc.)",
+      "category": "Snacks & Sides",
+      "allergens": ["wheat"]
+    },
+    {
+      "name": "Taco, Tiny (Sauced & Loaded)",
+      "category": "Snacks & Sides",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "Tree Top Apple Sauce Pouch",
+      "category": "Snacks & Sides",
+      "allergens": []
+    },
+    {
+      "name": "Bacon Breakfast Jack",
+      "category": "Breakfast",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Breakfast Jack",
+      "category": "Breakfast",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Classic French Toast Sticks (3pc)",
+      "category": "Breakfast",
+      "allergens": ["soy","wheat"]
+    },
+    {
+      "name": "Classic French Toast Sticks (6pc)",
+      "category": "Breakfast",
+      "allergens": ["soy","wheat"]
+    },
+    {
+      "name": "Classic French Toast Sticks Platter with Bacon",
+      "category": "Breakfast",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Classic French Toast Sticks Platter with Bacon & Sausage",
+      "category": "Breakfast",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Classic French Toast Sticks Platter with Sausage",
+      "category": "Breakfast",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Extreme Sausage Sandwich",
+      "category": "Breakfast",
+      "allergens": ["soy","milk","wheat","sesame"]
+    },
+    {
+      "name": "Hash Brown",
+      "category": "Breakfast",
+      "allergens": []
+    },
+    {
+      "name": "Loaded Breakfast Sandwich",
+      "category": "Breakfast",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Meat Lovers Breakfast Burrito (with salsa)",
+      "category": "Breakfast",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Meat Lovers Breakfast Burrito (no salsa)",
+      "category": "Breakfast",
+      "allergens": ["wheat"]
+    },
+    {
+      "name": "Mini Pancakes (8 pc.)",
+      "category": "Breakfast",
+      "allergens": ["milk","wheat"]
+    },
+    {
+      "name": "Sausage Breakfast Jack",
+      "category": "Breakfast",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Sausage Croissant",
+      "category": "Breakfast",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Sourdough Breakfast Sandwich",
+      "category": "Breakfast",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Supreme Croissant",
+      "category": "Breakfast",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Ultimate Breakfast Sandwich",
+      "category": "Breakfast",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Jack’s Spicy Chicken Sandwich",
+      "category": "Jack’s Munchie Meals",
+      "allergens": ["soy","eggs","wheat","sesame"]
+    },
+    {
+      "name": "The Cluck Chicken Sandwich",
+      "category": "Jack’s Munchie Meals",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Ultimate Cheeseburger",
+      "category": "Jack’s Munchie Meals",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Double Jack",
+      "category": "Jack’s Munchie Meals",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Halfsies (a la carte)",
+      "category": "Jack’s Munchie Meals",
+      "allergens": ["wheat"]
+    },
+    {
+      "name": "Halfsies (in Munchie Meal)",
+      "category": "Jack’s Munchie Meals",
+      "allergens": ["wheat"]
+    },
+    {
+      "name": "Onion Rings (4 pc.)",
+      "category": "Jack’s Munchie Meals",
+      "allergens": ["milk","wheat"]
+    },
+    {
+      "name": "Two Tacos",
+      "category": "Jack’s Munchie Meals",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "Seasoned Curly Fries (Medium)",
+      "category": "Jack’s Munchie Meals",
+      "allergens": ["wheat"]
+    },
+    {
+      "name": "French Fries (Medium)",
+      "category": "Jack’s Munchie Meals",
+      "allergens": []
+    },
+    {
+      "name": "Chocolate Overload Cake",
+      "category": "Desserts",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Mini Churros (5 pc.)",
+      "category": "Desserts",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "New York Style Cheesecake",
+      "category": "Desserts",
+      "allergens": ["soy","eggs","milk","wheat"]
+    },
+    {
+      "name": "Shake, Chocolate with Whipped Topping - 16 fl. oz.",
+      "category": "Desserts",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Shake, Chocolate with Whipped Topping - 24 fl. oz.",
+      "category": "Desserts",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Shake, OREO Cookie with Whipped Topping 16 fl. oz.",
+      "category": "Desserts",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "Shake, OREO Cookie with Whipped Topping - 24 fl. oz.",
+      "category": "Desserts",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "Shake, Strawberry with Whipped Topping - 16 fl. oz.",
+      "category": "Desserts",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Shake, Strawberry with Whipped Topping - 24 fl. oz.",
+      "category": "Desserts",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Shake, Vanilla with Whipped Topping - 16 fl. oz.",
+      "category": "Desserts",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Shake, Vanilla with Whipped Topping - 24 fl. oz.",
+      "category": "Desserts",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Shake, Vanilla with Boba & Whipped Topping - 16 fl. oz.",
+      "category": "Desserts",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Breakfast Jack",
+      "category": "Kids",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Cheeseburger",
+      "category": "Kids",
+      "allergens": ["soy","milk","wheat","sesame"]
+    },
+    {
+      "name": "Chicken Nuggets (4 pc.)",
+      "category": "Kids",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "Chicken Sandwich",
+      "category": "Kids",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Classic French Toast Sticks (3pc)",
+      "category": "Kids",
+      "allergens": ["soy","wheat"]
+    },
+    {
+      "name": "Crispy Chicken Strips (2 pc.)",
+      "category": "Kids",
+      "allergens": ["milk","wheat"]
+    },
+    {
+      "name": "French Fries (Kid’s)",
+      "category": "Kids",
+      "allergens": []
+    },
+    {
+      "name": "Grilled Cheese Sandwich",
+      "category": "Kids",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "Hamburger",
+      "category": "Kids",
+      "allergens": ["soy","milk","wheat","sesame"]
+    },
+    {
+      "name": "Seasoned Curly Fries (Kid’s)",
+      "category": "Kids",
+      "allergens": ["wheat"]
+    }
+
+
+
+
+  ]
+}
