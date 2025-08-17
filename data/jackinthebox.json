@@ -558,10 +558,376 @@
       "name": "Seasoned Curly Fries (Kid’s)",
       "category": "Kids",
       "allergens": ["wheat"]
+    },
+    {
+      "name": "Chicken Nuggets (4 pc.)",
+      "category": "Jack’s Deals",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "Chicken Nuggets (8 pc.)",
+      "category": "Jack’s Deals",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "Chicken Sandwich",
+      "category": "Jack’s Deals",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Chicken Sandwich with Bacon",
+      "category": "Jack’s Deals",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Grilled Cheese Sandwich",
+      "category": "Jack’s Deals",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "Jr. Bacon Cheeseburger",
+      "category": "Jack’s Deals",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Jr. Jumbo Jack",
+      "category": "Jack’s Deals",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Jr. Jumbo Jack Cheeseburger",
+      "category": "Jack’s Deals",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Jumbo Jack",
+      "category": "Jack’s Deals",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Jumbo Jack Cheeseburger",
+      "category": "Jack’s Deals",
+      "allergens": ["soy","eggs","milk","wheat","sesame"]
+    },
+    {
+      "name": "Tacos, Regular (2 Tacos)",
+      "category": "Jack’s Deals",
+      "allergens": ["soy","milk","wheat"]
+    },
+    {
+      "name": "Value French Fries",
+      "category": "Jack’s Deals",
+      "allergens": []
+    },
+    {
+      "name": "Jack Wrap - Classic Crispy",
+      "category": "Jack’s Deals",
+      "allergens": ["eggs","milk","wheat"]
+    },
+    {
+      "name": "Jack Wrap - Classic Grilled",
+      "category": "Jack’s Deals",
+      "allergens": ["eggs","milk","wheat"]
+    },
+    {
+      "name": "Jack Wrap - Spicy Crispy",
+      "category": "Jack’s Deals",
+      "allergens": ["eggs","milk","wheat"]
+    },
+    {
+      "name": "Jack Wrap - Spicy Grilled",
+      "category": "Jack’s Deals",
+      "allergens": ["eggs","milk","wheat"]
+    },
+    {
+      "name": "American Cheese",
+      "category": "Cheeses",
+      "allergens": ["soy","milk"]
+    },
+    {
+      "name": "Real Swiss Cheese",
+      "category": "Cheeses",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Swiss Style Cheese",
+      "category": "Cheeses",
+      "allergens": ["soy","milk"]
+    },
+    {
+      "name": "BBQ Sauce Dip Cup",
+      "category": "Dipping Sauces",
+      "allergens": []
+    },
+    {
+      "name": "Buttermilk House Dipping Sauce",
+      "category": "Dipping Sauces",
+      "allergens": ["eggs","milk"]
+    },
+    {
+      "name": "Creamy Avocado Lime Dipping Sauce",
+      "category": "Dipping Sauces",
+      "allergens": ["eggs"]
+    },
+    {
+      "name": "Franks Red Hot Buffalo Dipping Sauce",
+      "category": "Dipping Sauces",
+      "allergens": ["soy","sesame"]
+    },
+    {
+      "name": "Honey Garlic Sriracha Dip Cup",
+      "category": "Dipping Sauces",
+      "allergens": []
+    },
+    {
+      "name": "Honey Mustard Dip Cup",
+      "category": "Dipping Sauces",
+      "allergens": ["eggs"]
+    },
+    {
+      "name": "Jack’s Bacon Buttermilk Ranch Dip Cup",
+      "category": "Dipping Sauces",
+      "allergens": ["eggs","milk"]
+    },
+    {
+      "name": "Jack’s Good Good Dipping Cup",
+      "category": "Dipping Sauces",
+      "allergens": ["eggs","milk"]
+    },
+    {
+      "name": "Pancake Syrup",
+      "category": "Dipping Sauces",
+      "allergens": []
+    },
+    {
+      "name": "Sweet N’ Sour Dipping Sauce",
+      "category": "Dipping Sauces",
+      "allergens": []
+    },
+    {
+      "name": "Teriyaki Dipping Sauce",
+      "category": "Dipping Sauces",
+      "allergens": ["soy","wheat","sesame"]
+    },
+    {
+      "name": "Creamy Bacon Mayo (0.68 oz.)",
+      "category": "Sandwich Sauces",
+      "allergens": ["eggs"]
+    },
+    {
+      "name": "Creamy Ranch Sauce (0.61 oz.)",
+      "category": "Sandwich Sauces",
+      "allergens": ["eggs","milk"]
+    },
+    {
+      "name": "Garlic Herb Butter (0.50 oz.)",
+      "category": "Sandwich Sauces",
+      "allergens": ["soy","milk"]
+    },
+    {
+      "name": "Ketchup (0.57 oz.)",
+      "category": "Sandwich Sauces",
+      "allergens": []
+    },
+    {
+      "name": "Mayonnaise (0.25 oz.)",
+      "category": "Sandwich Sauces",
+      "allergens": ["eggs"]
+    },
+    {
+      "name": "Mustard (0.19 oz.)",
+      "category": "Sandwich Sauces",
+      "allergens": []
+    },
+    {
+      "name": "Tartar Sauce (0.78 oz.) (Seasonal)",
+      "category": "Sandwich Sauces",
+      "allergens": ["eggs"]
+    },
+    {
+      "name": "Fire Roasted Salsa (1 fl. oz.)",
+      "category": "Other",
+      "allergens": []
+    },
+    {
+      "name": "French’s Mustard (1 packet)",
+      "category": "Other",
+      "allergens": []
+    },
+    {
+      "name": "Grape Jelly (1 packet)",
+      "category": "Other",
+      "allergens": []
+    },
+    {
+      "name": "Grilled Onions (0.71 oz.)",
+      "category": "Other",
+      "allergens": ["soy","milk"]
+    },
+    {
+      "name": "Hot Taco Sauce (1 packet)",
+      "category": "Other",
+      "allergens": []
+    },
+    {
+      "name": "Ketchup (1 packet)",
+      "category": "Other",
+      "allergens": []
+    },
+    {
+      "name": "Kikkoman Soy Sauce (1 packet)",
+      "category": "Other",
+      "allergens": ["soy","wheat"]
+    },
+    {
+      "name": "Mayonnaise Packet (1 packet)",
+      "category": "Other",
+      "allergens": ["eggs"]
+    },
+    {
+      "name": "Gold-n-Sweet Spread (1 cup)",
+      "category": "Other",
+      "allergens": []
+    },
+    {
+      "name": "Secret Sauce (1 packet)",
+      "category": "Other",
+      "allergens": []
+    },
+    {
+      "name": "Strawberry Jam (1 packet)",
+      "category": "Other",
+      "allergens": []
+    },
+    {
+      "name": "Gold Peak Fresh Brewed Iced Tea - 16 fl. oz.",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "Gold Peak Fresh Brewed Iced Tea - 24 fl. oz.",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "Gold Peak Fresh Brewed Iced Tea - 32 fl. oz.",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "Gold Peak Fresh Brewed Iced Tea - 42 fl. oz.",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "Berry Purple Daze Red Bull Infusion with Red Bull Energy",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "Berry Purple Daze Red Bull Infusion with Red Bull Sugarfree",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "Strawberry Red Daze Red Bull Infusion with Red Bull Energy",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "Strawberry Red Daze Red Bull Infusion with Red Bull Sugarfree",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "Red Bull Energy Sugarfree Can",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "Red Bull Energy Can",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "High Mountain Arabica Coffee - Regular",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "High Mountain Arabica Coffee - Large",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "Iced Black Coffee - Regular",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "Iced Black Coffee - Large",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "Caramel Sweet Cream Iced Coffee - Regular",
+      "category": "Beverages",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Caramel Sweet Cream Iced Coffee - Large",
+      "category": "Beverages",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Mocha Sweet Cream Iced Coffee - Regular",
+      "category": "Beverages",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Mocha Sweet Cream Iced Coffee - Large",
+      "category": "Beverages",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Vanilla Sweet Cream Iced Coffee - Regular",
+      "category": "Beverages",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Vanilla Sweet Cream Iced Coffee - Large",
+      "category": "Beverages",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Sweet Cream Iced Coffee with Boba - Regular",
+      "category": "Beverages",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Milk Tea with Boba - Regular",
+      "category": "Beverages",
+      "allergens": ["milk"]
+    },
+    {
+      "name": "Minute Maid Apple Juice",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "Simply Orange Juice",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "Dasani Water Bottle",
+      "category": "Beverages",
+      "allergens": []
+    },
+    {
+      "name": "Milk",
+      "category": "Beverages",
+      "allergens": ["milk"]
     }
-
-
-
-
   ]
 }
