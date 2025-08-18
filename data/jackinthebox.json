@@ -309,7 +309,7 @@
     {
       "name": "Extreme Sausage Sandwich",
       "category": "Breakfast",
-      "allergens": ["soy","milk","wheat",]
+      "allergens": ["soy","milk","wheat"]
     },
     {
       "name": "Hash Brown",
