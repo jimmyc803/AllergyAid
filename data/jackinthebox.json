@@ -21,7 +21,7 @@
     {
       "name": "Chicken Teriyaki Bowl",
       "category": "Better for You",
-      "allergens": ["soy","wheat"]
+      "allergens": ["soy","wheat","sesame"]
     },
     {
       "name": "Garden Salad with Grilled Chicken",
@@ -37,7 +37,7 @@
     {
       "name": "Bacon Double Smashed Jack",
       "category": "Burgers & More",
-      "allergens": ["soy","eggs","milk","wheat","sesame"]
+      "allergens": ["soy","eggs","milk","wheat"]
     },
     {
       "name": "Bacon & Swiss Buttery Jack",
@@ -110,20 +110,16 @@
       "allergens": ["soy","eggs","milk","wheat","sesame"]
     },
     {
-      "name": "Chicken Fajita Pita made with Whole Grain (with salsa)",
+      "name": "Chicken Fajita Pita made with Whole Grain (with or without salsa)",
       "category": "Chicken & More",
       "allergens": ["soy","milk","wheat"]
     },
     {
-      "name": "Chicken Nuggets (4 pc.)",
+      "name": "Chicken Nuggets",
       "category": "Chicken & More",
       "allergens": ["soy","milk","wheat"]
     },
-    {
-      "name": "Chicken Nuggets (8 pc.)",
-      "category": "Chicken & More",
-      "allergens": ["soy","milk","wheat"]
-    },
+    
     {
       "name": "Chicken Sandwich",
       "category": "Chicken & More",
@@ -137,18 +133,14 @@
     {
       "name": "Chicken Teriyaki Bowl",
       "category": "Chicken & More",
-      "allergens": ["soy","wheat"]
+      "allergens": ["soy","wheat","sesame"]
     },
     {
-      "name": "Crispy Chicken Strips (3 pc.)",
+      "name": "Crispy Chicken Strips",
       "category": "Chicken & More",
       "allergens": ["milk","wheat"]
     },
-    {
-      "name": "Crispy Chicken Strips (5 pc.)",
-      "category": "Chicken & More",
-      "allergens": ["milk","wheat"]
-    },
+   
     {
       "name": "Fish Sandwich (seasonal)",
       "category": "Chicken & More",
