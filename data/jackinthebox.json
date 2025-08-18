@@ -209,7 +209,7 @@
     {
       "name": "Tri-Colored Tortilla Strips",
       "category": "Salads",
-      "allergens": ["wheat"]
+      "allergens": []
     },
     {
       "name": "Wheat Caesar Croutons",
@@ -222,65 +222,39 @@
       "allergens": ["eggs","milk"]
     },
     {
-      "name": "Egg Roll (1 pc.)",
+      "name": "Egg Roll",
       "category": "Snacks & Sides",
       "allergens": ["soy","eggs","fish","wheat"]
     },
+  
     {
-      "name": "Egg Roll (3 pc.)",
-      "category": "Snacks & Sides",
-      "allergens": ["soy","eggs","fish","wheat"]
-    },
-    {
-      "name": "French Fries (Small)",
+      "name": "French Fries",
       "category": "Snacks & Sides",
       "allergens": []
     },
-    {
-      "name": "French Fries (Medium)",
-      "category": "Snacks & Sides",
-      "allergens": []
-    },
-    {
-      "name": "French Fries (Large)",
-      "category": "Snacks & Sides",
-      "allergens": []
-    },
+  
     {
       "name": "Panko Onion Rings",
       "category": "Snacks & Sides",
       "allergens": ["soy","milk","wheat"]
     },
     {
-      "name": "Seasoned Curly Fries (Small)",
+      "name": "Seasoned Curly Fries",
       "category": "Snacks & Sides",
       "allergens": ["wheat"]
     },
-    {
-      "name": "Seasoned Curly Fries (Medium)",
-      "category": "Snacks & Sides",
-      "allergens": ["wheat"]
-    },
-    {
-      "name": "Seasoned Curly Fries (Large)",
-      "category": "Snacks & Sides",
-      "allergens": ["wheat"]
-    },
+    
     {
       "name": "Side Salad",
       "category": "Snacks & Sides",
       "allergens": ["milk"]
     },
     {
-      "name": "Stuffed Jalapeños (3 pc.)",
+      "name": "Stuffed Jalapeños",
       "category": "Snacks & Sides",
       "allergens": ["milk","wheat"]
     },
-    {
-      "name": "Stuffed Jalapeños (7 pc.)",
-      "category": "Snacks & Sides",
-      "allergens": ["milk","wheat"]
-    },
+   
     {
       "name": "Taco, Regular (1 Taco)",
       "category": "Snacks & Sides",
@@ -312,15 +286,11 @@
       "allergens": ["soy","eggs","milk","wheat"]
     },
     {
-      "name": "Classic French Toast Sticks (3pc)",
+      "name": "Classic French Toast Sticks",
       "category": "Breakfast",
       "allergens": ["soy","wheat"]
     },
-    {
-      "name": "Classic French Toast Sticks (6pc)",
-      "category": "Breakfast",
-      "allergens": ["soy","wheat"]
-    },
+   
     {
       "name": "Classic French Toast Sticks Platter with Bacon",
       "category": "Breakfast",
@@ -339,7 +309,7 @@
     {
       "name": "Extreme Sausage Sandwich",
       "category": "Breakfast",
-      "allergens": ["soy","milk","wheat","sesame"]
+      "allergens": ["soy","milk","wheat",]
     },
     {
       "name": "Hash Brown",
@@ -364,7 +334,7 @@
     {
       "name": "Mini Pancakes (8 pc.)",
       "category": "Breakfast",
-      "allergens": ["milk","wheat"]
+      "allergens": ["soy","eggs","milk","wheat"]
     },
     {
       "name": "Sausage Breakfast Jack",
@@ -449,7 +419,7 @@
     {
       "name": "Mini Churros (5 pc.)",
       "category": "Desserts",
-      "allergens": ["soy","milk","wheat"]
+      "allergens": ["soy","eggs","milk","wheat"]
     },
     {
       "name": "New York Style Cheesecake",
