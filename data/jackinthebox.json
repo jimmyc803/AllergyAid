@@ -413,62 +413,46 @@
     },
     {
       "name": "Chocolate Overload Cake",
-      "category": "Desserts",
+      "category": "Shakes and Desserts",
       "allergens": ["soy","eggs","milk","wheat"]
     },
     {
       "name": "Mini Churros (5 pc.)",
-      "category": "Desserts",
+      "category": "Shakes and Desserts",
       "allergens": ["soy","eggs","milk","wheat"]
     },
     {
       "name": "New York Style Cheesecake",
-      "category": "Desserts",
+      "category": "Shakes and Desserts",
       "allergens": ["soy","eggs","milk","wheat"]
     },
     {
-      "name": "Shake, Chocolate with Whipped Topping - 16 fl. oz.",
-      "category": "Desserts",
+      "name": "Shake, Chocolate with Whipped Topping",
+      "category": "Shakes and Desserts",
       "allergens": ["milk"]
     },
+
     {
-      "name": "Shake, Chocolate with Whipped Topping - 24 fl. oz.",
-      "category": "Desserts",
-      "allergens": ["milk"]
-    },
-    {
-      "name": "Shake, OREO Cookie with Whipped Topping 16 fl. oz.",
-      "category": "Desserts",
+      "name": "Shake, OREO Cookie with Whipped Topping",
+      "category": "Shakes and Desserts",
       "allergens": ["soy","milk","wheat"]
     },
+
     {
-      "name": "Shake, OREO Cookie with Whipped Topping - 24 fl. oz.",
-      "category": "Desserts",
-      "allergens": ["soy","milk","wheat"]
-    },
-    {
-      "name": "Shake, Strawberry with Whipped Topping - 16 fl. oz.",
-      "category": "Desserts",
+      "name": "Shake, Strawberry with Whipped Topping",
+      "category": "Shakes and Desserts",
       "allergens": ["milk"]
     },
+
     {
-      "name": "Shake, Strawberry with Whipped Topping - 24 fl. oz.",
-      "category": "Desserts",
+      "name": "Shake, Vanilla with Whipped Topping",
+      "category": "Shakes and Desserts",
       "allergens": ["milk"]
     },
+
     {
-      "name": "Shake, Vanilla with Whipped Topping - 16 fl. oz.",
-      "category": "Desserts",
-      "allergens": ["milk"]
-    },
-    {
-      "name": "Shake, Vanilla with Whipped Topping - 24 fl. oz.",
-      "category": "Desserts",
-      "allergens": ["milk"]
-    },
-    {
-      "name": "Shake, Vanilla with Boba & Whipped Topping - 16 fl. oz.",
-      "category": "Desserts",
+      "name": "Shake, Vanilla with Boba & Whipped Topping",
+      "category": "Shakes and Desserts",
       "allergens": ["milk"]
     },
     {
@@ -522,15 +506,11 @@
       "allergens": ["wheat"]
     },
     {
-      "name": "Chicken Nuggets (4 pc.)",
+      "name": "Chicken Nuggets",
       "category": "Jack’s Deals",
       "allergens": ["soy","milk","wheat"]
     },
-    {
-      "name": "Chicken Nuggets (8 pc.)",
-      "category": "Jack’s Deals",
-      "allergens": ["soy","milk","wheat"]
-    },
+   
     {
       "name": "Chicken Sandwich",
       "category": "Jack’s Deals",
@@ -634,12 +614,12 @@
     {
       "name": "Franks Red Hot Buffalo Dipping Sauce",
       "category": "Dipping Sauces",
-      "allergens": ["soy","sesame"]
+      "allergens": []
     },
     {
       "name": "Honey Garlic Sriracha Dip Cup",
       "category": "Dipping Sauces",
-      "allergens": []
+      "allergens": ["soy","sesame"]
     },
     {
       "name": "Honey Mustard Dip Cup",
@@ -647,7 +627,7 @@
       "allergens": ["eggs"]
     },
     {
-      "name": "Jack’s Bacon Buttermilk Ranch Dip Cup",
+      "name": "Jack’s Bacony Buttermilk Ranch Dip Cup",
       "category": "Dipping Sauces",
       "allergens": ["eggs","milk"]
     },
@@ -672,115 +652,101 @@
       "allergens": ["soy","wheat","sesame"]
     },
     {
-      "name": "Creamy Bacon Mayo (0.68 oz.)",
+      "name": "Creamy Bacon Mayo",
       "category": "Sandwich Sauces",
       "allergens": ["eggs"]
     },
     {
-      "name": "Creamy Ranch Sauce (0.61 oz.)",
+      "name": "Creamy Ranch Sauce",
       "category": "Sandwich Sauces",
       "allergens": ["eggs","milk"]
     },
     {
-      "name": "Garlic Herb Butter (0.50 oz.)",
+      "name": "Garlic Herb Butter",
       "category": "Sandwich Sauces",
       "allergens": ["soy","milk"]
     },
     {
-      "name": "Ketchup (0.57 oz.)",
+      "name": "Ketchup",
       "category": "Sandwich Sauces",
       "allergens": []
     },
     {
-      "name": "Mayonnaise (0.25 oz.)",
-      "category": "Sandwich Sauces",
-      "allergens": ["eggs"]
-    },
-    {
-      "name": "Mustard (0.19 oz.)",
-      "category": "Sandwich Sauces",
-      "allergens": []
-    },
-    {
-      "name": "Tartar Sauce (0.78 oz.) (Seasonal)",
+      "name": "Mayonnaise",
       "category": "Sandwich Sauces",
       "allergens": ["eggs"]
     },
     {
-      "name": "Fire Roasted Salsa (1 fl. oz.)",
+      "name": "Mustard",
+      "category": "Sandwich Sauces",
+      "allergens": []
+    },
+    {
+      "name": "Tartar Sauce",
+      "category": "Sandwich Sauces",
+      "allergens": ["eggs"]
+    },
+    {
+      "name": "Fire Roasted Salsa",
       "category": "Other",
       "allergens": []
     },
     {
-      "name": "French’s Mustard (1 packet)",
+      "name": "French’s Mustard",
       "category": "Other",
       "allergens": []
     },
     {
-      "name": "Grape Jelly (1 packet)",
+      "name": "Grape Jelly",
       "category": "Other",
       "allergens": []
     },
     {
-      "name": "Grilled Onions (0.71 oz.)",
+      "name": "Grilled Onions",
       "category": "Other",
       "allergens": ["soy","milk"]
     },
     {
-      "name": "Hot Taco Sauce (1 packet)",
+      "name": "Hot Taco Sauce",
       "category": "Other",
       "allergens": []
     },
     {
-      "name": "Ketchup (1 packet)",
+      "name": "Ketchup",
       "category": "Other",
       "allergens": []
     },
     {
-      "name": "Kikkoman Soy Sauce (1 packet)",
+      "name": "Kikkoman Soy Sauce",
       "category": "Other",
       "allergens": ["soy","wheat"]
     },
     {
-      "name": "Mayonnaise Packet (1 packet)",
+      "name": "Mayonnaise Packet",
       "category": "Other",
       "allergens": ["eggs"]
     },
     {
-      "name": "Gold-n-Sweet Spread (1 cup)",
+      "name": "Gold-n-Sweet Spread",
       "category": "Other",
       "allergens": []
     },
     {
-      "name": "Secret Sauce (1 packet)",
+      "name": "Secret Sauce",
+      "category": "Other",
+      "allergens": ["eggs"]
+    },
+    {
+      "name": "Strawberry Jam",
       "category": "Other",
       "allergens": []
     },
     {
-      "name": "Strawberry Jam (1 packet)",
-      "category": "Other",
-      "allergens": []
-    },
-    {
-      "name": "Gold Peak Fresh Brewed Iced Tea - 16 fl. oz.",
+      "name": "Gold Peak Fresh Brewed Iced Tea",
       "category": "Beverages",
       "allergens": []
     },
-    {
-      "name": "Gold Peak Fresh Brewed Iced Tea - 24 fl. oz.",
-      "category": "Beverages",
-      "allergens": []
-    },
-    {
-      "name": "Gold Peak Fresh Brewed Iced Tea - 32 fl. oz.",
-      "category": "Beverages",
-      "allergens": []
-    },
-    {
-      "name": "Gold Peak Fresh Brewed Iced Tea - 42 fl. oz.",
-      "category": "Beverages",
-      "allergens": []
-    },
+    
     {
       "name": "Berry Purple Daze Red Bull Infusion with Red Bull Energy",
       "category": "Beverages",
@@ -812,62 +778,42 @@
       "allergens": []
     },
     {
-      "name": "High Mountain Arabica Coffee - Regular",
+      "name": "High Mountain Arabica Coffee",
       "category": "Beverages",
       "allergens": []
     },
+ 
     {
-      "name": "High Mountain Arabica Coffee - Large",
+      "name": "Iced Black Coffee",
       "category": "Beverages",
       "allergens": []
     },
+   
     {
-      "name": "Iced Black Coffee - Regular",
+      "name": "Caramel Sweet Cream Iced Coffee",
       "category": "Beverages",
-      "allergens": []
+      "allergens": ["milk"]
     },
+  
     {
-      "name": "Iced Black Coffee - Large",
+      "name": "Mocha Sweet Cream Iced Coffee",
       "category": "Beverages",
-      "allergens": []
+      "allergens": ["milk"]
     },
+ 
     {
-      "name": "Caramel Sweet Cream Iced Coffee - Regular",
+      "name": "Vanilla Sweet Cream Iced Coffee",
+      "category": "Beverages",
+      "allergens": ["milk"]
+    },
+  
+    {
+      "name": "Sweet Cream Iced Coffee with Boba",
       "category": "Beverages",
       "allergens": ["milk"]
     },
     {
-      "name": "Caramel Sweet Cream Iced Coffee - Large",
-      "category": "Beverages",
-      "allergens": ["milk"]
-    },
-    {
-      "name": "Mocha Sweet Cream Iced Coffee - Regular",
-      "category": "Beverages",
-      "allergens": ["milk"]
-    },
-    {
-      "name": "Mocha Sweet Cream Iced Coffee - Large",
-      "category": "Beverages",
-      "allergens": ["milk"]
-    },
-    {
-      "name": "Vanilla Sweet Cream Iced Coffee - Regular",
-      "category": "Beverages",
-      "allergens": ["milk"]
-    },
-    {
-      "name": "Vanilla Sweet Cream Iced Coffee - Large",
-      "category": "Beverages",
-      "allergens": ["milk"]
-    },
-    {
-      "name": "Sweet Cream Iced Coffee with Boba - Regular",
-      "category": "Beverages",
-      "allergens": ["milk"]
-    },
-    {
-      "name": "Milk Tea with Boba - Regular",
+      "name": "Milk Tea with Boba",
       "category": "Beverages",
       "allergens": ["milk"]
     },
