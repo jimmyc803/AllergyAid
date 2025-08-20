@@ -1,0 +1,49 @@
+{
+  "name": "In-n-Out",
+  "website": "https://www.in-n-out.com/menu/nutrition-info",
+  "customAllergens": [
+    {"id": "wheat", "displayName": "Wheat (Gluten)"},
+    {"id": "sesame", "displayName": "Sesame"},
+    {"id": "milk", "displayName": "Milk"},
+    {"id": "soy", "displayName": "Soy"},
+    {"id": "egg", "displayName": "Egg"}
+  ],
+  "items": [
+    {
+      "name": "Double-Double w/ Onion",
+      "category": "Burgers",
+      "allergens": ["wheat", "sesame","milk","soy","egg"] 
+    },
+    {
+      "name": "Cheeseburger w/ Onion",
+      "category": "Burgers",
+      "allergens": ["wheat", "sesame","milk","soy","egg"] 
+    },
+    {
+      "name": "Hamburger w/ Onion",
+      "category": "Burgers",
+      "allergens": ["wheat", "sesame","egg", "soy"] 
+    },
+    {
+      "name": "French Fries",
+      "category": "Sides",
+      "allergens": [] 
+    },
+    {
+      "name": "Chocolate Shake",
+      "category": "Shakes",
+      "allergens": ["milk","soy"] 
+    },
+    {
+      "name": "Vanilla Shake",
+      "category": "Shakes",
+      "allergens": ["milk"] 
+    },
+    {
+      "name": "Strawberry Shake",
+      "category": "Shakes",
+      "allergens": ["milk"] 
+    }
+
+  ]
+}
