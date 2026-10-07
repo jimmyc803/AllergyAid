@@ -1020,7 +1020,6 @@ legend {
   }
   .hero-photo {
     height: 330px;
-    border-top-left-radius: 95px;
   }
   .intro-strip > .container {
     display: grid;

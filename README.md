@@ -1,8 +1,10 @@
 # Allergy Aid
 
-**Live site:** https://getallergyaid.com
+**Live site:** https://allergy-aid.vercel.app/restaurants.html
 
 Allergy Aid is a static, mobile-friendly web app that helps people with food allergies find menu items to consider at popular restaurants. Pick a restaurant, choose the allergens you need to avoid, and get that restaurant's menu filtered down to items whose stored allergen data doesn't list any of them.
+
+![Allergy Aid home page](images/screenshots/home.png)
 
 > ⚠️ **Not medical advice.** Results come from the allergen data stored in this repo. They do not guarantee that food is allergen-free and do not account for cross-contact or recipe changes. Always confirm with the restaurant before ordering.
 
@@ -17,6 +19,16 @@ Your selections are saved in session storage for the current tab, so you can go 
 ### Supported restaurants
 
 Bojangles · Burger King · Chick-fil-A · Chipotle · Halal Guys · In-N-Out · Jack in the Box · Long John Silver's · Panda Express · Popeyes · Raising Cane's
+
+## Screenshots
+
+| Find a restaurant | Choose allergens |
+| --- | --- |
+| ![Restaurant list](images/screenshots/restaurants.png) | ![Allergen picker](images/screenshots/allergens.png) |
+
+| Safe menu | Mobile |
+| --- | --- |
+| ![Filtered safe menu](images/screenshots/safe-menu.png) | <img src="images/screenshots/mobile.png" alt="Home page on mobile" width="260"> |
 
 ## Features
 
@@ -53,44 +65,10 @@ Use a web server rather than opening the HTML files directly, because menus are 
 ├── js/                     # Search, allergen selection, menu rendering, install support
 ├── data/                   # One JSON allergen guide per restaurant (+ template.json)
 ├── images/                 # Logos and app icons
-├── manifest.json, sw.js    # PWA install and offline support
-└── scripts/check-browser.cjs  # Playwright browser checks
+└── manifest.json, sw.js    # PWA install and offline support
 ```
 
 Paths are relative, so the site works at a domain root or under a subdirectory such as `/AllergyAid/`.
-
-## Adding a restaurant
-
-1. Copy `data/template.json` to `data/<restaurant>.json`.
-2. Fill in the restaurant name, its website, the allergens it tracks, and every menu item:
-
-   ```json
-   {
-     "name": "Restaurant Name",
-     "website": "https://example.com/allergens",
-     "customAllergens": [
-       { "id": "milk", "displayName": "Milk" },
-       { "id": "peanut", "displayName": "Peanut" }
-     ],
-     "items": [
-       { "name": "Menu Item", "category": "Entrées", "allergens": ["milk"] }
-     ]
-   }
-   ```
-
-   Allergen IDs in `items` must match the `customAllergens` IDs exactly. Case is ignored.
-3. Add a `restaurant-card` to `restaurants.html` (copy an existing card). Its "Explore menu" link should point to `allergen-picker.html?name=<restaurant>`, using the JSON filename without `.json`.
-4. Verify the data against the restaurant's official allergen information before publishing.
-
-## Browser checks
-
-With Playwright installed and the local server running:
-
-```sh
-PLAYWRIGHT_MODULE=/absolute/path/to/node_modules/playwright node scripts/check-browser.cjs
-```
-
-This covers restaurant search, the filtering flow for all 11 restaurants, keyboard category controls, selection restoration, error states, the contact form, local assets, and mobile overflow. Screenshots are saved to a temporary directory.
 
 ## Data disclaimer
 
@@ -98,4 +76,4 @@ The restaurant allergen data in `data/` is not automatically updated. Restaurant
 
 ## Contact
 
-Questions, corrections, or partnership ideas? Use the [contact page](https://getallergyaid.com/contact) or email allergyaidteam@gmail.com.
+Questions, corrections, or partnership ideas? Use the [contact page](https://allergy-aid.vercel.app/contact.html) or email allergyaidteam@gmail.com.
