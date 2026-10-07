@@ -1,126 +1,365 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNL67MWF9Q"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Find your restaurant — Allergy Aid</title>
+    <meta
+      name="description"
+      content="Explore restaurant menus and filter items by your selected allergens with Allergy Aid."
+    />
+    <meta name="theme-color" content="#f8f9f3" />
+    <link rel="icon" href="images/allergyaidicon.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/site.css" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YNL67MWF9Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-17XLE1VGH7');
-  </script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Restaurants - Allergy Aid</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  
-  <link rel="stylesheet" href="./css/restaurants.css" />
-  <link rel="stylesheet" href="./css/navbar.css">
-
-  <link rel="icon" href="images/allergyaidicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-</head>
-<body>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="index.html"><h1>Allergy Aid</h1></a>
-      <nav>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="restaurants.html" class="active">Restaurants</a>
-          <a href="partners.html">Partners</a>
-          <a href="contact.html">Contact</a>
+      gtag("config", "G-17XLE1VGH7");
+    </script>
+    <script src="js/site.js" defer></script>
+    <script src="js/restaurants.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Allergy Aid home"
+          ><span class="brand-mark" aria-hidden="true">a<span>+</span></span
+          ><span
+            >allergy<span class="brand-light">aid</span
+            ><span class="brand-dot">.</span></span
+          ></a
+        >
+        <nav aria-label="Main navigation">
+          <a href="index.html">Home</a
+          ><a href="restaurants.html" aria-current="page">Restaurants</a
+          ><a href="partners.html">Partners</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+        <a class="header-cta" href="restaurants.html"
+          >Find your menu</a
+        >
+      </div>
+    </header>
+    <main id="main" class="container directory-main">
+      <div class="page-intro">
+        <h1>Find a restaurant</h1>
+        <p>
+          Choose a restaurant to filter its menu by allergen.
+        </p>
+      </div>
+      <div class="directory-toolbar">
+        <div class="search-field">
+          <label for="restaurantSearch" class="sr-only"
+            >Search restaurants</label
+          ><span aria-hidden="true">⌕</span
+          ><input
+            type="search"
+            id="restaurantSearch"
+            placeholder="Search restaurants…"
+            autocomplete="off"
+          />
         </div>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container main-content">
-    <h1 class="page-title">Restaurants</h1>
-    
-    <section class="partners-section">
-      <div class="partner-list">
-        <!-- Chick-fil-A -->
-        <div class="partner-card">
-          <h2>Chick-fil-A</h2>
-          <a href="allergen-picker.html?name=chickfila" target="_self">View Menu</a>
-          <a href="https://www.chick-fil-a.com/nutrition-allergens" target="blank">Website</a>
+        <p id="restaurantCount" role="status">11 restaurant guides</p>
+      </div>
+      <div class="restaurant-grid" id="restaurantGrid">
+        <article class="restaurant-card" data-name="Bojangles">
+          <div class="restaurant-top">
+            <span class="card-label">MENU GUIDE</span>
+          </div>
+          <h3>Bojangles</h3>
+          <p>Chicken & biscuits</p>
+          <div class="restaurant-links">
+            <a
+              class="menu-link"
+              href="allergen-picker.html?name=bojangles"
+              aria-label="View Bojangles menu"
+              >View menu</a
+            ><a
+              class="source-link"
+              href="https://www.bojangles.com/menu/nutrition/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Bojangles allergen source"
+              >Allergen info</a
+            >
+          </div>
+        </article>
+        <article class="restaurant-card" data-name="Burger King">
+          <div class="restaurant-top">
+            <span class="card-label">MENU GUIDE</span>
+          </div>
+          <h3>Burger King</h3>
+          <p>Burgers & classics</p>
+          <div class="restaurant-links">
+            <a
+              class="menu-link"
+              href="allergen-picker.html?name=burgerking"
+              aria-label="View Burger King menu"
+              >View menu</a
+            ><a
+              class="source-link"
+              href="https://bk-use1-prod.sites.rbictg.com/nutrition/allergens.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Burger King allergen source"
+              >Allergen info</a
+            >
+          </div>
+        </article>
+        <article class="restaurant-card" data-name="Chick-fil-A">
+          <div class="restaurant-top">
+            <span class="card-label">MENU GUIDE</span>
+          </div>
+          <h3>Chick-fil-A</h3>
+          <p>Chicken & sandwiches</p>
+          <div class="restaurant-links">
+            <a
+              class="menu-link"
+              href="allergen-picker.html?name=chickfila"
+              aria-label="View Chick-fil-A menu"
+              >View menu</a
+            ><a
+              class="source-link"
+              href="https://www.chick-fil-a.com/nutrition-allergens"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chick-fil-A allergen source"
+              >Allergen info</a
+            >
+          </div>
+        </article>
+        <article class="restaurant-card" data-name="Chipotle">
+          <div class="restaurant-top">
+            <span class="card-label">MENU GUIDE</span>
+          </div>
+          <h3>Chipotle</h3>
+          <p>Burritos & bowls</p>
+          <div class="restaurant-links">
+            <a
+              class="menu-link"
+              href="allergen-picker.html?name=chipotle"
+              aria-label="View Chipotle menu"
+              >View menu</a
+            ><a
+              class="source-link"
+              href="https://www.chipotle.com/allergens"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chipotle allergen source"
+              >Allergen info</a
+            >
+          </div>
+        </article>
+        <article class="restaurant-card" data-name="Halal Guys">
+          <div class="restaurant-top">
+            <span class="card-label">MENU GUIDE</span>
+          </div>
+          <h3>Halal Guys</h3>
+          <p>Platters & sandwiches</p>
+          <div class="restaurant-links">
+            <a
+              class="menu-link"
+              href="allergen-picker.html?name=halalguys"
+              aria-label="View Halal Guys menu"
+              >View menu</a
+            ><a
+              class="source-link"
+              href="https://thehalalguys.com/nutrition-allergens/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Halal Guys allergen source"
+              >Allergen info</a
+            >
+          </div>
+        </article>
+        <article class="restaurant-card" data-name="In-n-Out">
+          <div class="restaurant-top">
+            <span class="card-label">MENU GUIDE</span>
+          </div>
+          <h3>In-n-Out</h3>
+          <p>Burgers & fries</p>
+          <div class="restaurant-links">
+            <a
+              class="menu-link"
+              href="allergen-picker.html?name=innout"
+              aria-label="View In-n-Out menu"
+              >View menu</a
+            ><a
+              class="source-link"
+              href="https://www.in-n-out.com/menu/nutrition-info"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="In-n-Out allergen source"
+              >Allergen info</a
+            >
+          </div>
+        </article>
+        <article class="restaurant-card" data-name="Jack in the Box">
+          <div class="restaurant-top">
+            <span class="card-label">MENU GUIDE</span>
+          </div>
+          <h3>Jack in the Box</h3>
+          <p>Burgers & more</p>
+          <div class="restaurant-links">
+            <a
+              class="menu-link"
+              href="allergen-picker.html?name=jackinthebox"
+              aria-label="View Jack in the Box menu"
+              >View menu</a
+            ><a
+              class="source-link"
+              href="https://assets.ctfassets.net/5hs630wuugof/5YPXJN6p8U0Esf31agJxUK/26a003f0ab50ca9eb38d0e6a3f7f2bf5/Nutrition_Facts_2025.PDF"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Jack in the Box allergen source"
+              >Allergen info</a
+            >
+          </div>
+        </article>
+        <article class="restaurant-card" data-name="Long John Silver&#x27;s">
+          <div class="restaurant-top">
+            <span class="card-label">MENU GUIDE</span>
+          </div>
+          <h3>Long John Silver&#x27;s</h3>
+          <p>Seafood & sides</p>
+          <div class="restaurant-links">
+            <a
+              class="menu-link"
+              href="allergen-picker.html?name=longjohnsilvers"
+              aria-label="View Long John Silver&#x27;s menu"
+              >View menu</a
+            ><a
+              class="source-link"
+              href="https://www.ljsilversmenu.com/allergen-menu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Long John Silver&#x27;s allergen source"
+              >Allergen info</a
+            >
+          </div>
+        </article>
+        <article class="restaurant-card" data-name="Panda Express">
+          <div class="restaurant-top">
+            <span class="card-label">MENU GUIDE</span>
+          </div>
+          <h3>Panda Express</h3>
+          <p>Chinese-inspired favorites</p>
+          <div class="restaurant-links">
+            <a
+              class="menu-link"
+              href="allergen-picker.html?name=pandaexpress"
+              aria-label="View Panda Express menu"
+              >View menu</a
+            ><a
+              class="source-link"
+              href="http://pandaexpress.com/nutritioninformation"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Panda Express allergen source"
+              >Allergen info</a
+            >
+          </div>
+        </article>
+        <article class="restaurant-card" data-name="Popeyes">
+          <div class="restaurant-top">
+            <span class="card-label">MENU GUIDE</span>
+          </div>
+          <h3>Popeyes</h3>
+          <p>Chicken & comfort food</p>
+          <div class="restaurant-links">
+            <a
+              class="menu-link"
+              href="allergen-picker.html?name=popeyes"
+              aria-label="View Popeyes menu"
+              >View menu</a
+            ><a
+              class="source-link"
+              href="https://plk-use1-prod.sites.rbictg.com/nutrition/Popeyes_US_Allergen.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Popeyes allergen source"
+              >Allergen info</a
+            >
+          </div>
+        </article>
+        <article class="restaurant-card" data-name="Raising Cane&#x27;s">
+          <div class="restaurant-top">
+            <span class="card-label">MENU GUIDE</span>
+          </div>
+          <h3>Raising Cane&#x27;s</h3>
+          <p>Chicken & sides</p>
+          <div class="restaurant-links">
+            <a
+              class="menu-link"
+              href="allergen-picker.html?name=raisingcanes"
+              aria-label="View Raising Cane&#x27;s menu"
+              >View menu</a
+            ><a
+              class="source-link"
+              href="https://www.raisingcanes.com/allergens/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Raising Cane&#x27;s allergen source"
+              >Allergen info</a
+            >
+          </div>
+        </article>
+      </div>
+      <div class="empty-state" id="noResults" hidden>
+        <span aria-hidden="true">⌕</span>
+        <h2>No restaurants found</h2>
+        <p id="noResultsText"></p>
+        <button class="button secondary" id="clearSearch">Clear search</button>
+      </div>
+      <div class="suggestion">
+        Your favorite deserves a place here.
+        <a href="contact.html">Suggest a restaurant</a>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <a class="brand" href="index.html" aria-label="Allergy Aid home"
+              ><span class="brand-mark" aria-hidden="true">a<span>+</span></span
+              ><span
+                >allergy<span class="brand-light">aid</span
+                ><span class="brand-dot">.</span></span
+              ></a
+            >
+            <p>Allergy-friendly menu guides.</p>
+          </div>
+          <div class="footer-links">
+            <a href="restaurants.html">Restaurants</a
+            ><a href="contact.html">Get in touch</a
+            ><a
+              href="https://www.instagram.com/allergy_aid"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram ↗</a
+            ><a
+              href="https://www.tiktok.com/@allergy.aid"
+              target="_blank"
+              rel="noopener noreferrer"
+              >TikTok ↗</a
+            >
+          </div>
         </div>
-
-        <div class="partner-card">
-          <h2>Raising Cane's</h2>
-          <a href="allergen-picker.html?name=raisingcanes" target="_self">View Menu</a>
-          <a href="https://www.raisingcanes.com/allergens/" target="_blank">Website</a>
-        </div>
-
-        <div class="partner-card">
-          <h2>Halal Guys</h2>
-            <a href="allergen-picker.html?name=halalguys" class="menu-link">View Menu</a>
-            <a href="https://thehalalguys.com/nutrition-allergens/" target="_blank">Website</a>
-        </div>
-
-        <div class="partner-card">
-          <h2>Chipotle</h2>
-            <a href="allergen-picker.html?name=chipotle" class="menu-link">View Menu</a>
-            <a href="https://www.chipotle.com/allergens" target="_blank">Website</a>
-        </div>
-
-        <div class="partner-card">
-          <h2>Panda Express</h2>
-            <a href="allergen-picker.html?name=pandaexpress" class="menu-link">View Menu</a>
-            <a href="http://pandaexpress.com/nutritioninformation" target="_blank">Website</a>
-        </div>
-
-        <div class="partner-card">
-          <h2>Bojangles</h2>
-            <a href="allergen-picker.html?name=bojangles" class="menu-link">View Menu</a>
-            <a href="https://www.bojangles.com/menu/nutrition/" target="_blank">Website</a>
-        </div>
-          
-        <div class="partner-card">
-          <h2>Burger King</h2>
-            <a href="allergen-picker.html?name=burgerking" class="menu-link">View Menu</a>
-            <a href="https://bk-use1-prod.sites.rbictg.com/nutrition/allergens.pdf" target="_blank">Website</a>
-        </div>
-  
-        <div class="partner-card">
-          <h2>Long John Silver's</h2>
-            <a href="allergen-picker.html?name=longjohnsilvers" class="menu-link">View Menu</a>
-            <a href="https://www.ljsilversmenu.com/allergen-menu/" target="_blank">Website</a>
-        </div>
-
-        <div class="partner-card">
-          <h2>Popeyes</h2>
-            <a href="allergen-picker.html?name=popeyes" class="menu-link">View Menu</a>
-            <a href="https://plk-use1-prod.sites.rbictg.com/nutrition/Popeyes_US_Allergen.pdf" target="_blank">Website</a>
-        </div>
-
-        <div class="partner-card">
-          <h2>Jack in the Box</h2>
-            <a href="allergen-picker.html?name=jackinthebox" class="menu-link">View Menu</a>
-            <a href="https://assets.ctfassets.net/5hs630wuugof/5YPXJN6p8U0Esf31agJxUK/26a003f0ab50ca9eb38d0e6a3f7f2bf5/Nutrition_Facts_2025.PDF" target="_blank">Website</a>
-        </div>
-
-        <div class="partner-card">
-          <h2>In-n-Out</h2>
-            <a href="allergen-picker.html?name=innout" class="menu-link">View Menu</a>
-            <a href="https://www.in-n-out.com/menu/nutrition-info" target="_blank">Website</a>
-        </div>
-
-        <div class="partner-card placeholder">
-          <h2>More Coming Soon</h2>
-          <a href="contact.html">Suggest a Restaurant</a>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Allergy Aid</span
+          ><button id="installBtn" hidden>Add to home screen</button>
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 Allergy Aid. All rights reserved.
-  </footer>
-
-  <script src="./js/restaurants.js"></script>
-</body>
+    </footer>
+  </body>
 </html>

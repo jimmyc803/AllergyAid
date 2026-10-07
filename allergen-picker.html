@@ -1,50 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNL67MWF9Q"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-17XLE1VGH7');
-  </script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Select Allergens</title>
-  <link rel="stylesheet" href="./css/allergen-picker.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="icon" href="images/allergyaidicon.png" type="image/x-icon">
-</head>
-<body>
-  <header>
-    <div class="header-content">
-      <a href="restaurants.html" class="back-button"><i class="fas fa-arrow-left"></i></a>
-      <div class="header-center">
-        <img id="restaurantLogo" src="" alt="Restaurant Logo">
-        <h1 id="restaurantName">Loading...</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Choose your allergens — Allergy Aid</title>
+    <meta
+      name="description"
+      content="Explore restaurant menus and filter items by your selected allergens with Allergy Aid."
+    />
+    <meta name="theme-color" content="#f8f9f3" />
+    <link rel="icon" href="images/allergyaidicon.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/site.css" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YNL67MWF9Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-17XLE1VGH7");
+    </script>
+    <script src="js/site.js" defer></script>
+    <script src="js/allergen-picker.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Allergy Aid home"
+          ><span class="brand-mark" aria-hidden="true">a<span>+</span></span
+          ><span
+            >allergy<span class="brand-light">aid</span
+            ><span class="brand-dot">.</span></span
+          ></a
+        >
+        <nav aria-label="Main navigation">
+          <a href="index.html">Home</a
+          ><a href="restaurants.html" aria-current="page">Restaurants</a
+          ><a href="partners.html">Partners</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+        <a class="header-cta" href="restaurants.html"
+          >Find your menu</a
+        >
       </div>
-    </div>
-  </header>
-
-  <section class="allergen-section">
-    <div class="allergen-container">
-      <h2>Select Your Allergens</h2>
-      <form id="allergenForm">
-        <div class="filter-group">
-          
+    </header>
+    <main id="main" class="container flow-main">
+      <a href="restaurants.html" class="back-link">← All restaurants</a>
+      <ol class="progress" aria-label="Menu steps">
+        <li>1 <span>Restaurant</span></li>
+        <li aria-current="step">2 <span>Your allergens</span></li>
+        <li>3 <span>Your menu</span></li>
+      </ol>
+      <div class="page-intro">
+        <h1 id="restaurantName">Loading…</h1>
+      </div>
+      <section class="selection-panel" aria-label="Allergen selection">
+        <form id="allergenForm">
+          <fieldset>
+            <legend>Select your allergens</legend>
+            <div class="filter-group" id="allergenOptions"></div>
+          </fieldset>
+          <div class="selection-footer">
+            <p id="selectionCount" role="status">Loading allergen options…</p>
+            <button class="button" type="submit" disabled>
+              Show safe menu
+            </button>
+          </div>
+          <p id="formError" class="form-error" role="alert" hidden></p>
+        </form>
+      </section>
+      <aside id="restaurantDisclaimer" class="notice">
+        <span aria-hidden="true">ⓘ</span>
+        <div>
+          <p>
+            Menu data may not cover cooking oils, cross-contact, or recipe
+            changes. Always check with the restaurant before ordering.
+          </p>
+          <a
+            id="restaurantSource"
+            target="_blank"
+            rel="noopener noreferrer"
+            hidden
+            >Restaurant allergen info ↗</a
+          >
         </div>
-        <button type="submit">Show Safe Menu</button>
-      </form>
-    </div>
-    
-  
-    <div id="restaurantDisclaimer" class="disclaimer hidden">
-     
-    </div>
-  </section>
-
-  <script src="./js/allergen-picker.js"></script>
-</body>
+      </aside>
+      <noscript
+        ><p>
+          Enable JavaScript to load the restaurant’s allergen options.
+        </p></noscript
+      >
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <a class="brand" href="index.html" aria-label="Allergy Aid home"
+              ><span class="brand-mark" aria-hidden="true">a<span>+</span></span
+              ><span
+                >allergy<span class="brand-light">aid</span
+                ><span class="brand-dot">.</span></span
+              ></a
+            >
+            <p>Allergy-friendly menu guides.</p>
+          </div>
+          <div class="footer-links">
+            <a href="restaurants.html">Restaurants</a
+            ><a href="contact.html">Get in touch</a
+            ><a
+              href="https://www.instagram.com/allergy_aid"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram ↗</a
+            ><a
+              href="https://www.tiktok.com/@allergy.aid"
+              target="_blank"
+              rel="noopener noreferrer"
+              >TikTok ↗</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Allergy Aid</span
+          ><button id="installBtn" hidden>Add to home screen</button>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

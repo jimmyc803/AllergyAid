@@ -1,122 +1,156 @@
-window.addEventListener('DOMContentLoaded', () => {
-  document.body.classList.add('loaded');
-
-  const urlParams = new URLSearchParams(window.location.search);
-  const restaurantParam = urlParams.get('name');
-  
-  const logoImg = document.getElementById('restaurantLogo');
-  const restaurantTitle = document.getElementById('restaurantName');
-  const allergenForm = document.getElementById('allergenForm');
-  const filterGroup = document.querySelector('.filter-group');
-  const disclaimerContainer = document.getElementById('restaurantDisclaimer');
-
-  if (!restaurantParam) {
-    restaurantTitle.textContent = "Restaurant Not Found";
-    if (logoImg) logoImg.style.display = "none";
-    filterGroup.innerHTML = '<p>Please select a restaurant from the home page.</p>';
+const restaurantId = new URLSearchParams(location.search).get("name");
+const title = document.getElementById("restaurantName");
+const form = document.getElementById("allergenForm");
+const options = document.getElementById("allergenOptions");
+const submit = form.querySelector('button[type="submit"]');
+const count = document.getElementById("selectionCount");
+const errorMessage = document.getElementById("formError");
+let restaurantData;
+let availableAllergens = [];
+const defaultAllergens = [
+  "milk",
+  "egg",
+  "soy",
+  "wheat",
+  "sesame",
+  "tree nuts",
+  "peanut",
+  "fish",
+].map((id) => ({
+  id,
+  displayName: id.replace(/\b\w/g, (letter) => letter.toUpperCase()),
+}));
+function showError(message) {
+  errorMessage.textContent = message;
+  errorMessage.hidden = false;
+}
+function selectedAllergens() {
+  return [...options.querySelectorAll("input:checked")].map(
+    (input) => input.value,
+  );
+}
+function updateCount() {
+  const total = selectedAllergens().length;
+  count.textContent = total
+    ? `${total} allergen${total === 1 ? "" : "s"} selected`
+    : "No allergens selected";
+}
+function validateMenu(data) {
+  if (
+    typeof data.name !== "string" ||
+    !Array.isArray(data.items) ||
+    !data.items.every(
+      (item) =>
+        typeof item.name === "string" &&
+        Array.isArray(item.allergens) &&
+        item.allergens.every(
+          (a) => typeof a === "string" || (a && typeof a.id === "string"),
+        ),
+    )
+  ) {
+    throw new Error("Invalid menu data");
+  }
+  return data;
+}
+async function loadRestaurant() {
+  if (
+    !restaurantId ||
+    !/^[a-z0-9-]+$/.test(restaurantId) ||
+    restaurantId === "template"
+  ) {
+    title.textContent = "Restaurant not found";
+    count.textContent = "Choose a restaurant to continue.";
+    showError("Please use “All restaurants” above to choose a restaurant.");
     return;
   }
-
-  const menuUrl = `./data/${restaurantParam}.json`;
-  const logoUrl = `./images/logos/${restaurantParam}.png`;
-
-  if (logoImg) {
-    logoImg.src = logoUrl;
-    logoImg.alt = `${restaurantParam.replace(/-/g, ' ')} logo`;
-    logoImg.onerror = () => {
-      logoImg.style.display = "none";
-    };
-  }
-
-  fetch(menuUrl)
-    .then(response => {
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-      return response.json();
-    })
-    .then(restaurantData => {
-      restaurantTitle.textContent = `${restaurantData.name} Menu`;
-      filterGroup.innerHTML = '';
-
-      const allergensToDisplay = restaurantData.customAllergens || [
-        {id: 'milk', displayName: 'Milk'},
-        {id: 'egg', displayName: 'Egg'},
-        {id: 'soy', displayName: 'Soy'},
-        {id: 'wheat', displayName: 'Wheat'},
-        {id: 'sesame', displayName: 'Sesame'},
-        {id: 'tree nuts', displayName: 'Tree Nuts'},
-        {id: 'peanut', displayName: 'Peanut'},
-        {id: 'fish', displayName: 'Fish'}
-      ];
-
-      allergensToDisplay.forEach(allergen => {
-        const label = document.createElement('label');
-        label.className = 'filter-option';
-        label.innerHTML = `
-          <input type="checkbox" name="allergen" value="${allergen.id}">
-          <span>${allergen.displayName || allergen.id}</span>
-        `;
-        
-        label.addEventListener('change', function() {
-          this.classList.toggle('selected', this.querySelector('input').checked);
-        });
-        
-        filterGroup.appendChild(label);
-      });
-
-      // New standardized disclaimer with dynamic website link
-      const disclaimerText = "While AllergyAid sources data directly from official restaurant websites, please be aware that some specific factors—such as cooking oils, cross-contamination, or preparation methods—may not be fully accounted for. For your safety, always consult the official restaurant allergen information before ordering. Learn more at the Restaurant’s Allergen Information Site:";
-      
-      if (restaurantData.website) {
-        disclaimerContainer.innerHTML = `
-          <p><strong>Disclaimer:</strong> ${disclaimerText} 
-            <a href="${restaurantData.website}" target="_blank" rel="noopener noreferrer">[click here]</a>
-          </p>
-        `;
-      } else {
-        disclaimerContainer.innerHTML = `
-          <p><strong>Disclaimer:</strong> ${disclaimerText} please consult the restaurant's official website.</p>
-        `;
-      }
-      disclaimerContainer.classList.remove('hidden');
-    })
-    .catch(error => {
-      console.error("Error loading restaurant data:", error);
-      restaurantTitle.textContent = "Menu Not Available";
-      filterGroup.innerHTML = '<p>Failed to load menu data. Please try again later.</p>';
+  try {
+    const response = await fetch(`./data/${restaurantId}.json`);
+    if (!response.ok) throw new Error("Menu unavailable");
+    restaurantData = validateMenu(await response.json());
+    title.textContent = restaurantData.name;
+    document.title = `${restaurantData.name} allergen choices — Allergy Aid`;
+    const seen = new Set();
+    availableAllergens = (
+      restaurantData.customAllergens || defaultAllergens
+    ).filter((allergen) => {
+      const id = allergen.id.toLowerCase();
+      if (seen.has(id)) return false;
+      seen.add(id);
+      return true;
     });
-
-  allergenForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    
+    // Restore choices only for this restaurant. Its labels may differ from another guide.
+    let previous = [];
     try {
-      const selectedAllergens = Array.from(
-        document.querySelectorAll('input[name="allergen"]:checked')
-      ).map(cb => cb.value.toLowerCase());
-
-      const response = await fetch(menuUrl);
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-      
-      const menuData = await response.json();
-
-      const safeItems = menuData.items.filter(item => {
-        const itemAllergens = (item.allergens || []).map(a => 
-          typeof a === 'string' ? a.toLowerCase() : a.id.toLowerCase()
-        );
-        return !selectedAllergens.some(allergen => 
-          itemAllergens.includes(allergen)
-        );
-      });
-
-      sessionStorage.setItem('filteredMenu', JSON.stringify({
-        restaurant: menuData.name,
-        items: safeItems,
-        customAllergens: menuData.customAllergens
-      }));
-      window.location.href = 'safe-menu.html';
-      
-    } catch (error) {
-      console.error("Error loading menu:", error);
-      alert("Failed to load menu data. Please try again later.");
+      const saved = JSON.parse(sessionStorage.getItem("filteredMenu"));
+      if (
+        saved?.restaurantId === restaurantId &&
+        Array.isArray(saved.selectedAllergens)
+      )
+        previous = saved.selectedAllergens;
+    } catch {
+      /* Storage is optional until the user requests results. */
     }
+    for (const allergen of availableAllergens) {
+      const label = document.createElement("label");
+      label.className = "filter-option";
+      const input = document.createElement("input");
+      input.type = "checkbox";
+      input.name = "allergen";
+      input.value = allergen.id.toLowerCase();
+      input.checked = previous.includes(input.value);
+      const text = document.createElement("span");
+      text.textContent = allergen.displayName || allergen.id;
+      label.append(input, text);
+      options.append(label);
+    }
+    const source = document.getElementById("restaurantSource");
+    if (/^https?:\/\//i.test(restaurantData.website || "")) {
+      source.href = restaurantData.website;
+      source.hidden = false;
+    }
+    updateCount();
+    submit.disabled = false;
+  } catch (error) {
+    title.textContent = "Menu not available";
+    count.textContent = "Menu could not be loaded.";
+    showError(
+      "We couldn’t load this menu. Check your connection and refresh, or choose another restaurant.",
+    );
+    console.warn("Unable to load menu:", error);
+  }
+}
+options.addEventListener("change", updateCount);
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (!restaurantData) return;
+  errorMessage.hidden = true;
+  const selected = selectedAllergens();
+  // Match the restaurant's original allergen IDs; do not infer ingredient substitutions.
+  const items = restaurantData.items.filter((item) => {
+    const allergens = item.allergens.map((a) =>
+      (typeof a === "string" ? a : a.id).toLowerCase(),
+    );
+    return !selected.some((allergen) => allergens.includes(allergen));
   });
+  try {
+    sessionStorage.setItem(
+      "filteredMenu",
+      JSON.stringify({
+        restaurant: restaurantData.name,
+        restaurantId,
+        website: restaurantData.website,
+        selectedAllergens: selected,
+        selectedLabels: availableAllergens
+          .filter((a) => selected.includes(a.id.toLowerCase()))
+          .map((a) => a.displayName || a.id),
+        items,
+      }),
+    );
+    location.href = "safe-menu.html";
+  } catch {
+    showError(
+      "Your browser couldn’t save these choices. Allow session storage for this site, then try again.",
+    );
+  }
 });
+loadRestaurant();

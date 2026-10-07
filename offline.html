@@ -1,28 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Offline | Allergy Aid</title>
-  <style>
-    body { 
-      font-family: 'Poppins', sans-serif;
-      text-align: center;
-      padding: 2rem;
-    }
-    h1 { color: #3a7d44; }
-    button {
-      background: #3a7d44;
-      color: white;
-      border: none;
-      padding: 0.8rem 1.5rem;
-      border-radius: 50px;
-      font-family: inherit;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <h1>You're Offline</h1>
-  <p>Some features may not be available without an internet connection.</p>
-  <button onclick="window.location.reload()">Retry Connection</button>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>You're offline — Allergy Aid</title>
+    <meta name="theme-color" content="#f8f9f3" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="icon" href="images/allergyaidicon.png" />
+  </head>
+  <body>
+    <main class="container flow-main" id="main">
+      <div class="page-intro">
+        <h1>You’re offline</h1>
+        <p>
+          Reconnect to load restaurant menus and allergen
+          information.
+        </p>
+      </div>
+      <button class="button" onclick="window.location.reload()">
+        Try again ↻
+      </button>
+      <a href="index.html" class="back-link">Back to home</a>
+    </main>
+  </body>
 </html>

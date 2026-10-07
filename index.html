@@ -1,157 +1,274 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-
-  <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#FFFFFF">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Allergy Aid - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <link rel="stylesheet" href="./css/home.css" />
-  <link rel="stylesheet" href="./css/navbar.css">
-  <link rel="icon" href="images/allergyaidicon.png" type="image/x-icon">
-
-  <meta name="google-site-verification" content="xKeh3pAY3s6YDakLNXKuyzpo24rNGgm7YKUyNlUEApc" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="index.html"><h1>Allergy Aid</h1></a>
-      <nav>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="restaurants.html">Restaurants</a>
-          <a href="partners.html">Partners</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <button id="installBtn">
-          <i class="fas fa-plus-circle"></i> Add to Home
-        </button>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container main-content">
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="hero-content">
-        <h2>Dine with Confidence</h2>
-        <p>Find allergy-friendly menu items at your favorite restaurants with our verified allergen database</p>
-        <a href="restaurants.html" class="cta-button">Browse Restaurants</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A little clarity before you order — Allergy Aid</title>
+    <meta
+      name="description"
+      content="Explore restaurant menus and filter items by your selected allergens with Allergy Aid."
+    />
+    <meta name="theme-color" content="#f8f9f3" />
+    <link rel="icon" href="images/allergyaidicon.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/site.css" />
+    <meta
+      name="google-site-verification"
+      content="xKeh3pAY3s6YDakLNXKuyzpo24rNGgm7YKUyNlUEApc"
+    />
+    <script src="js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Allergy Aid home"
+          ><span class="brand-mark" aria-hidden="true">a<span>+</span></span
+          ><span
+            >allergy<span class="brand-light">aid</span
+            ><span class="brand-dot">.</span></span
+          ></a
+        >
+        <nav aria-label="Main navigation">
+          <a href="index.html" aria-current="page">Home</a
+          ><a href="restaurants.html">Restaurants</a
+          ><a href="partners.html">Partners</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+        <a class="header-cta" href="restaurants.html"
+          >Find your menu</a
+        >
       </div>
-      <div class="hero-image">
-        <img src="images/food-safety.jpg" alt="Food safety illustration">
-      </div>
-    </section>
-
-    <!-- Mission Section -->
-    <section class="mission-section">
-      <div class="mission-card">
-        <i class="fas fa-heart"></i>
-        <h3>Our Mission</h3>
-        <p>Making dining out safer and more enjoyable for people with food allergies by providing accurate allergen information.</p>
-      </div>
-      <div class="mission-card">
-        <i class="fas fa-utensils"></i>
-        <h3>How It Works</h3>
-        <p>Select a restaurant, choose your allergens, and we'll show you safe menu options in an easy-to-read format.</p>
-      </div>
-      <div class="mission-card">
-        <i class="fas fa-handshake"></i>
-        <h3>Our Promise</h3>
-        <p>We work directly with restaurants to provide the most up-to-date allergen information available.</p>
-      </div>
-    </section>
-
-    <!-- Restaurant Section -->
-    <section class="restaurants-section">
-      <h2>Featured Restaurants</h2>
-      <div class="restaurants-grid">
-        <!-- Chick-fil-A -->
-        <div class="restaurant-card">
-          <h3>Chick-fil-A</h3>
-          <div class="restaurant-links">
-            <a href="allergen-picker.html?name=chickfila" class="menu-link">View Menu</a>
-            <a href="https://www.chick-fil-a.com/nutrition-allergens" target="_blank" class="website-link">Website</a>
+    </header>
+    <main id="main">
+      <section class="container hero">
+        <div class="hero-copy">
+          <h1>Allergy-friendly options at restaurants you know.</h1>
+          <p class="hero-description">
+            Pick a restaurant, choose the allergens you avoid, and see which
+            menu items don’t list them.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="restaurants.html"
+              >Find a restaurant</a
+            ><a class="text-link" href="#how-it-works"
+              >How it works <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <div class="hero-note">
+            <span class="note-icon" aria-hidden="true">✓</span> Free. No account
+            needed.
           </div>
         </div>
-
-        <!-- Raising Cane's -->
-        <div class="restaurant-card">
-          <h3>Raising Cane's</h3>
-          <div class="restaurant-links">
-            <a href="allergen-picker.html?name=raisingcanes" class="menu-link">View Menu</a>
-            <a href="https://www.raisingcanes.com/allergens/" target="_blank" class="website-link">Website</a>
+        <div class="hero-visual">
+          <img
+            class="hero-photo"
+            src="images/food-safety.jpg"
+            alt="Friends sharing a relaxed meal at a restaurant"
+            fetchpriority="high"
+            width="4385"
+            height="2923"
+          />
+        </div>
+      </section>
+      <section class="intro-strip">
+        <div class="container">
+          <span><b>11</b> restaurant guides</span
+          ><span>Filter by <b>your allergens</b></span
+          ><span><b>Free</b> to explore</span>
+        </div>
+      </section>
+      <section id="how-it-works" class="container section how-section">
+        <div class="section-heading">
+          <div>
+            <h2>How it works</h2>
           </div>
         </div>
-
-        <!-- Burger King -->
-        <div class="restaurant-card">
-          <h3>Burger King</h3>
-          <div class="restaurant-links">
-            <a href="allergen-picker.html?name=burgerking" class="menu-link">View Menu</a>
-            <a href="https://bk-use1-prod.sites.rbictg.com/nutrition/allergens.pdf" target="_blank" class="website-link">Website</a>
+        <div class="steps">
+          <article>
+            <span class="step-number">01</span>
+            <h3>Pick a restaurant</h3>
+          </article>
+          <article>
+            <span class="step-number">02</span>
+            <h3>Choose your allergens</h3>
+          </article>
+          <article>
+            <span class="step-number">03</span>
+            <h3>See your safe menu</h3>
+          </article>
+        </div>
+      </section>
+      <section class="featured-section">
+        <div class="container section">
+          <div class="section-heading">
+            <div>
+              <h2>Popular restaurants</h2>
+            </div>
+            <a class="text-link" href="restaurants.html"
+              >View all restaurants</a
+            >
+          </div>
+          <div class="restaurant-grid featured-grid">
+            <article class="restaurant-card" data-name="Chick-fil-A">
+              <div class="restaurant-top">
+                <span class="card-label">MENU GUIDE</span>
+              </div>
+              <h3>Chick-fil-A</h3>
+              <p>Chicken & sandwiches</p>
+              <div class="restaurant-links">
+                <a
+                  class="menu-link"
+                  href="allergen-picker.html?name=chickfila"
+                  aria-label="View Chick-fil-A menu"
+                  >View menu</a
+                ><a
+                  class="source-link"
+                  href="https://www.chick-fil-a.com/nutrition-allergens"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Chick-fil-A allergen source"
+                  >Allergen info</a
+                >
+              </div>
+            </article>
+            <article class="restaurant-card" data-name="Chipotle">
+              <div class="restaurant-top">
+                <span class="card-label">MENU GUIDE</span>
+              </div>
+              <h3>Chipotle</h3>
+              <p>Burritos & bowls</p>
+              <div class="restaurant-links">
+                <a
+                  class="menu-link"
+                  href="allergen-picker.html?name=chipotle"
+                  aria-label="View Chipotle menu"
+                  >View menu</a
+                ><a
+                  class="source-link"
+                  href="https://www.chipotle.com/allergens"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Chipotle allergen source"
+                  >Allergen info</a
+                >
+              </div>
+            </article>
+            <article class="restaurant-card" data-name="Raising Cane&#x27;s">
+              <div class="restaurant-top">
+                <span class="card-label">MENU GUIDE</span>
+              </div>
+              <h3>Raising Cane&#x27;s</h3>
+              <p>Chicken & sides</p>
+              <div class="restaurant-links">
+                <a
+                  class="menu-link"
+                  href="allergen-picker.html?name=raisingcanes"
+                  aria-label="View Raising Cane&#x27;s menu"
+                  >View menu</a
+                ><a
+                  class="source-link"
+                  href="https://www.raisingcanes.com/allergens/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Raising Cane&#x27;s allergen source"
+                  >Allergen info</a
+                >
+              </div>
+            </article>
+            <article class="restaurant-card" data-name="Panda Express">
+              <div class="restaurant-top">
+                <span class="card-label">MENU GUIDE</span>
+              </div>
+              <h3>Panda Express</h3>
+              <p>Chinese-inspired favorites</p>
+              <div class="restaurant-links">
+                <a
+                  class="menu-link"
+                  href="allergen-picker.html?name=pandaexpress"
+                  aria-label="View Panda Express menu"
+                  >View menu</a
+                ><a
+                  class="source-link"
+                  href="http://pandaexpress.com/nutritioninformation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Panda Express allergen source"
+                  >Allergen info</a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="suggestion">
+            Missing a restaurant?
+            <a href="contact.html">Suggest a restaurant</a>
           </div>
         </div>
-
-        <!-- Panda Express -->
-        <div class="restaurant-card">
-          <h3>Panda Express</h3>
-          <div class="restaurant-links">
-            <a href="allergen-picker.html?name=pandaexpress" class="menu-link">View Menu</a>
-            <a href="http://pandaexpress.com/nutritioninformation" target="_blank" class="website-link">Website</a>
+      </section>
+      <section class="container care-section">
+        <div>
+          <h2>Always check with the restaurant</h2>
+        </div>
+        <p>
+          Menu data may not cover cooking oils, cross-contact, or recipe
+          changes. Confirm with staff before ordering.
+        </p>
+      </section>
+      <aside class="container partner-banner">
+        <img
+          src="images/riddlio-banner.jpg"
+          alt=""
+          width="44"
+          height="44"
+          loading="lazy"
+        />
+        <div>
+          <span class="eyebrow">FROM OUR FRIENDS AT RIDDLIO</span>
+          <p>A new riddle every day.</p>
+        </div>
+        <a
+          class="text-link"
+          href="https://riddlio.com/dailyriddle"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Try today’s riddle ↗</a
+        >
+      </aside>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <a class="brand" href="index.html" aria-label="Allergy Aid home"
+              ><span class="brand-mark" aria-hidden="true">a<span>+</span></span
+              ><span
+                >allergy<span class="brand-light">aid</span
+                ><span class="brand-dot">.</span></span
+              ></a
+            >
+            <p>Allergy-friendly menu guides.</p>
+          </div>
+          <div class="footer-links">
+            <a href="restaurants.html">Restaurants</a
+            ><a href="contact.html">Get in touch</a
+            ><a
+              href="https://www.instagram.com/allergy_aid"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram ↗</a
+            ><a
+              href="https://www.tiktok.com/@allergy.aid"
+              target="_blank"
+              rel="noopener noreferrer"
+              >TikTok ↗</a
+            >
           </div>
         </div>
-
-        <!-- Coming Soon -->
-        <div class="restaurant-card coming-soon">
-          <h3>More Restaurants</h3>
-          <p class="coming-soon-text">Coming Soon</p>
-          <a href="contact.html" class="suggest-link">Suggest a Restaurant</a>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Allergy Aid</span
+          ><button id="installBtn" hidden>Add to home screen</button>
         </div>
       </div>
-    </section>
-  </main>
-
-  <!-- Horizontal Banner Ad -->
-  <section class="horizontal-banner">
-    <a href="https://riddlio.com/dailyriddle" target="_blank" rel="noopener noreferrer">
-      <div class="banner-flex">
-        <img src="images/riddlio-banner.jpg" alt="Riddlio Logo" class="banner-logo">
-        <div class="banner-text">
-          <h3>Can You Solve Today's Riddle?</h3>
-          <p>Fresh brain teasers waiting to challenge you on Riddlio</p>
-        </div>
-        <div class="cta-button">Visit Now →</div>
-      </div>
-    </a>
-  </section>
-
-  <footer>
-    <div class="social-links">
-      <a href="https://www.tiktok.com/@allergy.aid" target="_blank" aria-label="TikTok">
-        <i class="fab fa-tiktok"></i>
-      </a>
-      <a href="https://www.instagram.com/allergy_aid" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
-    <p>&copy; 2025 Allergy Aid. All rights reserved.</p>
-  </footer>
-
-  <!-- Floating Background Elements -->
-  <div class="floating-elements">
-    <div class="floating-circle circle-1"></div>
-    <div class="floating-circle circle-2"></div>
-    <div class="floating-circle circle-3"></div>
-  </div>
-
-  <script src="./js/home.js"></script>
-</body>
+    </footer>
+  </body>
 </html>

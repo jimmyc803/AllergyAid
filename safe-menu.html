@@ -1,35 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNL67MWF9Q"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your filtered menu — Allergy Aid</title>
+    <meta
+      name="description"
+      content="Explore restaurant menus and filter items by your selected allergens with Allergy Aid."
+    />
+    <meta name="theme-color" content="#f8f9f3" />
+    <link rel="icon" href="images/allergyaidicon.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/site.css" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YNL67MWF9Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-17XLE1VGH7');
-  </script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Safe Menu Items</title>
-  <link rel="stylesheet" href="./css/safe-menu.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-
-  <link rel="icon" href="images/allergyaidicon.png" type="image/x-icon">
-</head>
-<body>
-  <header>
-    <h1 id="restaurantName">Safe Menu Items</h1>
-  </header>
-
-  <section id="menuContainer">
-
-  </section>
-
-  <button id="backBtn">Back to Allergen Selection</button>
-
-  <script src="./js/safe-menu.js"></script>
-</body>
+      gtag("config", "G-17XLE1VGH7");
+    </script>
+    <script src="js/site.js" defer></script>
+    <script src="js/safe-menu.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Allergy Aid home"
+          ><span class="brand-mark" aria-hidden="true">a<span>+</span></span
+          ><span
+            >allergy<span class="brand-light">aid</span
+            ><span class="brand-dot">.</span></span
+          ></a
+        >
+        <nav aria-label="Main navigation">
+          <a href="index.html">Home</a
+          ><a href="restaurants.html" aria-current="page">Restaurants</a
+          ><a href="partners.html">Partners</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+        <a class="header-cta" href="restaurants.html"
+          >Find your menu</a
+        >
+      </div>
+    </header>
+    <main id="main" class="container flow-main">
+      <a href="restaurants.html" class="back-link" id="backBtn"
+        >← Choose a restaurant</a
+      >
+      <ol class="progress" aria-label="Menu steps">
+        <li>1 <span>Restaurant</span></li>
+        <li>2 <span>Your allergens</span></li>
+        <li aria-current="step">3 <span>Your menu</span></li>
+      </ol>
+      <div class="page-intro">
+        <h1 id="restaurantName">Safe menu</h1>
+        <p id="filterSummary"></p>
+      </div>
+      <aside class="notice">
+        <span aria-hidden="true">ⓘ</span>
+        <div>
+          <p>
+            These items don’t list your selected allergens, but that’s not a
+            guarantee. Always check with the restaurant before ordering.
+          </p>
+          <a
+            id="restaurantSource"
+            target="_blank"
+            rel="noopener noreferrer"
+            hidden
+            >Restaurant allergen info ↗</a
+          >
+        </div>
+      </aside>
+      <div class="directory-toolbar" id="menuToolbar" hidden>
+        <div class="search-field">
+          <label for="menuItemSearch" class="sr-only">Search menu items</label
+          ><span aria-hidden="true">⌕</span
+          ><input
+            type="search"
+            id="menuItemSearch"
+            placeholder="Search your menu…"
+            autocomplete="off"
+          />
+        </div>
+        <p id="menuCount" role="status"></p>
+      </div>
+      <section id="menuContainer" aria-label="Filtered menu"></section>
+      <noscript><p>Enable JavaScript to view your filtered menu.</p></noscript>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <a class="brand" href="index.html" aria-label="Allergy Aid home"
+              ><span class="brand-mark" aria-hidden="true">a<span>+</span></span
+              ><span
+                >allergy<span class="brand-light">aid</span
+                ><span class="brand-dot">.</span></span
+              ></a
+            >
+            <p>Allergy-friendly menu guides.</p>
+          </div>
+          <div class="footer-links">
+            <a href="restaurants.html">Restaurants</a
+            ><a href="contact.html">Get in touch</a
+            ><a
+              href="https://www.instagram.com/allergy_aid"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram ↗</a
+            ><a
+              href="https://www.tiktok.com/@allergy.aid"
+              target="_blank"
+              rel="noopener noreferrer"
+              >TikTok ↗</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Allergy Aid</span
+          ><button id="installBtn" hidden>Add to home screen</button>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
